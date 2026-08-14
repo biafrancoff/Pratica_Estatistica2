@@ -1,0 +1,137 @@
+---
+title: "**PRÁTICA ESTATÍSTICA II**"
+subtitle: "**ATIVIDADE AVALIATIVA 1**"
+author: "Beatriz Franco (<beatrizff@id.uff.br>) <br> Paolla Pinheiro 
+(<paollapp@id.uff.br>)"
+date: 2026-08-17
+date-format: "DD/MM/YYYY"
+institute: "Universidade Federal Fluminense"
+format:
+  revealjs:
+    css: custom.css
+    slide-number: true
+    incremental: false
+    transition: slide
+    background-transition: fade
+    width: 1280
+    height: 720
+    margin: 0.07
+    auto-stretch: false
+    number-sections: true
+    title-slide-attributes:
+      data-background-image: "imagens/Capa.png"
+      data-background-size: cover
+---
+
+# **Introdução:**{data-background-image="imagens/transicao.png" style="text-align:center"}
+
+## Artigo e autores:
+
+::: box-blue
+**Bem-estar subjetivo de residentes da região metropolitana do Rio de Janeiro
+durante a COVID-19**
+
+-Deise Breder dos Santos BatistaI;
+
+-Adriana Lenho de Figueiredo PereiraI;
+
+-Alan de Souza Campello JuniorI
+
+-Claudia da Silva Teixeira de SantanaI
+
+-Juliana Amaral PrataI
+
+-Claudia Silvia Rocha OliveiraI
+:::
+
+## Motivação:
+
+::: box-blue
+- Expansão do uso de tecnologias digitais na adolescência;
+
+- Elevada exposição a telas (especialmente no período noturno), evidências apontam impacto negativo no padrão do sono;
+
+- A luz azul emitida por dispositivos:
+
+  - Inibe a secreção de melatonina e altera o ritmo circadiano.
+
+- Relevância epidemiológica:
+
+  - Distúrbios do sono em adolescentes são problema de saúde pública.
+
+:::
+
+## Objetivos:
+
+::: box-blue
+- Objetivo geral:
+
+  - Avaliar a associação entre qualidade do sono e tempo de tela em adolescentes.
+
+- Objetivos específicos:
+
+  - Descrever o padrão de uso de dispositivos eletrônicos;
+
+  - Classificar a qualidade do sono.
+:::
+
+## Coleta da amostra :
+
+::: {.box-blue style="font-size: 0.9em;"}
+- Amostra: 128 adolescentes;
+
+- Faixa etária: 15 a 19 anos;
+
+- Local: escola pública (Recife – PE);
+
+- Critérios de exclusão:
+
+  -  Distúrbios do sono em tratamento;
+
+  - Limitações cognitivas.
+
+- Instrumentos utilizados: 
+  - Questionário online (Google Forms);
+  - Questionário sociodemográfico;
+  - Índice de Qualidade do Sono de Pittsburgh (PSQI);
+  - Questionário de mídias eletrônicas.
+:::
+
+# Metodologia Estatística:
+
+## Variáveis analisadas:
+
+::: box-blue
+- Desfecho:
+
+  - Qualidade do sono (PSQI)
+
+    - Boa;
+
+    - Má.
+- Fatores de exposição:
+
+  - Tempo de uso de telas (≥ 4h/dia);
+
+  - Uso de celular, computador e televisão;
+
+  - Uso de telas no período noturno (após 22h).
+:::
+
+## Testes Aplicados:
+
+::: box-blue
+- Teste Exato de Fisher $p^{(2)}$;
+
+- Qui-quadrado de Pearson $p^{(1)}$;
+
+- Hipóteses:
+$$
+\begin{cases}
+H_0: \text{as variáveis são independentes.} \\
+H_1: \text{as variáveis são dependentes.}
+\end{cases}
+$$
+
+- Nível de significância: $\alpha = 0{,}05$ (5%).
+:::
