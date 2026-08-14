@@ -23,41 +23,60 @@ format:
       data-background-size: cover
 ---
 
-# **Introdução:**{data-background-image="imagens/transicao.png" style="text-align:center"}
+# Introdução:{.transicao data-background-image="imagens/transicao.png" data-background-size="cover"}
+
 
 ## Artigo e autores:
 
 ::: box-blue
+<div class="titulo-principal">
 **Bem-estar subjetivo de residentes da região metropolitana do Rio de Janeiro
 durante a COVID-19**
+</div>
+
+<u>Autores:</u>
 
 -Deise Breder dos Santos BatistaI;
 
 -Adriana Lenho de Figueiredo PereiraI;
 
--Alan de Souza Campello JuniorI
+-Alan de Souza Campello Junior;
 
--Claudia da Silva Teixeira de SantanaI
+-Claudia da Silva Teixeira de SantanaI;
 
--Juliana Amaral PrataI
+-Juliana Amaral PrataI;
 
--Claudia Silvia Rocha OliveiraI
+-Claudia Silvia Rocha OliveiraI.
 :::
 
 ## Motivação:
 
 ::: box-blue
-- Expansão do uso de tecnologias digitais na adolescência;
+- A pandemia de COVID-19 trouxe consequências **sociais, econômicas e psicológicas**.
 
-- Elevada exposição a telas (especialmente no período noturno), evidências apontam impacto negativo no padrão do sono;
+- O isolamento social esteve associado a experiências como: 
+   - estresse; 
+   - solidão; 
+   - irritabilidade; 
+   - medo; 
+   - frustração;
+   - tédio;
+   - insegurança.
 
-- A luz azul emitida por dispositivos:
+- Diante disso, tornou-se importante investigar os impactos da pandemia sobre o **bem-estar subjetivo da população**.
 
-  - Inibe a secreção de melatonina e altera o ritmo circadiano.
+:::
 
-- Relevância epidemiológica:
+## Contextualização:
 
-  - Distúrbios do sono em adolescentes são problema de saúde pública.
+::: box-blue
+- O **Bem-Estar Subjetivo (BES)** representa a forma como os indivíduos avaliam e vivenciam seu próprio bem-estar.
+
+- No estudo, o BES foi avaliado por meio do **Índice de Bem-Estar da OMS (OMS-5)**.
+
+- O OMS-5 é composto por **cinco questões** relacionadas a aspectos positivos do bem-estar.
+
+- O índice gera um escore de **0 a 100**, no qual valores maiores indicam maior nível de bem-estar.
 
 :::
 
@@ -66,64 +85,63 @@ durante a COVID-19**
 ::: box-blue
 - Objetivo geral:
 
-  - Avaliar a associação entre qualidade do sono e tempo de tela em adolescentes.
+  - Identificar o nível do bem-estar subjetivo e seus fatores associados em residentes na região metropolitana do Rio de Janeiro durante a pandemia da COVID-19.
 
-- Objetivos específicos:
-
-  - Descrever o padrão de uso de dispositivos eletrônicos;
-
-  - Classificar a qualidade do sono.
+**Pergunta de interesse:** quais características e fatores estão associados ao bem-estar subjetivo?
 :::
 
-## Coleta da amostra :
+## Coleta da amostra:
 
 ::: {.box-blue style="font-size: 0.9em;"}
-- Amostra: 128 adolescentes;
+- **Amostra:** 143 adultos
 
-- Faixa etária: 15 a 19 anos;
+  - 98 mulheres (68,5%);
+  
+  - 45 homens  (31,5%). 
 
-- Local: escola pública (Recife – PE);
+- **Local:** primeira região metropolitana do RJ (Municípios do Rio de Janeiro e Baixada Fluminense).
 
-- Critérios de exclusão:
+- **Período:** janeiro a maio de 2021.
 
-  -  Distúrbios do sono em tratamento;
+- **Coleta:**
 
-  - Limitações cognitivas.
+  - Questionário eletrônico autoadministrado;
 
-- Instrumentos utilizados: 
-  - Questionário online (Google Forms);
-  - Questionário sociodemográfico;
-  - Índice de Qualidade do Sono de Pittsburgh (PSQI);
-  - Questionário de mídias eletrônicas.
+  - Divulgação por **redes sociais e aplicativos de mensagens**.
+  
+ 
+
 :::
 
-# Metodologia Estatística:
+# Metodologia Estatística:{.transicao data-background-image="imagens/transicao.png" data-background-size="cover"}
 
 ## Variáveis analisadas:
 
-::: box-blue
-- Desfecho:
+::: box-blue 
+- Desfecho: Bem-estar subjetivo do OMS-5 
 
-  - Qualidade do sono (PSQI)
+:::{.tabela-esquerda}
+ | Classificação | Escore |
+|---|---:|
+| BES prejudicado | < 50 |
+| BES preservado | ≥ 50 |   
+:::
 
-    - Boa;
-
-    - Má.
 - Fatores de exposição:
 
-  - Tempo de uso de telas (≥ 4h/dia);
+  - **Sociodemográficos:** idade, sexo, município, cor da pele, atividade laboral, doença crônica e diagnóstico de COVID-19.
 
-  - Uso de celular, computador e televisão;
+  - **Sentimentos no isolamento:** tédio, frustração, angústia, solidão, medo, entre outros.
 
-  - Uso de telas no período noturno (após 22h).
+  - **Percepção de risco:** exposição à COVID-19 em diferentes locais e meios de transporte.
 :::
 
 ## Testes Aplicados:
 
 ::: box-blue
-- Teste Exato de Fisher $p^{(2)}$;
+- **Qui-quadrado de Pearson (\*\*):** associação entre variáveis categóricas;
 
-- Qui-quadrado de Pearson $p^{(1)}$;
+- **Teste Exato de Fisher (\*\*):** utilizado quando havia **menos de 5 observações**;
 
 - Hipóteses:
 $$
@@ -134,4 +152,100 @@ H_1: \text{as variáveis são dependentes.}
 $$
 
 - Nível de significância: $\alpha = 0{,}05$ (5%).
+
+- **Decisão:** \(p < 0,05\) → rejeita-se \(H0\) → **há associação significativa**.
 :::
+
+
+
+# Resultados:{data-background-image="imagens/transicao.png"}
+
+## Tabela 1
+
+![](imagens/Tabela 1.1.png)
+
+## Tabela 1.2
+
+![](imagens/Tabela 1.2.jpeg)
+
+## Tabela 2.1 {.scrollable}
+
+![](imagens/Tabela 2.1.jpeg)
+
+
+
+## Resultados
+
+::: {.tabela-estilo}
+
+| Variáveis                        | Valor de p |
+|----------------------------------|------------|
+| Município                        |  < 0,05    |
+| Diagnóstico de COVID-19          |  < 0,05    |
+| Tédio                            |  < 0,05    |
+| Frustração                       |  < 0,01    |
+| Aborrecimento                    |  < 0,05    |
+| Angustia                         |  < 0,05    |
+| Solidão                          |  < 0,05    |
+| Nervosismo                       |  < 0,01    |
+| Culpa                            |  < 0,01    |
+
+::: {.texto-pequeno .texto-centralizado}
+**Variável principal:** Bem-estar subjetivo do OMS-5
+:::
+
+:::
+
+
+# Conclusão:{.transicao data-background-image="imagens/transicao.png" data-background-size="cover"}
+
+## Principais Achados:
+
+::: box-blue
+
+- O escore global médio de **BES foi 51,1**;
+  
+- Houve associação significativa entre o **BES** e:
+  - Residência na **Baixada Fluminense**;
+  - **Diagnóstico de COVID-19**;
+  - Sentimentos negativos durante o isolamento, como **tédio, frustração, angústia, solidão e nervosismo**;
+  - Percepção de risco de exposição à COVID-19 em **transporte alternativo**.
+
+- Os resultados evidenciaram impactos da pandemia sobre o **bem-estar subjetivo** dos participantes.
+
+:::
+
+## Importância do Teste de Associação:
+
+::: box-blue
+
+- Os testes de Qui-quadrado e Exato de Fisher permitiram verificar a existência de associação entre o **BES e os fatores analisados**.
+
+- Com os testes, foi possível identificar quais fatores apresentaram **associação estatisticamente significativa** com o bem-estar subjetivo.
+
+:::
+
+## Contribuição para a Sociedade:
+
+::: box-blue
+
+- O estudo contribui para compreender os **impactos psicossociais da pandemia** sobre o bem-estar da população.
+
+- Os resultados reforçam a importância de:
+  - promover a **saúde mental**;
+  - prevenir **agravos psicológicos**;
+  - desenvolver **estratégias de cuidado** voltadas à população.
+
+:::
+
+## Conclusão dos autores:
+
+::: box-blue
+
+"O estudo lança luz sobre as necessidades psicossociais que podem decorrer da pandemia em curso e das 
+demandas emergentes de estratégias de cuidados voltadas à promoção da saúde e prevenção de agravos, como as 
+respostas emocionais prejudicadas e as situações de violência aqui identificadas."
+
+::: 
+
+# Obrigado. {.unnumbered .transicao data-background-image="imagens/transicao.png" data-background-size="cover"}
