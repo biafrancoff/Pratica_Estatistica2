@@ -36,17 +36,17 @@ durante a COVID-19**
 
 <u>Autores:</u>
 
--Deise Breder dos Santos BatistaI;
+-Deise Breder dos Santos Batista;
 
--Adriana Lenho de Figueiredo PereiraI;
+-Adriana Lenho de Figueiredo Pereira;
 
 -Alan de Souza Campello Junior;
 
--Claudia da Silva Teixeira de SantanaI;
+-Claudia da Silva Teixeira de Santana;
 
--Juliana Amaral PrataI;
+-Juliana Amaral Prata;
 
--Claudia Silvia Rocha OliveiraI.
+-Claudia Silvia Rocha Oliveira.
 :::
 
 ## Motivação:
@@ -99,7 +99,7 @@ durante a COVID-19**
   
   - 45 homens  (31,5%). 
 
-- **Local:** primeira região metropolitana do RJ (Municípios do Rio de Janeiro e Baixada Fluminense).
+- **Local:** primeira região metropolitana do RJ (Município do Rio de Janeiro e Baixada Fluminense).
 
 - **Período:** janeiro a maio de 2021.
 
