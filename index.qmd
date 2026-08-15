@@ -164,9 +164,9 @@ $$
 
 ![](imagens/Tabela 1.1.png)
 
-## Tabela 1.2
+## Tabela 1.2 {.scrollable}
 
-![](imagens/Tabela 1.2.jpeg)
+![](imagens/Tabela 1.2.png)
 
 ## Tabela 2.1 {.scrollable}
 
@@ -206,7 +206,7 @@ $$
 - O escore global médio de **BES foi 51,1**;
   
 - Houve associação significativa entre o **BES** e:
-  - Residência na **Baixada Fluminense**;
+  - **Local de residência** (Rio de Janeiro/Baixada Fluminense);
   - **Diagnóstico de COVID-19**;
   - Sentimentos negativos durante o isolamento, como **tédio, frustração, angústia, solidão e nervosismo**;
   - Percepção de risco de exposição à COVID-19 em **transporte alternativo**.
