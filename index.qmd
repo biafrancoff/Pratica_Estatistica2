@@ -191,7 +191,7 @@ $$
 | Culpa                            |  < 0,01    |
 
 ::: {.texto-pequeno .texto-centralizado}
-**Variável principal:** Bem-estar subjetivo do OMS-5
+**Variável desfecho:** Bem-estar subjetivo do OMS-5
 :::
 
 :::
@@ -237,15 +237,5 @@ $$
   - desenvolver **estratégias de cuidado** voltadas à população.
 
 :::
-
-## Conclusão dos autores:
-
-::: box-blue
-
-"O estudo lança luz sobre as necessidades psicossociais que podem decorrer da pandemia em curso e das 
-demandas emergentes de estratégias de cuidados voltadas à promoção da saúde e prevenção de agravos, como as 
-respostas emocionais prejudicadas e as situações de violência aqui identificadas."
-
-::: 
 
 # Obrigado. {.unnumbered .transicao data-background-image="imagens/transicao.png" data-background-size="cover"}
