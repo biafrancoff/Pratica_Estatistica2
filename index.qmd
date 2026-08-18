@@ -141,7 +141,7 @@ durante a COVID-19**
 ::: box-blue
 - **Qui-quadrado de Pearson (\*\*):** associação entre variáveis categóricas;
 
-- **Teste Exato de Fisher (\*\*):** utilizado quando havia **menos de 5 observações**;
+- **Teste Exato de Fisher (\*\*\*):** utilizado quando havia **menos de 5 observações**;
 
 - Hipóteses:
 $$
