@@ -1,0 +1,114 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Prática Estatística II",
+    "section": "",
+    "text": "Atividade Avaliativa 1"
+  },
+  {
+    "objectID": "index.html#atividades-avaliativas",
+    "href": "index.html#atividades-avaliativas",
+    "title": "Prática Estatística II",
+    "section": "",
+    "text": "Atividade Avaliativa 1"
+  },
+  {
+    "objectID": "Atividade_1/index.html#artigo-e-autores",
+    "href": "Atividade_1/index.html#artigo-e-autores",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "1.1 Artigo e autores:",
+    "text": "1.1 Artigo e autores:\n\n\nBem-estar subjetivo de residentes da região metropolitana do Rio de Janeiro durante a COVID-19\n\nAutores:\n\nDeise Breder dos Santos Batista;\nAdriana Lenho de Figueiredo Pereira;\nAlan de Souza Campello Junior;\nClaudia da Silva Teixeira de Santana;\nJuliana Amaral Prata;\nClaudia Silvia Rocha Oliveira."
+  },
+  {
+    "objectID": "Atividade_1/index.html#motivação",
+    "href": "Atividade_1/index.html#motivação",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "1.2 Motivação:",
+    "text": "1.2 Motivação:\n\n\nA pandemia de COVID-19 trouxe consequências sociais, econômicas e psicológicas.\nO isolamento social esteve associado a experiências como:\n\nestresse;\nsolidão;\nirritabilidade;\nmedo;\nfrustração;\ntédio;\ninsegurança.\n\nDiante disso, tornou-se importante investigar os impactos da pandemia sobre o bem-estar subjetivo da população."
+  },
+  {
+    "objectID": "Atividade_1/index.html#contextualização",
+    "href": "Atividade_1/index.html#contextualização",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "1.3 Contextualização:",
+    "text": "1.3 Contextualização:\n\n\nO Bem-Estar Subjetivo (BES) representa a forma como os indivíduos avaliam e vivenciam seu próprio bem-estar.\nNo estudo, o BES foi avaliado por meio do Índice de Bem-Estar da OMS (OMS-5).\nO OMS-5 é composto por cinco questões relacionadas a aspectos positivos do bem-estar.\nO índice gera um escore de 0 a 100, no qual valores maiores indicam maior nível de bem-estar."
+  },
+  {
+    "objectID": "Atividade_1/index.html#objetivos",
+    "href": "Atividade_1/index.html#objetivos",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "1.4 Objetivos:",
+    "text": "1.4 Objetivos:\n\n\nObjetivo geral:\n\nIdentificar o nível do bem-estar subjetivo e seus fatores associados em residentes na região metropolitana do Rio de Janeiro durante a pandemia da COVID-19.\n\n\nPergunta de interesse: quais características e fatores estão associados ao bem-estar subjetivo?"
+  },
+  {
+    "objectID": "Atividade_1/index.html#coleta-da-amostra",
+    "href": "Atividade_1/index.html#coleta-da-amostra",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "1.5 Coleta da amostra:",
+    "text": "1.5 Coleta da amostra:\n\n\nAmostra: 143 adultos\n\n98 mulheres (68,5%);\n45 homens (31,5%).\n\nLocal: primeira região metropolitana do RJ (Município do Rio de Janeiro e Baixada Fluminense).\nPeríodo: janeiro a maio de 2021.\nColeta:\n\nQuestionário eletrônico autoadministrado;\nDivulgação por redes sociais e aplicativos de mensagens."
+  },
+  {
+    "objectID": "Atividade_1/index.html#variáveis-analisadas",
+    "href": "Atividade_1/index.html#variáveis-analisadas",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "2.1 Variáveis analisadas:",
+    "text": "2.1 Variáveis analisadas:\n\n\nDesfecho: Bem-estar subjetivo do OMS-5\n\n\n\n\n\nClassificação\nEscore\n\n\n\n\nBES prejudicado\n&lt; 50\n\n\nBES preservado\n≥ 50\n\n\n\n\n\nFatores de exposição:\n\nSociodemográficos: idade, sexo, município, cor da pele, atividade laboral, doença crônica e diagnóstico de COVID-19.\nSentimentos no isolamento: tédio, frustração, angústia, solidão, medo, entre outros.\nPercepção de risco: exposição à COVID-19 em diferentes locais e meios de transporte."
+  },
+  {
+    "objectID": "Atividade_1/index.html#testes-aplicados",
+    "href": "Atividade_1/index.html#testes-aplicados",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "2.2 Testes Aplicados:",
+    "text": "2.2 Testes Aplicados:\n\n\nQui-quadrado de Pearson (**): associação entre variáveis categóricas;\nTeste Exato de Fisher (***): utilizado quando havia menos de 5 observações;\nHipóteses: \\[\n\\begin{cases}\nH_0: \\text{as variáveis são independentes.} \\\\\nH_1: \\text{as variáveis são dependentes.}\n\\end{cases}\n\\]\nNível de significância: \\(\\alpha = 0{,}05\\) (5%).\nDecisão: (p &lt; 0,05) → rejeita-se (H0) → há associação significativa."
+  },
+  {
+    "objectID": "Atividade_1/index.html#tabela-1",
+    "href": "Atividade_1/index.html#tabela-1",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "3.1 Tabela 1",
+    "text": "3.1 Tabela 1"
+  },
+  {
+    "objectID": "Atividade_1/index.html#tabela-1.2",
+    "href": "Atividade_1/index.html#tabela-1.2",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "3.2 Tabela 1.2",
+    "text": "3.2 Tabela 1.2"
+  },
+  {
+    "objectID": "Atividade_1/index.html#tabela-2.1",
+    "href": "Atividade_1/index.html#tabela-2.1",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "3.3 Tabela 2.1",
+    "text": "3.3 Tabela 2.1"
+  },
+  {
+    "objectID": "Atividade_1/index.html#resultados-1",
+    "href": "Atividade_1/index.html#resultados-1",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "3.4 Resultados",
+    "text": "3.4 Resultados\n\n\n\n\nVariáveis\nValor de p\n\n\n\n\nMunicípio\n&lt; 0,05\n\n\nDiagnóstico de COVID-19\n&lt; 0,05\n\n\nTédio\n&lt; 0,05\n\n\nFrustração\n&lt; 0,01\n\n\nAborrecimento\n&lt; 0,05\n\n\nAngustia\n&lt; 0,05\n\n\nSolidão\n&lt; 0,05\n\n\nNervosismo\n&lt; 0,01\n\n\nCulpa\n&lt; 0,01\n\n\n\n\nVariável desfecho: Bem-estar subjetivo do OMS-5"
+  },
+  {
+    "objectID": "Atividade_1/index.html#principais-achados",
+    "href": "Atividade_1/index.html#principais-achados",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "4.1 Principais Achados:",
+    "text": "4.1 Principais Achados:\n\n\nO escore global médio de BES foi 51,1;\nHouve associação significativa entre o BES e:\n\nLocal de residência (Rio de Janeiro/Baixada Fluminense);\nDiagnóstico de COVID-19;\nSentimentos negativos durante o isolamento, como tédio, frustração, angústia, solidão e nervosismo;\nPercepção de risco de exposição à COVID-19 em transporte alternativo.\n\nOs resultados evidenciaram impactos da pandemia sobre o bem-estar subjetivo dos participantes."
+  },
+  {
+    "objectID": "Atividade_1/index.html#importância-do-teste-de-associação",
+    "href": "Atividade_1/index.html#importância-do-teste-de-associação",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "4.2 Importância do Teste de Associação:",
+    "text": "4.2 Importância do Teste de Associação:\n\n\nOs testes de Qui-quadrado e Exato de Fisher permitiram verificar a existência de associação entre o BES e os fatores analisados.\nCom os testes, foi possível identificar quais fatores apresentaram associação estatisticamente significativa com o bem-estar subjetivo."
+  },
+  {
+    "objectID": "Atividade_1/index.html#contribuição-para-a-sociedade",
+    "href": "Atividade_1/index.html#contribuição-para-a-sociedade",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "4.3 Contribuição para a Sociedade:",
+    "text": "4.3 Contribuição para a Sociedade:\n\n\nO estudo contribui para compreender os impactos psicossociais da pandemia sobre o bem-estar da população.\nOs resultados reforçam a importância de:\n\npromover a saúde mental;\nprevenir agravos psicológicos;\ndesenvolver estratégias de cuidado voltadas à população."
+  }
+]
