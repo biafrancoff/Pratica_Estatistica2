@@ -1,0 +1,149 @@
+body {
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+  background: #f5f9ff;
+  color: #0f172a;
+  margin: 0;
+}
+
+main {
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* ===== TOPO ===== */
+
+.topo {
+  background: linear-gradient(
+    120deg,
+    #052034 0%,
+    #163b55 70%,
+    #9d8b68 140%
+  );
+
+  color: white;
+  padding: 55px 9%;
+}
+
+.topo h1 {
+  color: white;
+  font-size: 3rem;
+  margin: 8px 0;
+  font-weight: 800;
+}
+
+.mini-titulo {
+  color: #E6C691;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.descricao {
+  font-size: 1.05rem;
+  color: #dbe6ee;
+  margin-top: 8px;
+}
+
+.autores {
+  margin-top: 18px;
+  font-size: 0.9rem;
+  color: #cbd5e1;
+}
+
+/* ===== ÁREA DAS ATIVIDADES ===== */
+
+.area-atividades {
+  max-width: 1150px;
+  margin: 45px auto;
+  padding: 0 30px;
+}
+
+.area-atividades h2 {
+  color: #052034;
+  font-size: 1.7rem;
+  margin-bottom: 25px;
+}
+
+/* ===== GRADE ===== */
+
+.grid-atividades {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+/* ===== CARDS ===== */
+
+.card-atividade {
+  background: white;
+  min-height: 170px;
+  padding: 20px;
+  border-radius: 10px;
+  border-bottom: 4px solid #052034;
+
+  box-shadow:
+    0 3px 12px rgba(15, 23, 42, 0.08);
+
+  transition: 0.2s ease;
+}
+
+.card-atividade:hover {
+  transform: translateY(-3px);
+}
+
+.numero {
+  font-size: 1.9rem;
+  font-weight: 800;
+  color: #E6C691;
+}
+
+.card-atividade h3 {
+  font-size: 1rem;
+  color: #052034;
+  margin: 10px 0;
+}
+
+.tema {
+  font-size: 0.85rem;
+  color: #64748b;
+  min-height: 40px;
+}
+
+/* ===== LINK ===== */
+
+.card-atividade a {
+  display: inline-block;
+  margin-top: 15px;
+
+  color: #052034;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+
+  text-decoration: none;
+}
+
+.card-atividade a:hover {
+  color: #c59b50;
+}
+
+/* ===== AINDA NÃO DISPONÍVEL ===== */
+
+.indisponivel {
+  opacity: 0.45;
+}
+
+/* ===== RESPONSIVO ===== */
+
+@media (max-width: 900px) {
+  .grid-atividades {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 550px) {
+  .grid-atividades {
+    grid-template-columns: 1fr;
+  }
+}

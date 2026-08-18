@@ -1,7 +1,65 @@
 ---
-title: "Prática Estatística II"
+title: ""
+format:
+  html:
+    css: custom.css
+    toc: false
 ---
 
-## Atividades Avaliativas
+::: {.topo}
 
-- [Atividade Avaliativa 1](Atividade_1/)
+<div class="mini-titulo">UFF • ESTATÍSTICA</div>
+
+# Prática Estatística II
+
+<div class="descricao">
+Atividades Avaliativas • 2026.2
+</div>
+
+<div class="autores">
+Beatriz Franco • Paolla Pinheiro
+</div>
+
+:::
+
+::: {.area-atividades}
+
+## Atividades
+
+::: {.grid-atividades}
+
+::: {.card-atividade}
+<div class="numero">01</div>
+
+### Atividade Avaliativa 1
+
+<div class="tema">
+Bem-estar subjetivo e testes de associação
+</div>
+
+[ABRIR ATIVIDADE →](Atividade_1/)
+:::
+
+::: {.card-atividade .indisponivel}
+<div class="numero">02</div>
+
+### Atividade Avaliativa 2
+
+<div class="tema">
+Em breve
+</div>
+:::
+
+::: {.card-atividade .indisponivel}
+<div class="numero">03</div>
+
+### Atividade Avaliativa 3
+
+<div class="tema">
+Em breve
+</div>
+:::
+
+
+:::
+:::
