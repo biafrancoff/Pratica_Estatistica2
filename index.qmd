@@ -34,7 +34,7 @@ Beatriz Franco • Paolla Pinheiro
 ### Atividade Avaliativa 1
 
 <div class="tema">
-Bem-estar subjetivo e testes de associação
+Testes de independência na literatura
 </div>
 
 [ABRIR ATIVIDADE →](Atividade_1/)
