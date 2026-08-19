@@ -5,7 +5,7 @@
 
 Atividades e apresentações desenvolvidas ao longo da disciplina 
 
-<div 
+<div>
   <a href="https://biafrancoff.github.io/Pratica_Estatistica2/">
     <img src="https://img.shields.io/badge/Ver%20apresentações%20da%20disciplina-052034?style=for-the-badge&logo=github&logoColor=white">
   </a>
