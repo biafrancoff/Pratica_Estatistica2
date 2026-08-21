@@ -1,0 +1,151 @@
+/* ===== Base ===== */
+
+.reveal {
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+  font-size: 30px;
+  background-color: #f5f9ff; /* fundo azul bem claro */
+  color: #052034;
+}
+
+.reveal .slides section li{
+    text-align: justify;
+}
+
+.reveal .slides {
+  text-align: justify;
+}
+
+/* ===== Títulos ===== */
+.reveal h1 {
+  font-size: 2.1em;
+  position: relative;
+  top: 5px;
+  font-weight: 800;
+  color: #0f172a; 
+}
+
+.reveal h2 {
+  font-size: 1.7em;
+  position: relative;
+  top: 5px;
+  font-weight: 700;
+  color: #052034;
+}
+
+.reveal h3 {
+  font-size: 1.3em;
+  font-weight: 600;
+  color: #052034;
+}
+
+
+#title-slide .subtitle {
+  position: relative;
+  top: 5px;
+}
+
+/* ===== Slide de título ===== */
+.reveal .title-slide {
+  background: linear-gradient(
+      135deg,
+      rgba(5, 32, 52, 0.75),      /* azul-marinho */
+      rgba(59, 82, 96, 0.65),     /* azul acinzentado */
+      rgba(230, 198, 145, 0.65)   /* bege dourado */
+
+    );
+
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.reveal .title-slide h1,
+.reveal .title-slide h2,
+.reveal .title-slide p {
+  color: white;
+}
+
+/* ===== Texto ===== */
+.reveal p,
+.reveal li {
+  line-height: 1.45;
+}
+
+/* ===== Listas ===== */
+.reveal ul li::marker {
+  color: #E6C691; /* amarelo */
+}
+
+/* ===== Caixas coloridas ===== */
+.box-blue {
+  border-left: 8px solid #052034;
+  background: #eff6ff;
+  padding: 0.7em;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.box-yellow {
+  border-left: 8px solid #E6C691;
+  background: #fefce8;
+  padding: 0.7em;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.box-esquerda {
+  position: relative;
+  top: 15px;
+}
+
+.box-direita {
+  position: relative;
+  top: 15px;
+}
+/* (opcional manter outras cores mais neutras) */
+.box-gray {
+  border-left: 8px solid #94a3b8;
+  background: #f1f5f9;
+  padding: 0.7em;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* ===== Destaques ===== */
+.highlight-blue {
+  color:  #052034;
+  font-weight: 700;
+}
+
+.highlight-yellow {
+  color: #E6C691;
+  font-weight: 700;
+}
+
+/* ===== Código ===== */
+.reveal pre code {
+  font-size: 0.78em;
+  background: #020617;
+  color: #e5e7eb;
+  border-radius: 10px;
+  padding: 1em;
+}
+
+/* ===== Rodapé ===== */
+.reveal .footer {
+  font-size: 0.5em;
+  color: #052034;
+}  
+
+/* Barra de progresso inferior */
+.reveal .progress {
+  color: #0f172a !important;
+}
+
+.reveal .progress span {
+  background-color: #0f172a !important;
+}
+
+.reveal .slide-menu-button .fa-bars::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%230f172a' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z'/%3E%3C/svg%3E") !important;
+}

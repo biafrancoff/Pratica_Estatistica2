@@ -138,5 +138,40 @@
     "title": "Prática Estatística II",
     "section": "Atividades",
     "text": "Atividades\n\n\n\n01\n\n\nAtividade Avaliativa 1\n\nTestes de independência na literatura\n\nABRIR ATIVIDADE →\n\n\n\n\n02\n\n\nAtividade Avaliativa 2\n\nEm breve\n\n\n\n\n\n03\n\n\nAtividade Avaliativa 3\n\nEm breve"
+  },
+  {
+    "objectID": "Atividade_2/index.html#artigo-e-autores",
+    "href": "Atividade_2/index.html#artigo-e-autores",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "1.1 Artigo e autores:",
+    "text": "1.1 Artigo e autores:\n\n\nBem-estar subjetivo de residentes da região metropolitana do Rio de Janeiro durante a COVID-19\n\nAutores:\n\nDeise Breder dos Santos Batista;\nAdriana Lenho de Figueiredo Pereira;\nAlan de Souza Campello Junior;\nClaudia da Silva Teixeira de Santana;\nJuliana Amaral Prata;\nClaudia Silvia Rocha Oliveira."
+  },
+  {
+    "objectID": "Atividade_2/index.html#tabela-1",
+    "href": "Atividade_2/index.html#tabela-1",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "2.1 Tabela",
+    "text": "2.1 Tabela\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nVariáveis\n\nAsma\n\nValor-p\nCramér\n\n\nNão257 (86%)\nSim43 (14%)\n\n\n\n\nIMCQ\n\n\n\n\n0,696\n0,050\n\n\n    &lt; 25\n78 (88%)\n11 (12%)\n\n\n\n\n\n\n    25 a 29,9\n99 (86%)\n16 (14%)\n\n\n\n\n\n\n    30 ou mais\n80 (83%)\n16 (17%)\n\n\n\n\n\n\nCigarroQ\n\n\n\n\n0,136\n0,090\n\n\n    Não\n145 (88%)\n19 (12%)\n\n\n\n\n\n\n    Sim\n112 (82%)\n24 (18%)\n\n\n\n\n\n\nConsumo AlcoolF\n\n\n\n\n0,755\n0,030\n\n\n    Não\n238 (86%)\n39 (14%)\n\n\n\n\n\n\n    Sim\n19 (83%)\n4 (17%)\n\n\n\n\n\n\nSaude FisicaQ\n\n\n\n\n0,781\n0,040\n\n\n    Nenhum dia\n181 (87%)\n28 (13%)\n\n\n\n\n\n\n    1 a 13 dias\n41 (84%)\n8 (16%)\n\n\n\n\n\n\n    14 dias ou mais\n35 (83%)\n7 (17%)\n\n\n\n\n\n\nSaude MentalQ\n\n\n\n\n0,012\n0,170\n\n\n    Nenhum dia\n167 (90%)\n18 (9,7%)\n\n\n\n\n\n\n    1 a 13 dias\n63 (80%)\n16 (20%)\n\n\n\n\n\n\n    14 dias ou mais\n27 (75%)\n9 (25%)\n\n\n\n\n\n\nDificuldade AndarQ\n\n\n\n\n0,812\n0,010\n\n\n    Não\n213 (86%)\n35 (14%)\n\n\n\n\n\n\n    Sim\n44 (85%)\n8 (15%)\n\n\n\n\n\n\nSexoQ\n\n\n\n\n0,230\n0,070\n\n\n    Feminino\n130 (83%)\n26 (17%)\n\n\n\n\n\n\n    Masculino\n127 (88%)\n17 (12%)\n\n\n\n\n\n\nFaixa IdadeQ\n\n\n\n\n0,194\n0,100\n\n\n    18 a 44 anos\n57 (79%)\n15 (21%)\n\n\n\n\n\n\n    45 a 64 anos\n97 (87%)\n14 (13%)\n\n\n\n\n\n\n    65 anos ou mais\n103 (88%)\n14 (12%)\n\n\n\n\n\n\nRacaF\n\n\n\n\n0,120\n0,120\n\n\n    Branco\n208 (88%)\n29 (12%)\n\n\n\n\n\n\n    Preto\n17 (77%)\n5 (23%)\n\n\n\n\n\n\n    Outros\n32 (78%)\n9 (22%)\n\n\n\n\n\n\nAtividade FisicaQ\n\n\n\n\n0,399\n0,050\n\n\n    Não\n63 (89%)\n8 (11%)\n\n\n\n\n\n\n    Sim\n194 (85%)\n35 (15%)\n\n\n\n\n\n\nSaude GeralQ\n\n\n\n\n0,310\n0,090\n\n\n    Razoável/Ruim\n43 (83%)\n9 (17%)\n\n\n\n\n\n\n    Boa\n80 (82%)\n17 (18%)\n\n\n\n\n\n\n    Excelente/Muito boa\n134 (89%)\n17 (11%)\n\n\n\n\n\n\nTempo DormirF\n\n\n\n\n0,060\n0,130\n\n\n    Menos de 7 horas\n76 (80%)\n19 (20%)\n\n\n\n\n\n\n    7 a 9 horas\n171 (89%)\n21 (11%)\n\n\n\n\n\n\n    Mais de 9 horas\n10 (77%)\n3 (23%)\n\n\n\n\n\n\n\nQ: Teste do qui-quadrado de Pearson;  F: Teste exato de Fisher;  Valores em negrito na coluna Valor-p indicam significância estatística (p &lt; 0,05);  Valores em negrito nas tabelas de contingência indicam células com resíduos padronizados elevados."
+  },
+  {
+    "objectID": "Atividade_2/index.html#conclusão-1",
+    "href": "Atividade_2/index.html#conclusão-1",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "3.1 Conclusão",
+    "text": "3.1 Conclusão\n\n\nAssociações significativas:\n\n\n\nSaúde Mental\n\n\n\n\n\n\nCaracterísticas do passageiro:\n\n Passageiros mais velhos → maior satisfação\n Passageiros mais jovens → maior insatisfação \nClasse executiva → maior satisfação\n\nClasse econômica → maior insatisfação\n\n\n\n\n\n\n\nContexto da viagem:\n\nViagens a negócios → maior satisfação\nViagens pessoais → maior insatisfação\nSem atraso → maior satisfação\nCom atraso → maior insatisfação"
+  },
+  {
+    "objectID": "Atividade_2/index.html#tabela",
+    "href": "Atividade_2/index.html#tabela",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "1.1 Tabela",
+    "text": "1.1 Tabela\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nVariáveis\n\nAsma\n\nValor-p\nCramér\n\n\nNão257 (86%)\nSim43 (14%)\n\n\n\n\nIMCQ\n\n\n\n\n0,696\n0,050\n\n\n    &lt; 25\n78 (88%)\n11 (12%)\n\n\n\n\n\n\n    25 a 29,9\n99 (86%)\n16 (14%)\n\n\n\n\n\n\n    30 ou mais\n80 (83%)\n16 (17%)\n\n\n\n\n\n\nCigarroQ\n\n\n\n\n0,136\n0,090\n\n\n    Não\n145 (88%)\n19 (12%)\n\n\n\n\n\n\n    Sim\n112 (82%)\n24 (18%)\n\n\n\n\n\n\nConsumo de ÁlcoolF\n\n\n\n\n0,755\n0,030\n\n\n    Não\n238 (86%)\n39 (14%)\n\n\n\n\n\n\n    Sim\n19 (83%)\n4 (17%)\n\n\n\n\n\n\nSaúde FísicaQ\n\n\n\n\n0,781\n0,040\n\n\n    Nenhum dia\n181 (87%)\n28 (13%)\n\n\n\n\n\n\n    1 a 13 dias\n41 (84%)\n8 (16%)\n\n\n\n\n\n\n    14 dias ou mais\n35 (83%)\n7 (17%)\n\n\n\n\n\n\nSaúde MentalQ\n\n\n\n\n0,012\n0,170\n\n\n    Nenhum dia\n167 (90%)\n18 (9,7%)\n\n\n\n\n\n\n    1 a 13 dias\n63 (80%)\n16 (20%)\n\n\n\n\n\n\n    14 dias ou mais\n27 (75%)\n9 (25%)\n\n\n\n\n\n\nDificuldade de AndarQ\n\n\n\n\n0,812\n0,010\n\n\n    Não\n213 (86%)\n35 (14%)\n\n\n\n\n\n\n    Sim\n44 (85%)\n8 (15%)\n\n\n\n\n\n\nSexoQ\n\n\n\n\n0,230\n0,070\n\n\n    Feminino\n130 (83%)\n26 (17%)\n\n\n\n\n\n\n    Masculino\n127 (88%)\n17 (12%)\n\n\n\n\n\n\nIdadeQ\n\n\n\n\n0,194\n0,100\n\n\n    18 a 44 anos\n57 (79%)\n15 (21%)\n\n\n\n\n\n\n    45 a 64 anos\n97 (87%)\n14 (13%)\n\n\n\n\n\n\n    65 anos ou mais\n103 (88%)\n14 (12%)\n\n\n\n\n\n\nRaçaF\n\n\n\n\n0,120\n0,120\n\n\n    Branco\n208 (88%)\n29 (12%)\n\n\n\n\n\n\n    Preto\n17 (77%)\n5 (23%)\n\n\n\n\n\n\n    Outros\n32 (78%)\n9 (22%)\n\n\n\n\n\n\nAtividade FísicaQ\n\n\n\n\n0,399\n0,050\n\n\n    Não\n63 (89%)\n8 (11%)\n\n\n\n\n\n\n    Sim\n194 (85%)\n35 (15%)\n\n\n\n\n\n\nSaúde GeralQ\n\n\n\n\n0,310\n0,090\n\n\n    Razoável/Ruim\n43 (83%)\n9 (17%)\n\n\n\n\n\n\n    Boa\n80 (82%)\n17 (18%)\n\n\n\n\n\n\n    Excelente/Muito boa\n134 (89%)\n17 (11%)\n\n\n\n\n\n\nTempo de DormirF\n\n\n\n\n0,060\n0,130\n\n\n    Menos de 7 horas\n76 (80%)\n19 (20%)\n\n\n\n\n\n\n    7 a 9 horas\n171 (89%)\n21 (11%)\n\n\n\n\n\n\n    Mais de 9 horas\n10 (77%)\n3 (23%)\n\n\n\n\n\n\n\nQ: Teste do qui-quadrado de Pearson;  F: Teste exato de Fisher;  Valores em negrito na coluna Valor-p indicam significância estatística (p &lt; 0,05);  Valores em negrito nas tabelas de contingência indicam células com resíduos padronizados elevados."
+  },
+  {
+    "objectID": "Atividade_2/index.html#principais-achados",
+    "href": "Atividade_2/index.html#principais-achados",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "2.1 Principais achados",
+    "text": "2.1 Principais achados\nAssociação significativa:\n\n\nSaúde Mental × Asma — p = 0,012\nCramér = 0,170\n\n\n\n\n\nDistribuição da asma:\n\nNenhum dia → 9,7%\n1 a 13 dias → 20%\n14 dias ou mais → 25%\n\n9,7% → 20% → 25%\n\n\n\n\n\nInterpretação:\n\nMais dias de saúde mental não boa → maior proporção de asma\n“Nenhum dia” apresentou resíduos padronizados elevados\nAssociação de baixa intensidade"
   }
 ]
