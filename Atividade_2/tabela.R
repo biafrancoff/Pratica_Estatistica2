@@ -122,22 +122,22 @@ cramer_fun <- function(data, variable, by, ...) {
 # Criando tabela ---------------------------------------------------------------
 
 tabela <- tbl_summary(data = DadosFR,
-                           by = Asma,
-                           percent = "row",
-                           label = list(
-                             IMC ~ "IMC<sup>Q</sup>",
-                             Cigarro ~ "Cigarro<sup>Q</sup>",
-                             Consumo_Alcool ~ "Consumo de Álcool<sup>F</sup>",
-                             Saude_Fisica ~"Saúde Física<sup>Q</sup>",
-                             Saude_Mental ~ "Saúde Mental<sup>Q</sup>",
-                             Dificuldade_Andar ~ "Dificuldade de Andar<sup>Q</sup>",
-                             Sexo ~"Sexo<sup>Q</sup>",
-                             Faixa_Idade ~"Idade<sup>Q</sup>",
-                             Raca ~ "Raça<sup>F</sup>",
-                             Atividade_Fisica ~"Atividade Física<sup>Q</sup>",
-                             Saude_Geral ~"Saúde Geral<sup>Q</sup>",
-                             Tempo_Dormir ~"Tempo de Dormir<sup>F</sup>"
-                           )
+                      by = Asma,
+                      percent = "row",
+                      label = list(
+                        IMC ~ "IMC<sup>Q</sup>",
+                        Cigarro ~ "Cigarro<sup>Q</sup>",
+                        Consumo_Alcool ~ "Consumo de Álcool<sup>F</sup>",
+                        Saude_Fisica ~"Saúde Física<sup>Q</sup>",
+                        Saude_Mental ~ "Saúde Mental<sup>Q</sup>",
+                        Dificuldade_Andar ~ "Dificuldade de Andar<sup>Q</sup>",
+                        Sexo ~"Sexo<sup>Q</sup>",
+                        Faixa_Idade ~"Idade<sup>Q</sup>",
+                        Raca ~ "Raça<sup>F</sup>",
+                        Atividade_Fisica ~"Atividade Física<sup>Q</sup>",
+                        Saude_Geral ~"Saúde Geral<sup>Q</sup>",
+                        Tempo_Dormir ~"Tempo de Dormir<sup>F</sup>"
+                      )
 )%>%
   add_p(pvalue_fun = label_style_pvalue(digits = 3)) %>%
   bold_p(t = 0.05) %>%
@@ -156,16 +156,36 @@ tabela <- tbl_summary(data = DadosFR,
   modify_footnote(everything() ~ NA)%>%
   as_gt() %>%                   
   fmt_markdown(columns = label) %>%
-  tab_options(
-    table.font.size = "20px",    
+  gt::tab_options(
+    table.font.size = "20px",
     heading.title.font.size = "26px",
-    column_labels.font.size = "22px"
-  )%>% 
-  tab_source_note(
-    source_note = md("**Q**: Teste do qui-quadrado de Pearson; <br>
-                     **F**: Teste exato de Fisher; <br>
-                     Valores em negrito na coluna *Valor-p* indicam significância estatística (p < 0,05); <br>
-                     Valores em negrito nas tabelas de contingência indicam células com resíduos padronizados elevados.")
+    column_labels.font.size = "22px",
+    container.height = gt::px(500),
+    container.overflow.y = TRUE
+  ) %>%
+  
+  gt::tab_source_note(
+    source_note = gt::md(
+      "**Q**: Teste do qui-quadrado de Pearson; <br>
+     **F**: Teste exato de Fisher; <br>
+     Valores em negrito na coluna *Valor-p* indicam significância estatística (p < 0,05); <br>
+     Valores em negrito nas tabelas de contingência indicam células com resíduos padronizados elevados."
+    )
+  ) %>%
+  
+  gt::opt_css(
+    css = "
+    .gt_table thead {
+      position: sticky !important;
+      top: -12px !important;
+      z-index: 9999 !important;
+      background: white !important;
+    }
+
+    .gt_table thead th {
+      background: white !important;
+    }
+  "
   )
 
 tabela

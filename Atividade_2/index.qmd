@@ -25,7 +25,7 @@ format:
 
 # Resultados {.transicao data-background-image="imagens/transicao.png" data-background-size="cover"}
 
-## Tabela {.scrollable }
+## Tabela 
 
 ```{r, include=FALSE}
 
@@ -172,20 +172,38 @@ tabela <- tbl_summary(data = DadosFR,
   modify_footnote(everything() ~ NA)%>%
   as_gt() %>%                   
   fmt_markdown(columns = label) %>%
-  tab_options(
-    table.font.size = "20px",    
-    heading.title.font.size = "26px",
-    column_labels.font.size = "22px"
-  )%>% 
-  tab_source_note(
-    source_note = md("**Q**: Teste do qui-quadrado de Pearson; <br>
-                     **F**: Teste exato de Fisher; <br>
-                     Valores em negrito na coluna *Valor-p* indicam significância estatística (p < 0,05); <br>
-                     Valores em negrito nas tabelas de contingência indicam células com resíduos padronizados elevados.")
+gt::tab_options(
+  table.font.size = "20px",
+  heading.title.font.size = "26px",
+  column_labels.font.size = "22px",
+  container.height = gt::px(500),
+  container.overflow.y = TRUE
+) %>%
+
+gt::tab_source_note(
+  source_note = gt::md(
+    "**Q**: Teste do qui-quadrado de Pearson; <br>
+     **F**: Teste exato de Fisher; <br>
+     Valores em negrito na coluna *Valor-p* indicam significância estatística (p < 0,05); <br>
+     Valores em negrito nas tabelas de contingência indicam células com resíduos padronizados elevados."
   )
+) %>%
 
-tabela
+gt::opt_css(
+  css = "
+    .gt_table thead {
+      position: sticky !important;
+      top: -12px !important;
+      z-index: 9999 !important;
+      background: white !important;
+    }
 
+    .gt_table thead th {
+      background: white !important;
+    }
+  "
+)
+  
 # Colorir
 
 tabela <- tabela %>%
@@ -226,11 +244,11 @@ Associação significativa:
 ::: {.box-blue .box-esquerda}
 **Distribuição da asma:**
 
-- **Nenhum dia** → <span style="color: #2E7D32;">**9,7%**</span>
-- **1 a 13 dias** → **20%**
-- **14 dias ou mais** → <span style="color: #C62828;">**25%**</span>
+- **Nenhum dia** <span class="seta">→</span>  <span style="color: #2E7D32;">**9,7%**</span>
+- **1 a 13 dias** <span class="seta">→</span>  **20%**
+- **14 dias ou mais** <span class="seta">→</span>  <span style="color: #C62828;">**25%**</span>
 
-**9,7% → 20% → 25%**
+**9,7% <span class="seta">→</span> 20% <span class="seta">→</span> 25%**
 :::
 
 :::
@@ -244,7 +262,7 @@ Associação significativa:
 ::: {.box-blue .box-direita}
 **Interpretação:**
 
-- Mais dias de **saúde mental não boa** → maior proporção de **asma**
+- Mais dias de **saúde mental não boa** <span class="seta">→</span> maior proporção de **asma**
 
 - **“Nenhum dia”** apresentou resíduos padronizados elevados
 
