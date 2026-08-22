@@ -16,6 +16,11 @@ DadosFatoresRisco <- read.xlsx("DadosFatoresRisco.xlsx")
 theme_gtsummary_language("pt", big.mark = ".", decimal.mark = ",")
 
 # Adequando variáveis qualitativas ---------------------------------------------
+DadosFatoresRisco$IMC <- factor(
+  DadosFatoresRisco$IMC,
+  levels = c("< 25", "25 a 29,9", "30 ou mais"),
+  labels = c("Menos de 25", "25 a 29,9", "30 ou mais")
+)
 
 DadosFatoresRisco$Tempo_Dormir <- factor(
   DadosFatoresRisco$Tempo_Dormir,
@@ -160,7 +165,7 @@ tabela <- tbl_summary(data = DadosFR,
     table.font.size = "20px",
     heading.title.font.size = "26px",
     column_labels.font.size = "22px",
-    container.height = gt::px(500),
+    container.height = gt::px(650),
     container.overflow.y = TRUE
   ) %>%
   
@@ -168,8 +173,9 @@ tabela <- tbl_summary(data = DadosFR,
     source_note = gt::md(
       "**Q**: Teste do qui-quadrado de Pearson; <br>
      **F**: Teste exato de Fisher; <br>
-     Valores em negrito na coluna *Valor-p* indicam significância estatística (p < 0,05); <br>
-     Valores em negrito nas tabelas de contingência indicam células com resíduos padronizados elevados."
+     <span style='color:#8FB9DE;'>■</span> Acima do esperado (r > 1,96) &nbsp;&nbsp;&nbsp;
+       <span style='color:#B8A4D4;'>■</span> Abaixo do esperado (r < -1,96) &nbsp;&nbsp;&nbsp;
+       <span style='color:#E5C94F;'>■</span> p < 0,05"
     )
   ) %>%
   
@@ -203,7 +209,25 @@ tabela <- tabela %>%
     )
   )
 
-packageVersion("gtsummary")
-
-## Salvar ----------------------------------------------------------------------
-gt::gtsave(tabela, "tabela.png")
+tabela <- tabela %>%
+  # Mais casos que o esperado
+  tab_style(
+    style = cell_fill(color = "#DCEAF7"),
+    locations = cells_body(
+      columns = stat_1,
+      rows = variable == "Saude_Mental" &
+        row_type == "level" &
+        label == "Nenhum dia"
+    )
+  ) %>%
+  
+  # Menos casos que o esperado
+  tab_style(
+    style = cell_fill(color = "#E8E0F2"),
+    locations = cells_body(
+      columns = stat_2,
+      rows = variable == "Saude_Mental" &
+        row_type == "level" &
+        label == "Nenhum dia"
+    )
+  )
