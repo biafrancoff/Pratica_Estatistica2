@@ -34,20 +34,22 @@ Beatriz Franco • Paolla Pinheiro
 ### Atividade Avaliativa 1
 
 <div class="tema">
-Testes de independência na literatura
+Testes de Independência na Literatura
 </div>
-
+<br>
 [ABRIR ATIVIDADE →](Atividade_1/)
 :::
 
-::: {.card-atividade .indisponivel}
+::: {.card-atividade}
 <div class="numero">02</div>
 
 ### Atividade Avaliativa 2
 
 <div class="tema">
-Em breve
+Tabela e Análise de Associação com o pacote gtsummary
 </div>
+
+[ABRIR ATIVIDADE →](Atividade_2/)
 :::
 
 ::: {.card-atividade .indisponivel}
