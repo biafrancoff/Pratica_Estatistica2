@@ -190,7 +190,7 @@ $$
 | Nervosismo                       |  < 0,01    |
 | Culpa                            |  < 0,01    |
 
-::: {.texto-pequeno .texto-centralizado}
+::: {.texto-desfecho}
 **Variável desfecho:** Bem-estar subjetivo do OMS-5
 :::
 

@@ -156,16 +156,21 @@
   color: #052034;
 }
 
-/* ===== Apêndices ===== */
-/* Todas as linhas (amarelo leve) */
-.tabela-estilo table tbody tr {
-  background-color: #fefce8; /* amarelo bem suave */
+
+/* Linhas ímpares */
+.tabela-estilo tbody tr:nth-child(odd) {
+  background-color: #fff9e8;
 }
 
-/* Linhas 3 e 4 (azul leve) */
-.tabela-estilo table tbody tr:nth-child(3),
-.tabela-estilo table tbody tr:nth-child(4) {
-  background-color: #eff6ff; /* azul bem suave */
+/* Linhas pares */
+.tabela-estilo tbody tr:nth-child(even) {
+  background-color: #edf3fa;
 }
 
 
+.texto-desfecho {
+  font-size: 0.8em;
+  text-align: center;
+  margin-top: 60px;
+  width: 100%;
+}

@@ -23,7 +23,7 @@ format:
       data-background-size: cover
 ---
 
-# Resultados {.transicao data-background-image="imagens/transicao.png" data-background-size="cover"}
+# Resultados: {.transicao data-background-image="imagens/transicao.png" data-background-size="cover"}
 
 ## Tabela 
 
@@ -303,7 +303,7 @@ tabela <- tabela %>%
 tabela
 ```
 
-# Conclusão {.transicao data-background-image="imagens/transicao.png" data-background-size="cover"}
+# Conclusão: {.transicao data-background-image="imagens/transicao.png" data-background-size="cover"}
 
 ## Principais achados
 
