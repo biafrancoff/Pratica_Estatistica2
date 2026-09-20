@@ -145,7 +145,7 @@ $$
 
 :::
 
-# Resultados:{.Transicao data-background-image="imagens/Transicao.png" data-background-size="cover"}
+# Resultados: {.Transicao data-background-image="imagens/Transicao.png" data-background-size="cover"}
 
 
 ## ANOVA e Teste-T — Oclusão Dentária
