@@ -1,0 +1,310 @@
+/* ===== Base ===== */
+
+.reveal {
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+  font-size: 30px;
+  background-color: #f5f9ff; 
+  color: #0f172a;
+}
+
+.reveal .slides section li{
+    text-align: justify;
+}
+
+.reveal .slides {
+  text-align: justify;
+}
+
+
+:root {
+  --r-link-color: #E6C691;
+  --r-link-color-hover: #F5E6C8;
+}
+
+.reveal .slide-menu-button a,
+.slide-menu-button a,
+.slide-menu-button i {
+  color: #0f172a !important;
+}
+
+/* Barra de progresso inferior */
+.reveal .progress {
+  color: #0f172a !important;
+}
+
+.reveal .progress span {
+  background-color: #0f172a !important;
+}
+
+.reveal .slide-menu-button .fa-bars::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%230f172a' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z'/%3E%3C/svg%3E") !important;
+}
+
+/* ===== Títulos ===== */
+.reveal h1 {
+  font-size: 2.1em;
+  position: relative;
+  top: 5px;
+  font-weight: 800;
+  color: #0f172a; 
+}
+
+.reveal h2 {
+  font-size: 1.7em;
+  position: relative;
+  top: 10px;
+  font-weight: 700;
+  color: #052034;
+}
+
+.reveal h3 {
+  font-size: 1.3em;
+  font-weight: 600;
+  color: #052034;
+}
+
+
+#title-slide .subtitle {
+  position: relative;
+  top: 5px;
+}
+
+/* ===== Slide de título ===== */
+.reveal .title-slide {
+ background: linear-gradient(
+  135deg,
+  rgba(5, 32, 52, 0.75),      /* azul-marinho */
+  rgba(59, 82, 96, 0.65),     /* azul acinzentado */
+  rgba(230, 198, 145, 0.65)   /* bege dourado */
+),
+    url("imagens/transicao.jpg");
+
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.reveal .title-slide h1,
+.reveal .title-slide h2,
+.reveal .title-slide p {
+  color: white;
+}
+
+/* ===== Texto ===== */
+.reveal p,
+.reveal li {
+  line-height: 1.45;
+}
+
+
+
+
+/* ===== Listas ===== */
+.reveal ul li::marker {
+  color: #E6C691; /* bege dourado */
+}
+
+/* ===== Caixas coloridas ===== */
+.box-blue {
+  border-left: 8px solid #052034;
+  background: #eff6ff;
+  padding: 0.7em;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.box-yellow {
+  border-left: 8px solid #facc15;
+  background: #fefce8;
+  padding: 0.7em;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* (opcional manter outras cores mais neutras) */
+.box-gray {
+  border-left: 8px solid #94a3b8;
+  background: #f1f5f9;
+  padding: 0.7em;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* ===== Destaques ===== */
+.highlight-blue {
+  color: #052034;
+  font-weight: 700;
+}
+
+.highlight-yellow {
+  color: #eab308;
+  font-weight: 700;
+}
+
+/* ===== Código ===== */
+.reveal pre code {
+  font-size: 0.78em;
+  background: #020617;
+  color: #e5e7eb;
+  border-radius: 10px;
+  padding: 1em;
+}
+
+/* ===== Rodapé ===== */
+.reveal .footer {
+  font-size: 0.5em;
+  color: #052034;
+}
+
+
+/* Linhas ímpares */
+.tabela-estilo tbody tr:nth-child(odd) {
+  background-color: #fff9e8;
+}
+
+/* Linhas pares */
+.tabela-estilo tbody tr:nth-child(even) {
+  background-color: #edf3fa;
+}
+
+
+
+.small-table {
+  font-size: 0.65em;
+}
+
+.small-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.small-table th,
+.small-table td {
+  padding: 20px 8px !important;
+  line-height: 1.4;
+  vertical-align: top;
+}
+
+/* Largura das colunas */
+.small-table th:nth-child(1),
+.small-table td:nth-child(1) {
+  width: 34%;
+}
+
+.small-table th:nth-child(2),
+.small-table td:nth-child(2) {
+  width: 30%;
+}
+
+.small-table th:nth-child(3),
+.small-table td:nth-child(3) {
+  width: 36%;
+}
+
+.nivel-significancia {
+  margin-top: 25px;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+
+.caixa-teste {
+  background-color: #edf3fa;
+  border-left: 6px solid #052034;
+  border-radius: 5px;
+  padding: 20px 28px;
+  margin: 0 auto 22px auto;
+  width: 94%;
+  min-height: 145px;
+  box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.08);
+  font-size: 0.7em;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.caixa-teste ul {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.caixa-teste .math.display {
+  margin: 15px 0 5px;
+  text-align: center;
+}
+
+.caixa-decisao {
+  background-color: #edf3fa;
+  border-left: 6px solid #052034;
+  border-radius: 5px;
+  padding: 18px 28px;
+  margin: 0 auto;
+  width: 94%;
+  min-height: 100px;
+  box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.08);
+  font-size: 0.7em;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.caixa-decisao ul {
+  margin: 0;
+}
+
+.caixa-decisao li {
+  margin-bottom: 10px;
+}
+
+.resultados-colunas {
+  position: relative !important;
+  top: 50px !important;
+  width: 90% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* Texto da variável desfecho */
+.texto-desfecho {
+  width: 100%;
+  margin-top: 50px;
+  font-size: 1em;
+  text-align: left;
+}
+
+/* Caixa de Tukey */
+.resultados-colunas .caixa-teste2 {
+  width: 100%;
+  min-height: 215px;
+  margin: 0;
+  padding: 25px 30px;
+  box-sizing: border-box;
+  background-color: #edf3fa;
+  border-left: 6px solid #052034;
+  border-radius: 5px;
+  box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Espaçamento da lista principal */
+.resultados-colunas .caixa-teste2 > ul {
+  margin-top: 15px;
+}
+
+/* Espaçamento entre os itens */
+.resultados-colunas .caixa-teste2 li {
+  margin-bottom: 10px;
+}
+
+/* Centralização do p-valor */
+.tukey-p {
+  width: 100%;
+  margin: 18px 0 0;
+  text-align: center;
+  font-weight: bold;
+}
+
+.resultados-colunas {
+  font-size: 1.08em;
+}

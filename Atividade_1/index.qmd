@@ -1,8 +1,7 @@
 ---
 title: "**PRÁTICA ESTATÍSTICA II**"
 subtitle: "**ATIVIDADE AVALIATIVA 1**"
-author: "Beatriz Franco (<beatrizff@id.uff.br>) <br> Paolla Pinheiro 
-(<paollapp@id.uff.br>)"
+author: "Beatriz Franco (<beatrizff@id.uff.br>) <br> Paolla Pinheiro (<paollapp@id.uff.br>)"
 date: 2026-08-17
 date-format: "DD/MM/YYYY"
 institute: "Universidade Federal Fluminense"
