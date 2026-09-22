@@ -147,3 +147,36 @@ main {
     grid-template-columns: 1fr;
   }
 }
+
+
+
+.grid-atividades {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  align-items: stretch;
+}
+
+.card-atividade {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.card-atividade > p:last-child {
+  margin-top: auto;
+}
+
+.card-atividade {
+  position: relative;
+  min-height: 270px;
+  padding-bottom: 65px;
+  box-sizing: border-box;
+}
+
+.card-atividade a {
+  position: absolute;
+  bottom: 28px;
+  left: 20px;
+}

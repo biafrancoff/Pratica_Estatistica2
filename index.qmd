@@ -36,7 +36,8 @@ Beatriz Franco • Paolla Pinheiro
 <div class="tema">
 Testes de Independência na Literatura
 </div>
-<br>
+
+
 [ABRIR ATIVIDADE →](Atividade_1/)
 :::
 
@@ -49,17 +50,33 @@ Testes de Independência na Literatura
 Tabela e Análise de Associação com o pacote gtsummary
 </div>
 
+
 [ABRIR ATIVIDADE →](Atividade_2/)
 :::
 
-::: {.card-atividade .indisponivel}
+::: {.card-atividade}
 <div class="numero">03</div>
 
 ### Atividade Avaliativa 3
 
 <div class="tema">
-Em breve
+Revisão de Testes de Hipóteses
 </div>
+
+
+[ABRIR ATIVIDADE →](C:\Users\bia franco\AtividadeAvaliativa3)
+:::
+
+::: {.card-atividade}
+<div class="numero">04</div>
+
+### Atividade Avaliativa 4
+
+<div class="tema">
+Testes de Hipóteses para 1, 2 ou mais populações na Literatura 
+</div>
+
+[ABRIR ATIVIDADE →](Atividade_4/)
 :::
 
 
