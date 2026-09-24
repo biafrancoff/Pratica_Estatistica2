@@ -433,6 +433,54 @@ main {
   margin: 0;
 }
 
-grid-template-columns: repeat(2, 1fr);
-align-items: stretch;
-height: 100%;
+
+
+.tipo-projeto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 48px;
+  height: 48px;
+  margin-bottom: 18px;
+
+  background: linear-gradient(135deg, #052034, #315464);
+  color: #cbd8df;
+
+  border-radius: 10px;
+  box-shadow: 0 5px 12px rgba(5, 32, 52, 0.18);
+
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+}
+
+.card-projeto {
+  border: 1px solid #cbd8df;
+  border-bottom: 5px solid #052034;
+}
+
+
+
+.tipo-projeto {
+  background: linear-gradient(135deg, #052034, #315464);
+  color: #e6c691;
+}
+
+
+.card-projeto a::before,
+.card-projeto a::after {
+  content: none !important;
+  display: none !important;
+}
+
+.card-projeto a {
+  transform: none !important;
+  text-shadow: none !important;
+  text-decoration: none;
+}
+
+.card-projeto a:hover {
+  transform: none !important;
+  text-decoration: underline;
+}

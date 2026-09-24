@@ -104,7 +104,7 @@ Em breve
 ::: {.grid-projetos}
 
 ::: {.card-projeto .card-atividade-projeto .indisponivel}
-<div class="numero">P1</div>
+<div class="tipo-projeto">P1</div>
 
 ### Projeto I
 
@@ -117,7 +117,7 @@ Em breve
 
 
 ::: {.card-projeto .card-atividade-projeto .indisponivel}
-<div class="numero">P2</div>
+<div class="tipo-projeto">P2</div>
 
 ### Projeto II
 
@@ -125,7 +125,7 @@ Em breve
 Em breve
 </div>
 
-[ABRIR PROJETO→]()
+[ABRIR PROJETO →]()
 :::
 
 :::
