@@ -63,7 +63,7 @@ Tabela e Análise de Associação com o pacote gtsummary
 Revisão de Testes de Hipóteses
 </div>
 
-[ABRIR ATIVIDADE →](Atividade_3/)
+[ABRIR ATIVIDADE →](Atividade_3/Gabarito.pdf)
 :::
 
 ::: {.card-atividade-grupo}
