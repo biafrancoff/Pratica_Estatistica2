@@ -12,24 +12,26 @@ format:
 
 # Prática Estatística II
 
-<div class="descricao">
-Atividades Avaliativas • 2026.2
+<div class="banner-subtitulo">
+Portfólio acadêmico • 2026.2
 </div>
 
-<div class="autores">
-Beatriz Franco • Paolla Pinheiro
+<div class="banner-autora">
+Beatriz Franco 
 </div>
 
 :::
 
 ::: {.area-atividades}
 
-## Atividades
+## Atividades avaliativas
+
+*Trabalhos e avaliações realizados ao longo da disciplina.*
 
 ::: {.grid-atividades}
 
-::: {.card-atividade}
-<div class="numero">01</div>
+::: {.card-atividade-grupo}
+<div class="tipo-atividade">Trabalho em Grupo</div>
 
 ### Atividade Avaliativa 1
 
@@ -37,12 +39,11 @@ Beatriz Franco • Paolla Pinheiro
 Testes de Independência na Literatura
 </div>
 
-
 [ABRIR ATIVIDADE →](Atividade_1/)
 :::
 
-::: {.card-atividade}
-<div class="numero">02</div>
+::: {.card-atividade-grupo}
+<div class="tipo-atividade">Trabalho em Grupo</div>
 
 ### Atividade Avaliativa 2
 
@@ -50,12 +51,11 @@ Testes de Independência na Literatura
 Tabela e Análise de Associação com o pacote gtsummary
 </div>
 
-
 [ABRIR ATIVIDADE →](Atividade_2/)
 :::
 
-::: {.card-atividade}
-<div class="numero">03</div>
+::: {.card-atividade-individual}
+<div class="tipo-atividade individual">Avaliação Individual</div>
 
 ### Atividade Avaliativa 3
 
@@ -63,22 +63,69 @@ Tabela e Análise de Associação com o pacote gtsummary
 Revisão de Testes de Hipóteses
 </div>
 
-
-[ABRIR ATIVIDADE →](C:\Users\bia franco\AtividadeAvaliativa3)
+[ABRIR ATIVIDADE →](Atividade_3/)
 :::
 
-::: {.card-atividade}
-<div class="numero">04</div>
+::: {.card-atividade-grupo}
+<div class="tipo-atividade">Trabalho em Grupo</div>
 
 ### Atividade Avaliativa 4
 
 <div class="tema">
-Testes de Hipóteses para 1, 2 ou mais populações na Literatura 
+Testes de Hipóteses para 1, 2 ou mais populações na Literatura
 </div>
 
 [ABRIR ATIVIDADE →](Atividade_4/)
 :::
 
+::: {.card-atividade-grupo .indisponivel}
+<div class="tipo-atividade">Trabalho em Grupo</div>
+
+### Atividade Avaliativa 5
+
+<div class="tema">
+Em breve
+</div>
+
+[ABRIR ATIVIDADE →]()
+:::
 
 :::
+
+:::
+
+
+::: {.area-projetos}
+
+## Projetos individuais
+
+*Projetos individuais desenvolvidos na etapa final da disciplina.*
+
+::: {.grid-projetos}
+
+::: {.card-projeto .card-atividade-projeto .indisponivel}
+<div class="numero">P1</div>
+
+### Projeto I
+
+<div class="tema">
+Em breve
+</div>
+
+[ABRIR PROJETO →]()
+:::
+
+
+::: {.card-projeto .card-atividade-projeto .indisponivel}
+<div class="numero">P2</div>
+
+### Projeto II
+
+<div class="tema">
+Em breve
+</div>
+
+[ABRIR PROJETO→]()
+:::
+
 :::

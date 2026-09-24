@@ -39,17 +39,18 @@ main {
   letter-spacing: 3px;
 }
 
-.descricao {
-  font-size: 1.05rem;
-  color: #dbe6ee;
+.banner-subtitulo {
   margin-top: 8px;
+  color: #d9e2e8;
 }
 
-.autores {
-  margin-top: 18px;
-  font-size: 0.9rem;
-  color: #cbd5e1;
+.banner-autora {
+  margin-top: 22px;
+  color: #c7d2d9;
+  font-size: 0.95rem;
 }
+
+
 
 /* ===== ÁREA DAS ATIVIDADES ===== */
 
@@ -75,12 +76,12 @@ main {
 
 /* ===== CARDS ===== */
 
-.card-atividade {
+.card-atividade-individual {
   background: white;
   min-height: 170px;
   padding: 20px;
   border-radius: 10px;
-  border-bottom: 4px solid #052034;
+  border-bottom: 4px solid #c59b50;
 
   box-shadow:
     0 3px 12px rgba(15, 23, 42, 0.08);
@@ -88,7 +89,7 @@ main {
   transition: 0.2s ease;
 }
 
-.card-atividade:hover {
+.card-atividade-individual:hover {
   transform: translateY(-3px);
 }
 
@@ -98,7 +99,45 @@ main {
   color: #E6C691;
 }
 
-.card-atividade h3 {
+.card-atividade-individual h3 {
+  font-size: 1rem;
+  color: #052034;
+  margin: 10px 0;
+}
+
+.tema {
+  font-size: 0.85rem;
+  color: #64748b;
+  min-height: 40px;
+}
+
+
+
+
+.card-atividade-grupo {
+  background: white;
+  min-height: 170px;
+  padding: 20px;
+  border-radius: 10px;
+  border-bottom: 4px solid #285a78;
+
+  box-shadow:
+    0 3px 12px rgba(15, 23, 42, 0.08);
+
+  transition: 0.2s ease;
+}
+
+.card-atividade-grupo:hover {
+  transform: translateY(-3px);
+}
+
+.numero {
+  font-size: 1.9rem;
+  font-weight: 800;
+  color: #E6C691;
+}
+
+.card-atividade-grupo h3 {
   font-size: 1rem;
   color: #052034;
   margin: 10px 0;
@@ -112,7 +151,7 @@ main {
 
 /* ===== LINK ===== */
 
-.card-atividade a {
+.card-atividade-individual a {
   display: inline-block;
   margin-top: 15px;
 
@@ -124,8 +163,41 @@ main {
   text-decoration: none;
 }
 
-.card-atividade a:hover {
+
+.card-atividade-grupo a {
+  display: inline-block;
+  margin-top: 15px;
+
+  color: #052034;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+
+  text-decoration: none;
+}
+
+
+.card-atividade-projeto a {
+  display: inline-block;
+  margin-top: 15px;
+
+  color: #052034;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+
+  text-decoration: none;
+}
+
+
+.card-atividade-individual a:hover {
   color: #c59b50;
+}
+
+
+
+.card-atividade-grupo a:hover {
+  color: #285a78;
 }
 
 /* ===== AINDA NÃO DISPONÍVEL ===== */
@@ -157,26 +229,210 @@ main {
   align-items: stretch;
 }
 
-.card-atividade {
+.card-atividade-individual {
   display: flex;
   flex-direction: column;
   height: 100%;
   box-sizing: border-box;
 }
 
-.card-atividade > p:last-child {
+
+.card-atividade-grupo {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.card-atividade-projeto {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+
+.card-atividade-individual > p:last-child {
   margin-top: auto;
 }
 
-.card-atividade {
+
+.card-atividade-grupo > p:last-child {
+  margin-top: auto;
+}
+
+
+.card-atividade-projeto> p:last-child {
+  margin-top: auto;
+}
+
+.card-atividade-individual {
   position: relative;
   min-height: 270px;
   padding-bottom: 65px;
   box-sizing: border-box;
 }
 
-.card-atividade a {
+.card-atividade-grupo {
+  position: relative;
+  min-height: 270px;
+  padding-bottom: 65px;
+  box-sizing: border-box;
+}
+
+
+.card-atividade-projeto {
+  position: relative;
+  min-height: 270px;
+  padding-bottom: 65px;
+  box-sizing: border-box;
+}
+
+
+
+.card-atividade-individual a {
   position: absolute;
   bottom: 28px;
   left: 20px;
 }
+
+
+.card-atividade-grupo a {
+  position: absolute;
+  bottom: 28px;
+  left: 20px;
+}
+
+
+.card-atividade-projeto a {
+  position: absolute;
+  bottom: 28px;
+  left: 20px;
+}
+
+
+.grid-projetos {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 35px;
+  width: 100%;
+  margin: 0 auto;
+  align-items: stretch;
+}
+
+
+.card-projeto {
+  position: relative;
+  background: white;
+  min-height: 220px;
+  height: 100%
+  padding: 25px;
+  padding-bottom: 65px;
+  border-radius: 10px;
+
+  border: 1px solid #e6eaf0;
+  border-bottom: 4px solid #052034;
+
+  box-shadow:
+    0 4px 15px rgba(15, 23, 42, 0.09);
+
+  box-sizing: border-box;
+  transition: 0.2s ease;
+}
+
+.card-projeto:hover {
+  transform: translateY(-3px);
+}
+
+.numero-projeto {
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  color: #052034;
+}
+
+.card-projeto h3 {
+  font-size: 1.15rem;
+  color: #052034;
+  margin: 12px 0;
+}
+
+.card-projeto .tema {
+  font-size: 0.88rem;
+  color: #64748b;
+}
+
+.status {
+  position: absolute;
+  bottom: 27px;
+  left: 25px;
+
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  color: #052034;
+}
+
+
+.grid-projetos {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(280px, 1fr));
+  gap: 35px;
+}
+
+.card-projeto .numero {
+  color: #052034;
+}
+
+.tipo-atividade {
+  display: inline-block;
+  width: fit-content;
+  margin: 4px 0 12px 0;
+  padding: 4px 9px;
+  border-radius: 15px;
+  background-color: #dcecf5;
+  color: #285a78;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+/* Cor diferente para atividades individuais */
+.tipo-atividade.individual {
+  background-color: #f4e2bd;
+  color: #c59b50;
+}
+
+.card-atividade-projeto a:hover {
+  color: #052034;
+}
+
+
+
+
+.grid-projetos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 35px;
+  align-items: stretch;
+}
+
+.card-projeto {
+  position: relative;
+  min-height: 245px;
+  height: 100%;
+  padding: 25px;
+  padding-bottom: 65px;
+  box-sizing: border-box;
+}
+
+.card-projeto > p:last-child {
+  position: absolute;
+  left: 25px;
+  bottom: 22px;
+  margin: 0;
+}
+
+grid-template-columns: repeat(2, 1fr);
+align-items: stretch;
+height: 100%;

@@ -31,6 +31,72 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    html { -webkit-text-size-adjust: 100%; }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-2740581606dc327e82f18f789b69d8a0.css">
   <link rel="stylesheet" href="custom.css">
@@ -149,30 +215,31 @@ Beatriz Franco (<a href="mailto:beatrizff@id.uff.br" class="email">beatrizff@id.
 </section>
 <section>
 <section id="resultados" class="title-slide slide level1 transicao center" data-background-image="imagens/transicao.png" data-background-size="cover" data-number="1">
-<h1><span class="header-section-number">1</span> Resultados</h1>
+<h1><span class="header-section-number">1</span> Resultados:</h1>
 
 </section>
 <section id="tabela" class="slide level2" data-number="1.1">
 <h2><span class="header-section-number">1.1</span> Tabela</h2>
 <div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a>tabela</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
-<div id="eieovpcizi" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:650px;">
-<style>#eieovpcizi table {
+<div id="oamuflrfqw" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:650px;">
+<style>#oamuflrfqw table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#eieovpcizi thead, #eieovpcizi tbody, #eieovpcizi tfoot, #eieovpcizi tr, #eieovpcizi td, #eieovpcizi th {
+#oamuflrfqw thead, #oamuflrfqw tbody, #oamuflrfqw tfoot, #oamuflrfqw tr, #oamuflrfqw td, #oamuflrfqw th {
   border-style: none;
 }
 
-#eieovpcizi p {
+#oamuflrfqw p {
   margin: 0;
   padding: 0;
 }
 
-#eieovpcizi .gt_table {
+#oamuflrfqw .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -198,12 +265,12 @@ Beatriz Franco (<a href="mailto:beatrizff@id.uff.br" class="email">beatrizff@id.
   border-left-color: #D3D3D3;
 }
 
-#eieovpcizi .gt_caption {
+#oamuflrfqw .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#eieovpcizi .gt_title {
+#oamuflrfqw .gt_title {
   color: #333333;
   font-size: 26px;
   font-weight: initial;
@@ -215,7 +282,7 @@ Beatriz Franco (<a href="mailto:beatrizff@id.uff.br" class="email">beatrizff@id.
   border-bottom-width: 0;
 }
 
-#eieovpcizi .gt_subtitle {
+#oamuflrfqw .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -227,7 +294,7 @@ Beatriz Franco (<a href="mailto:beatrizff@id.uff.br" class="email">beatrizff@id.
   border-top-width: 0;
 }
 
-#eieovpcizi .gt_heading {
+#oamuflrfqw .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -239,13 +306,13 @@ Beatriz Franco (<a href="mailto:beatrizff@id.uff.br" class="email">beatrizff@id.
   border-right-color: #D3D3D3;
 }
 
-#eieovpcizi .gt_bottom_border {
+#oamuflrfqw .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#eieovpcizi .gt_col_headings {
+#oamuflrfqw .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -260,7 +327,7 @@ Beatriz Franco (<a href="mailto:beatrizff@id.uff.br" class="email">beatrizff@id.
   border-right-color: #D3D3D3;
 }
 
-#eieovpcizi .gt_col_heading {
+#oamuflrfqw .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 22px;
@@ -280,7 +347,7 @@ Beatriz Franco (<a href="mailto:beatrizff@id.uff.br" class="email">beatrizff@id.
   overflow-x: hidden;
 }
 
-#eieovpcizi .gt_column_spanner_outer {
+#oamuflrfqw .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 22px;
@@ -292,15 +359,15 @@ Beatriz Franco (<a href="mailto:beatrizff@id.uff.br" class="email">beatrizff@id.
   padding-right: 4px;
 }
 
-#eieovpcizi .gt_column_spanner_outer:first-child {
+#oamuflrfqw .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#eieovpcizi .gt_column_spanner_outer:last-child {
+#oamuflrfqw .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#eieovpcizi .gt_column_spanner {
+#oamuflrfqw .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -312,11 +379,11 @@ Beatriz Franco (<a href="mailto:beatrizff@id.uff.br" class="email">beatrizff@id.
   width: 100%;
 }
 
-#eieovpcizi .gt_spanner_row {
+#oamuflrfqw .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#eieovpcizi .gt_group_heading {
+#oamuflrfqw .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -342,7 +409,7 @@ Beatriz Franco (<a href="mailto:beatrizff@id.uff.br" class="email">beatrizff@id.
   text-align: left;
 }
 
-#eieovpcizi .gt_empty_group_heading {
+#oamuflrfqw .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -357,15 +424,15 @@ Beatriz Franco (<a href="mailto:beatrizff@id.uff.br" class="email">beatrizff@id.
   vertical-align: middle;
 }
 
-#eieovpcizi .gt_from_md > :first-child {
+#oamuflrfqw .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#eieovpcizi .gt_from_md > :last-child {
+#oamuflrfqw .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#eieovpcizi .gt_row {
+#oamuflrfqw .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -384,7 +451,7 @@ Beatriz Franco (<a href="mailto:beatrizff@id.uff.br" class="email">beatrizff@id.
   overflow-x: hidden;
 }
 
-#eieovpcizi .gt_stub {
+#oamuflrfqw .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -397,7 +464,7 @@ Beatriz Franco (<a href="mailto:beatrizff@id.uff.br" class="email">beatrizff@id.
   padding-right: 5px;
 }
 
-#eieovpcizi .gt_stub_row_group {
+#oamuflrfqw .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -411,15 +478,15 @@ Beatriz Franco (<a href="mailto:beatrizff@id.uff.br" class="email">beatrizff@id.
   vertical-align: top;
 }
 
-#eieovpcizi .gt_row_group_first td {
+#oamuflrfqw .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#eieovpcizi .gt_row_group_first th {
+#oamuflrfqw .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#eieovpcizi .gt_summary_row {
+#oamuflrfqw .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -429,16 +496,16 @@ Beatriz Franco (<a href="mailto:beatrizff@id.uff.br" class="email">beatrizff@id.
   padding-right: 5px;
 }
 
-#eieovpcizi .gt_first_summary_row {
+#oamuflrfqw .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#eieovpcizi .gt_first_summary_row.thick {
+#oamuflrfqw .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#eieovpcizi .gt_last_summary_row {
+#oamuflrfqw .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -448,7 +515,7 @@ Beatriz Franco (<a href="mailto:beatrizff@id.uff.br" class="email">beatrizff@id.
   border-bottom-color: #D3D3D3;
 }
 
-#eieovpcizi .gt_grand_summary_row {
+#oamuflrfqw .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -458,7 +525,7 @@ Beatriz Franco (<a href="mailto:beatrizff@id.uff.br" class="email">beatrizff@id.
   padding-right: 5px;
 }
 
-#eieovpcizi .gt_first_grand_summary_row {
+#oamuflrfqw .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -468,7 +535,7 @@ Beatriz Franco (<a href="mailto:beatrizff@id.uff.br" class="email">beatrizff@id.
   border-top-color: #D3D3D3;
 }
 
-#eieovpcizi .gt_last_grand_summary_row_top {
+#oamuflrfqw .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -478,11 +545,11 @@ Beatriz Franco (<a href="mailto:beatrizff@id.uff.br" class="email">beatrizff@id.
   border-bottom-color: #D3D3D3;
 }
 
-#eieovpcizi .gt_striped {
+#oamuflrfqw .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#eieovpcizi .gt_table_body {
+#oamuflrfqw .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -491,7 +558,7 @@ Beatriz Franco (<a href="mailto:beatrizff@id.uff.br" class="email">beatrizff@id.
   border-bottom-color: #D3D3D3;
 }
 
-#eieovpcizi .gt_footnotes {
+#oamuflrfqw .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -505,7 +572,7 @@ Beatriz Franco (<a href="mailto:beatrizff@id.uff.br" class="email">beatrizff@id.
   border-right-color: #D3D3D3;
 }
 
-#eieovpcizi .gt_footnote {
+#oamuflrfqw .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -514,7 +581,7 @@ Beatriz Franco (<a href="mailto:beatrizff@id.uff.br" class="email">beatrizff@id.
   padding-right: 5px;
 }
 
-#eieovpcizi .gt_sourcenotes {
+#oamuflrfqw .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -528,7 +595,7 @@ Beatriz Franco (<a href="mailto:beatrizff@id.uff.br" class="email">beatrizff@id.
   border-right-color: #D3D3D3;
 }
 
-#eieovpcizi .gt_sourcenote {
+#oamuflrfqw .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -536,72 +603,72 @@ Beatriz Franco (<a href="mailto:beatrizff@id.uff.br" class="email">beatrizff@id.
   padding-right: 5px;
 }
 
-#eieovpcizi .gt_left {
+#oamuflrfqw .gt_left {
   text-align: left;
 }
 
-#eieovpcizi .gt_center {
+#oamuflrfqw .gt_center {
   text-align: center;
 }
 
-#eieovpcizi .gt_right {
+#oamuflrfqw .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#eieovpcizi .gt_font_normal {
+#oamuflrfqw .gt_font_normal {
   font-weight: normal;
 }
 
-#eieovpcizi .gt_font_bold {
+#oamuflrfqw .gt_font_bold {
   font-weight: bold;
 }
 
-#eieovpcizi .gt_font_italic {
+#oamuflrfqw .gt_font_italic {
   font-style: italic;
 }
 
-#eieovpcizi .gt_super {
+#oamuflrfqw .gt_super {
   font-size: 65%;
 }
 
-#eieovpcizi .gt_footnote_marks {
+#oamuflrfqw .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#eieovpcizi .gt_asterisk {
+#oamuflrfqw .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#eieovpcizi .gt_indent_1 {
+#oamuflrfqw .gt_indent_1 {
   text-indent: 5px;
 }
 
-#eieovpcizi .gt_indent_2 {
+#oamuflrfqw .gt_indent_2 {
   text-indent: 10px;
 }
 
-#eieovpcizi .gt_indent_3 {
+#oamuflrfqw .gt_indent_3 {
   text-indent: 15px;
 }
 
-#eieovpcizi .gt_indent_4 {
+#oamuflrfqw .gt_indent_4 {
   text-indent: 20px;
 }
 
-#eieovpcizi .gt_indent_5 {
+#oamuflrfqw .gt_indent_5 {
   text-indent: 25px;
 }
 
-#eieovpcizi .katex-display {
+#oamuflrfqw .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#eieovpcizi div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#oamuflrfqw div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 
@@ -1078,7 +1145,7 @@ Beatriz Franco (<a href="mailto:beatrizff@id.uff.br" class="email">beatrizff@id.
 </section></section>
 <section>
 <section id="conclusão" class="title-slide slide level1 transicao center" data-background-image="imagens/transicao.png" data-background-size="cover" data-number="2">
-<h1><span class="header-section-number">2</span> Conclusão</h1>
+<h1><span class="header-section-number">2</span> Conclusão:</h1>
 
 </section>
 <section id="principais-achados" class="slide level2" data-number="2.1">
@@ -1334,82 +1401,6 @@ Beatriz Franco (<a href="mailto:beatrizff@id.uff.br" class="email">beatrizff@id.
         ]
       });
     </script>
-    
-
-    <script>
-
-      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
-
-      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
-
-      // slide changes (different for each slide format).
-
-      (function () {
-
-        // dispatch for htmlwidgets
-
-        function fireSlideEnter() {
-
-          const event = window.document.createEvent("Event");
-
-          event.initEvent("slideenter", true, true);
-
-          window.document.dispatchEvent(event);
-
-        }
-
-    
-
-        function fireSlideChanged(previousSlide, currentSlide) {
-
-          fireSlideEnter();
-
-    
-
-          // dispatch for shiny
-
-          if (window.jQuery) {
-
-            if (previousSlide) {
-
-              window.jQuery(previousSlide).trigger("hidden");
-
-            }
-
-            if (currentSlide) {
-
-              window.jQuery(currentSlide).trigger("shown");
-
-            }
-
-          }
-
-        }
-
-    
-
-        // hookup for slidy
-
-        if (window.w3c_slidy) {
-
-          window.w3c_slidy.add_observer(function (slide_num) {
-
-            // slide_num starts at position 1
-
-            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
-
-          });
-
-        }
-
-    
-
-      })();
-
-    </script>
-
-    
-
     <script id="quarto-html-after-body" type="application/javascript">
       window.document.addEventListener("DOMContentLoaded", function (event) {
         const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
