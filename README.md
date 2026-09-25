@@ -1,13 +1,14 @@
 <div align="center">
 
-# 📊 Prática Estatística 2
+# 📊 Portfólio Acadêmico | Prática Estatística II
+
 ### Universidade Federal Fluminense
 
-Atividades e apresentações desenvolvidas ao longo da disciplina 
+Atividades avaliativas, apresentações e projetos desenvolvidos ao longo da disciplina.
 
 <div>
   <a href="https://biafrancoff.github.io/Pratica_Estatistica2/">
-    <img src="https://img.shields.io/badge/Ver%20apresentações%20da%20disciplina-052034?style=for-the-badge&logo=github&logoColor=white">
+    <img src="https://img.shields.io/badge/Acessar%20Portfólio%20-052034?style=for-the-badge&logo=github&logoColor=white">
   </a>
 </div>
 
@@ -22,16 +23,20 @@ Atividades e apresentações desenvolvidas ao longo da disciplina
 
 ---
 
-## Sobre
+## Sobre o portfólio
 
-Este repositório reúne os trabalhos desenvolvidos na disciplina de **Prática Estatística II**, da **Universidade Federal Fluminense (UFF)**, durante o período letivo de **2026.2**.
+Este repositório reúne atividades avaliativas, apresentações e projetos desenvolvidos na disciplina de **Prática Estatística II**, da **Universidade Federal Fluminense (UFF)**, durante o período letivo de **2026.2**.
 
----
-
-## Autoras
-
-- **Beatriz Franco de Freitas**
-- **Paolla Pinheiro Pacheco**
+Os trabalhos envolvem a aplicação de métodos estatísticos, análise de dados e interpretação de resultados, utilizando principalmente **R** e **Quarto**.
 
 ---
 
+## Autoria e colaboração
+
+**Responsável pelo portfólio**
+
+- Beatriz Franco de Freitas
+
+**Colaboração nas atividades em grupo**
+
+- Paolla Pinheiro Pacheco
