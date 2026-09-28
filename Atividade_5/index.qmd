@@ -22,7 +22,7 @@ format:
       data-background-size: cover
 ---
 
-# Contextualização  {.Transicao data-background-image="imagens/Transicao.png" data-background-size="cover"}
+# Contextualização:  {.Transicao data-background-image="imagens/Transicao.png" data-background-size="cover"}
 
 ## ANOVA Clássica
 
@@ -199,7 +199,7 @@ $$
 
 
 
-# ANOVA de Welch  {.Transicao data-background-image="imagens/Transicao.png" data-background-size="cover"}
+# ANOVA de Welch:  {.Transicao data-background-image="imagens/Transicao.png" data-background-size="cover"}
 
 ## ANOVA de Welch
 
@@ -331,7 +331,7 @@ $$
 
 :::
 
-# Teste de Games-Howell  {.Transicao data-background-image="imagens/Transicao.png" data-background-size="cover"}
+# Teste de Games-Howell:  {.Transicao data-background-image="imagens/Transicao.png" data-background-size="cover"}
 
 ## Escolha do método pós-hoc
 
@@ -427,7 +427,7 @@ $$
 
 :::
 
-# Referências {.Transicao data-background-image="imagens/Transicao.png" data-background-size="cover"}
+# Referências: {.Transicao data-background-image="imagens/Transicao.png" data-background-size="cover"}
 
 ## Referências 
 

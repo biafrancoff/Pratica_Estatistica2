@@ -100,7 +100,7 @@ Análise de Variânica e Testes Pós-hoc: ANOVA, Welch, Tukey e Games-Howell
 Em breve.
 </div>
 
-[ABRIR ATIVIDADE →](Atividade_5/)
+[ABRIR ATIVIDADE →]()
 :::
 
 
