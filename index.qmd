@@ -78,17 +78,31 @@ Testes de Hipóteses para 1, 2 ou mais populações na Literatura
 [ABRIR ATIVIDADE →](Atividade_4/)
 :::
 
-::: {.card-atividade-grupo .indisponivel}
+::: {.card-atividade-grupo}
 <div class="tipo-atividade">Trabalho em Grupo</div>
 
 ### Atividade Avaliativa 5
 
 <div class="tema">
+Análise de Variânica e Testes Pós-hoc: ANOVA, Welch, Tukey e Games-Howell
+</div>
+
+[ABRIR ATIVIDADE →](Atividade_5/)
+:::
+
+
+::: {.card-atividade-individual .indisponivel}
+<div class="tipo-atividade individual">Avaliação Individual</div>
+
+### Atividade Avaliativa 6
+
+<div class="tema">
 Em breve
 </div>
 
-[ABRIR ATIVIDADE →]()
+[ABRIR ATIVIDADE →](Atividade_5/)
 :::
+
 
 :::
 

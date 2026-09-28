@@ -311,8 +311,8 @@ Associação significativa:
 
 ::: {.achados-lista}
 
-- **Saúde Mental × Asma** — *p* = **0,012**
-- Cramér = **0,170**
+- **Saúde Mental × Asma** — ***p*** = **0,012**
+- **Cramér** = **0,170**
 
 :::
 
