@@ -403,7 +403,7 @@
     "href": "Atividade_5/index.html#anova-de-welch-1",
     "title": "PRÁTICA ESTATÍSTICA II",
     "section": "2.1 ANOVA de Welch",
-    "text": "2.1 ANOVA de Welch\n\n\n\nQuando usar?\nQuando a hipótese de homocedasticidade não é satisfeita\n\n\n\nEstatística\n\\[\nF_W =\n\\frac{\n\\sum w_i(\\bar{y}_i-\\bar{y}_w)^2/(k-1)\n}{\n1+\\frac{2(k-2)}{k^2-1}\n\\sum\\frac{1}{n_i-1}\n\\left(1-\\frac{w_i}{\\sum w_i}\\right)^2\n}\n\\]\n\n\n\n\n\nIdeia\n\nCada grupo tem sua própria variância\nGrupos com menor variância recebem mais peso\n\n\\[\nw_i=\\frac{n_i}{s_i^2}\n\\]\n\n\n\n\n\nInterpretação de \\(\\boldsymbol{F_W}\\)\n\nNumerador: diferença ponderada entre as médias\nDenominador: correção para variâncias diferentes"
+    "text": "2.1 ANOVA de Welch\n\n\n\nQuando usar?\nQuando a hipótese de homocedasticidade não é satisfeita\n\n\n\nEstatística de teste:\n\\[\nF_W =\n\\frac{\n\\sum w_i(\\bar{y}_i-\\bar{y}_w)^2/(k-1)\n}{\n1+\\frac{2(k-2)}{k^2-1}\n\\sum\\frac{1}{n_i-1}\n\\left(1-\\frac{w_i}{\\sum w_i}\\right)^2\n}\n\\]\n\n\n\n\n\nIdeia\n\nCada grupo tem sua própria variância\nGrupos com menor variância recebem mais peso\n\n\\[\nw_i=\\frac{n_i}{s_i^2}\n\\]\n\n\n\n\n\nInterpretação de \\(\\boldsymbol{F_W}\\):\n\nNumerador: diferença ponderada entre as médias\nDenominador: correção para variâncias diferentes"
   },
   {
     "objectID": "Atividade_5/index.html#comparação-da-estatística",

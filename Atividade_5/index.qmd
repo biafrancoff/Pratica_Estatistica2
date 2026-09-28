@@ -219,7 +219,7 @@ Quando a hipótese de homocedasticidade **não é satisfeita**
 
 ::: {.box-blue style="font-size: 0.82em; height: 280px; box-sizing: border-box;"}
 
-**Estatística**
+**Estatística de teste:**
 
 $$
 F_W =
@@ -259,7 +259,7 @@ $$
 
 ::: {.box-yellow style="font-size: 0.82em; height: 280px; box-sizing: border-box;"}
 
-**Interpretação de $\boldsymbol{F_W}$**
+**Interpretação de $\boldsymbol{F_W}$:**
 
 - **Numerador:** diferença ponderada entre as médias
 - **Denominador:** correção para variâncias diferentes
