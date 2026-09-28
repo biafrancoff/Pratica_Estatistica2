@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.9.38">
+
+  <meta name="author" content="Beatriz Franco (beatrizff@id.uff.br)   Paolla Pinheiro (paollapp@id.uff.br)">
+  <title>PRÁTICA ESTATÍSTICA II</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/reveal.css">
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-2740581606dc327e82f18f789b69d8a0.css">
+  <link rel="stylesheet" href="custom.css">
+  <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" data-background-image="imagens/Capa.png" data-background-position="center" data-background-size="cover" class="quarto-title-block center">
+  <h1 class="title"><strong>PRÁTICA ESTATÍSTICA II</strong></h1>
+  <p class="subtitle"><strong>ATIVIDADE AVALIATIVA 4</strong></p>
+
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Beatriz Franco (<a href="mailto:beatrizff@id.uff.br" class="email">beatrizff@id.uff.br</a>) <br> Paolla Pinheiro (<a href="mailto:paollapp@id.uff.br" class="email">paollapp@id.uff.br</a>) 
+</div>
+        <p class="quarto-title-affiliation">
+            Universidade Federal Fluminense
+          </p>
+    </div>
+</div>
+
+  <p class="date">28/09/2026</p>
+</section>
+<section class="slide level2">
+
+<style>
+.pergunta-central {
+  margin: 120px auto 0 auto;
+  width: 72%;
+  padding: 28px 34px;
+  border-left: 9px solid #0f172a;
+  border-radius: 10px;
+  background: rgba(239, 246, 255, 0.94);
+  text-align: center;
+  font-size: 1.15em;
+}
+
+.transicao-texto {
+  width: 62%;
+  margin: 250px auto 0 auto;
+  padding: 20px 30px;
+  border-radius: 12px;
+  background: rgba(5, 32, 52, 0.78);
+  color: white;
+  text-align: center;
+}
+
+.transicao-texto h1,
+.transicao-texto p {
+  color: white !important;
+  text-align: center;
+}
+
+.formula-principal {
+  padding: 18px 24px;
+  border-radius: 10px;
+  background: #e6f2ff;
+  border-left: 8px solid #052034;
+  text-align: center;
+}
+
+.comparacao {
+  font-size: 0.82em;
+}
+
+.referencias {
+  font-size: 0.66em;
+}
+</style>
+</section>
+<section id="o-problema" class="title-slide slide level1 Transicao center" data-background-image="imagens/Transicao.png" data-background-size="cover" data-background-position="center" data-number="1">
+<h1><span class="header-section-number">1</span> O problema</h1>
+
+</section>
+
+<section id="uma-variância-comum-é-sempre-adequada" class="title-slide slide level1 transicao-texto center" data-number="2">
+<h1><span class="header-section-number">2</span> Uma variância comum é sempre adequada?</h1>
+<p>O ponto de partida para entender a ANOVA de Welch</p>
+</section>
+
+<section id="a-pergunta-da-anova" class="slide level2" data-number="2.1">
+<h2><span class="header-section-number">2.1</span> A pergunta da ANOVA</h2>
+<div class="pergunta-central">
+<p>Temos <span class="math inline">\(k\)</span> grupos independentes. As diferenças observadas entre suas médias podem ser atribuídas apenas à variabilidade amostral?</p>
+</div>
+<p><br></p>
+<p><span class="math display">\[
+H_0:\mu_1=\mu_2=\cdots=\mu_k
+\qquad\text{versus}\qquad
+H_1:\text{pelo menos uma média difere}
+\]</span></p>
+</section>
+<section id="duas-fontes-de-variação" class="slide level2" data-number="2.2">
+<h2><span class="header-section-number">2.2</span> Duas fontes de variação</h2>
+<div class="columns">
+<div class="column" style="width:47%;">
+<section id="entre-os-grupos" class="box-blue" data-number="2.2.1">
+<h3 data-number="2.2.1"><span class="header-section-number">2.2.1</span> Entre os grupos</h3>
+<p>Mede o afastamento das médias dos grupos em relação à média geral.</p>
+<p><span class="math display">\[
+QM_{Entre}=\frac{SQ_{Entre}}{k-1}
+\]</span></p>
+</section>
+</div><div class="column" style="width:6%;">
+
+</div><div class="column" style="width:47%;">
+<section id="dentro-dos-grupos" class="box-gray" data-number="2.2.2">
+<h3 data-number="2.2.2"><span class="header-section-number">2.2.2</span> Dentro dos grupos</h3>
+<p>Mede a variabilidade das observações em torno da média de cada grupo.</p>
+<p><span class="math display">\[
+QM_{Dentro}=\frac{SQ_{Dentro}}{N-k}
+\]</span></p>
+</section>
+</div></div>
+<div class="formula-principal">
+<p><span class="math display">\[
+F=\frac{QM_{Entre}}{QM_{Dentro}}
+\]</span></p>
+</div>
+</section>
+<section id="quando-a-anova-clássica-funciona-bem" class="slide level2" data-number="2.3">
+<h2><span class="header-section-number">2.3</span> Quando a ANOVA clássica funciona bem?</h2>
+<div class="columns">
+<div class="column" style="width:31%;">
+<section id="independência" class="box-gray" data-number="2.3.1">
+<h3 data-number="2.3.1"><span class="header-section-number">2.3.1</span> 1. Independência</h3>
+<p>Uma observação não determina o valor de outra.</p>
+</section>
+</div><div class="column" style="width:3%;">
+
+</div><div class="column" style="width:31%;">
+<section id="normalidade" class="box-gray" data-number="2.3.2">
+<h3 data-number="2.3.2"><span class="header-section-number">2.3.2</span> 2. Normalidade</h3>
+<p>Os erros são aproximadamente normais em cada grupo.</p>
+</section>
+</div><div class="column" style="width:3%;">
+
+</div><div class="column" style="width:31%;">
+<section id="homocedasticidade" class="box-yellow" data-number="2.3.3">
+<h3 data-number="2.3.3"><span class="header-section-number">2.3.3</span> 3. Homocedasticidade</h3>
+<p><span class="math display">\[
+\sigma_1^2=\cdots=\sigma_k^2
+\]</span></p>
+</section>
+</div></div>
+</section>
+<section id="a-variância-comum-aparece-duas-vezes" class="slide level2" data-number="2.4">
+<h2><span class="header-section-number">2.4</span> A variância comum aparece duas vezes</h2>
+<div class="columns">
+<div class="column" style="width:48%;">
+<h3 data-number="2.4.1" id="no-teste-global"><span class="header-section-number">2.4.1</span> No teste global</h3>
+<p><span class="math display">\[
+F=\frac{QM_{Entre}}{\color{red}{QM_{Dentro}}}
+\]</span></p>
+<p><span class="math inline">\(QM_{Dentro}\)</span> combina as variâncias de todos os grupos.</p>
+</div><div class="column" style="width:4%;">
+
+</div><div class="column" style="width:48%;">
+<h3 data-number="2.4.2" id="nas-comparações-de-tukeykramer"><span class="header-section-number">2.4.2</span> Nas comparações de Tukey–Kramer</h3>
+<p><span class="math display">\[
+q_{ij}=
+\frac{|\bar y_i-\bar y_j|}
+{\sqrt{\dfrac{\color{red}{QM_{Dentro}}}{2}
+\left(\dfrac1{n_i}+\dfrac1{n_j}\right)}}
+\]</span></p>
+</div></div>
+<div class="box-gray" style="font-size: 0.75em;">
+<p>Os dois procedimentos tratam <span class="math inline">\(QM_{Dentro}\)</span> como uma boa representação da variância residual de todos os grupos.</p>
+</div>
+</section>
+<section id="e-se-as-variâncias-forem-diferentes" class="slide level2" data-number="2.5">
+<h2><span class="header-section-number">2.5</span> E se as variâncias forem diferentes?</h2>
+<div class="columns">
+<div class="column" style="width:42%;">
+<div class="box-yellow">
+<p><span class="math display">\[
+\sigma_1^2\neq\sigma_2^2\neq\cdots\neq\sigma_k^2
+\]</span></p>
+<p>Uma única variância combinada deixa de representar adequadamente todos os grupos.</p>
+</div>
+</div><div class="column" style="width:6%;">
+
+</div><div class="column" style="width:52%;">
+<ul>
+<li>O nível real do teste pode se afastar de <span class="math inline">\(\alpha\)</span>.</li>
+<li>A combinação de variâncias e amostras desiguais pode distorcer <span class="math inline">\(F\)</span>.</li>
+<li>O problema é maior quando o grupo mais variável tem o menor tamanho amostral.</li>
+</ul>
+</div></div>
+<div class="formula-principal">
+<p>Precisamos comparar as médias sem impor uma variância comum.</p>
+</div>
+</section>
+<section id="a-solução-de-welch" class="title-slide slide level1 Transicao center" data-background-image="imagens/Transicao.png" data-background-size="cover" data-background-position="center" data-number="3">
+<h1><span class="header-section-number">3</span> A solução de Welch</h1>
+
+</section>
+
+<section id="anova-de-welch" class="title-slide slide level1 transicao-texto center" data-number="4">
+<h1><span class="header-section-number">4</span> ANOVA de Welch</h1>
+<p>Cada grupo contribui de acordo com a precisão de sua média</p>
+</section>
+
+<section id="a-mudança-essencial" class="slide level2" data-number="4.1">
+<h2><span class="header-section-number">4.1</span> A mudança essencial</h2>
+<div class="columns">
+<div class="column" style="width:45%;">
+<section id="anova-clássica" class="box-blue" data-number="4.1.1">
+<h3 data-number="4.1.1"><span class="header-section-number">4.1.1</span> ANOVA clássica</h3>
+<p>Combina as variâncias em <span class="math inline">\(QM_{Dentro}\)</span> e atribui peso principalmente pelo tamanho da amostra.</p>
+</section>
+</div><div class="column" style="width:10%;">
+<p><span class="math display">\[
+\Longrightarrow
+\]</span></p>
+</div><div class="column" style="width:45%;">
+<section id="welch" class="box-yellow" data-number="4.1.2">
+<h3 data-number="4.1.2"><span class="header-section-number">4.1.2</span> Welch</h3>
+<p>Mantém as variâncias separadas e pondera cada grupo pela precisão.</p>
+<p><span class="math display">\[
+w_i=\frac{n_i}{s_i^2}
+\]</span></p>
+</section>
+</div></div>
+</section>
+<section id="como-os-pesos-funcionam" class="slide level2" data-number="4.2">
+<h2><span class="header-section-number">4.2</span> Como os pesos funcionam?</h2>
+<p><span class="math display">\[
+w_i=\frac{n_i}{s_i^2}
+\qquad
+W=\sum_{i=1}^{k}w_i
+\qquad
+\bar y_w=\frac{\sum_{i=1}^{k}w_i\bar y_i}{W}
+\]</span></p>
+<div class="columns">
+<div class="column" style="width:48%;">
+<div class="box-blue">
+<p><strong>Maior <span class="math inline">\(n_i\)</span></strong> <span class="math inline">\(\Rightarrow\)</span> maior precisão <span class="math inline">\(\Rightarrow\)</span> maior peso.</p>
+</div>
+</div><div class="column" style="width:4%;">
+
+</div><div class="column" style="width:48%;">
+<div class="box-yellow">
+<p><strong>Maior <span class="math inline">\(s_i^2\)</span></strong> <span class="math inline">\(\Rightarrow\)</span> menor precisão <span class="math inline">\(\Rightarrow\)</span> menor peso.</p>
+</div>
+</div></div>
+</section>
+<section id="a-estatística-de-welch" class="slide level2" data-number="4.3">
+<h2><span class="header-section-number">4.3</span> A estatística de Welch</h2>
+<p>Defina a correção:</p>
+<p><span class="math display">\[
+C=\sum_{i=1}^{k}
+\frac{\left(1-\dfrac{w_i}{W}\right)^2}{n_i-1}
+\]</span></p>
+<div class="formula-principal">
+<p><span class="math display">\[
+F_W=
+\frac{
+\dfrac{1}{k-1}\sum_{i=1}^{k}w_i(\bar y_i-\bar y_w)^2
+}
+{
+1+\dfrac{2(k-2)}{k^2-1}C
+}
+\]</span></p>
+</div>
+</section>
+<section id="por-que-os-graus-de-liberdade-mudam" class="slide level2" data-number="4.4">
+<h2><span class="header-section-number">4.4</span> Por que os graus de liberdade mudam?</h2>
+<p><span class="math display">\[
+F_W\sim F_{\nu_1,\nu_2}
+\]</span></p>
+<p><span class="math display">\[
+\nu_1=k-1
+\qquad\text{e}\qquad
+\nu_2=\frac{k^2-1}{3C}
+\]</span></p>
+<div class="box-gray">
+<ul>
+<li><span class="math inline">\(\nu_2\)</span> pode ser fracionário.</li>
+<li>O ajuste considera os tamanhos e as variâncias observadas.</li>
+<li>Isso melhora o controle do erro tipo I sob heterocedasticidade.</li>
+</ul>
+</div>
+</section>
+<section id="o-raciocínio-completo" class="slide level2" data-number="4.5">
+<h2><span class="header-section-number">4.5</span> O raciocínio completo</h2>
+<div class="columns">
+<div class="column" style="width:22%;">
+<div class="box-gray">
+<p><strong>1.</strong> Variâncias diferentes</p>
+</div>
+</div><div class="column" style="width:4%;">
+<p><span class="math display">\[\rightarrow\]</span></p>
+</div><div class="column" style="width:22%;">
+<div class="box-blue">
+<p><strong>2.</strong> Pesos específicos</p>
+</div>
+</div><div class="column" style="width:4%;">
+<p><span class="math display">\[\rightarrow\]</span></p>
+</div><div class="column" style="width:22%;">
+<div class="box-yellow">
+<p><strong>3.</strong> Correção de <span class="math inline">\(F\)</span></p>
+</div>
+</div><div class="column" style="width:4%;">
+<p><span class="math display">\[\rightarrow\]</span></p>
+</div><div class="column" style="width:22%;">
+<div class="box-gray">
+<p><strong>4.</strong> Graus de liberdade ajustados</p>
+</div>
+</div></div>
+<p><br></p>
+<div class="formula-principal">
+<p>Welch testa a igualdade das médias sem exigir homogeneidade das variâncias.</p>
+</div>
+</section>
+<section id="depois-do-teste-global" class="title-slide slide level1 Transicao center" data-background-image="imagens/Transicao.png" data-background-size="cover" data-background-position="center" data-number="5">
+<h1><span class="header-section-number">5</span> Depois do teste global</h1>
+
+</section>
+
+<section id="gameshowell" class="title-slide slide level1 transicao-texto center" data-number="6">
+<h1><span class="header-section-number">6</span> Games–Howell</h1>
+<p>Se Welch rejeita <span class="math inline">\(H_0\)</span>, quais pares diferem?</p>
+</section>
+
+<section id="por-que-tukey-não-acompanha-welch" class="slide level2" data-number="6.1">
+<h2><span class="header-section-number">6.1</span> Por que Tukey não acompanha Welch?</h2>
+<div class="comparacao">
+<table class="caption-top">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Aspecto</th>
+<th>Tukey–Kramer</th>
+<th>Games–Howell</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Variância no denominador</td>
+<td><span class="math inline">\(QM_{Dentro}\)</span> comum</td>
+<td><span class="math inline">\(s_i^2\)</span> e <span class="math inline">\(s_j^2\)</span> separadas</td>
+</tr>
+<tr class="even">
+<td>Graus de liberdade</td>
+<td>Iguais em todos os pares</td>
+<td>Calculados para cada par</td>
+</tr>
+<tr class="odd">
+<td>Variâncias iguais</td>
+<td>Necessárias</td>
+<td>Não necessárias</td>
+</tr>
+<tr class="even">
+<td>Tamanhos iguais</td>
+<td>Não são obrigatórios</td>
+<td>Não são obrigatórios</td>
+</tr>
+<tr class="odd">
+<td>Combinação usual</td>
+<td>ANOVA clássica + Tukey</td>
+<td>Welch + Games–Howell</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="comparação-entre-dois-grupos" class="slide level2" data-number="6.2">
+<h2><span class="header-section-number">6.2</span> Comparação entre dois grupos</h2>
+<p>Para cada par <span class="math inline">\((i,j)\)</span>, o Games–Howell utiliza o erro-padrão:</p>
+<p><span class="math display">\[
+EP_{ij}=\sqrt{\frac{s_i^2}{n_i}+\frac{s_j^2}{n_j}}
+\]</span></p>
+<div class="formula-principal">
+<p><span class="math display">\[
+t_{ij}=\frac{|\bar y_i-\bar y_j|}{EP_{ij}}
+\]</span></p>
+</div>
+<p>Cada comparação utiliza apenas as variâncias dos dois grupos envolvidos.</p>
+</section>
+<section id="graus-de-liberdade-de-cada-par" class="slide level2" data-number="6.3">
+<h2><span class="header-section-number">6.3</span> Graus de liberdade de cada par</h2>
+<p>O ajuste de Welch–Satterthwaite é:</p>
+<p><span class="math display">\[
+\nu_{ij}=
+\frac{
+\left(\dfrac{s_i^2}{n_i}+\dfrac{s_j^2}{n_j}\right)^2
+}
+{
+\dfrac{(s_i^2/n_i)^2}{n_i-1}
++
+\dfrac{(s_j^2/n_j)^2}{n_j-1}
+}
+\]</span></p>
+<div class="box-yellow">
+<p>Como <span class="math inline">\(\nu_{ij}\)</span> depende de <span class="math inline">\(i\)</span> e <span class="math inline">\(j\)</span>, pares diferentes podem ter graus de liberdade diferentes.</p>
+</div>
+</section>
+<section id="o-que-o-resultado-informa" class="slide level2" data-number="6.4">
+<h2><span class="header-section-number">6.4</span> O que o resultado informa?</h2>
+<p>Para cada par de grupos, o Games–Howell apresenta:</p>
+<div class="columns">
+<div class="column" style="width:31%;">
+<section id="diferença" class="box-blue" data-number="6.4.1">
+<h3 data-number="6.4.1"><span class="header-section-number">6.4.1</span> Diferença</h3>
+<p><span class="math inline">\(\bar y_i-\bar y_j\)</span></p>
+</section>
+</div><div class="column" style="width:3%;">
+
+</div><div class="column" style="width:31%;">
+<section id="intervalo" class="box-gray" data-number="6.4.2">
+<h3 data-number="6.4.2"><span class="header-section-number">6.4.2</span> Intervalo</h3>
+<p>Intervalo de confiança simultâneo</p>
+</section>
+</div><div class="column" style="width:3%;">
+
+</div><div class="column" style="width:31%;">
+<section id="decisão" class="box-yellow" data-number="6.4.3">
+<h3 data-number="6.4.3"><span class="header-section-number">6.4.3</span> Decisão</h3>
+<p><span class="math inline">\(p\)</span>-valor ajustado</p>
+</section>
+</div></div>
+<div class="formula-principal" style="font-size: 0.86em;">
+<p>Se o <span class="math inline">\(p\)</span>-valor ajustado for menor que <span class="math inline">\(\alpha\)</span>, há evidência de diferença entre aquele par de médias.</p>
+</div>
+</section>
+<section id="qual-caminho-seguir" class="slide level2" data-number="6.5">
+<h2><span class="header-section-number">6.5</span> Qual caminho seguir?</h2>
+<div class="columns">
+<div class="column" style="width:46%;">
+<section id="variâncias-semelhantes" class="box-blue" data-number="6.5.1">
+<h3 data-number="6.5.1"><span class="header-section-number">6.5.1</span> Variâncias semelhantes</h3>
+<ol type="1">
+<li>ANOVA clássica</li>
+<li>Tukey–Kramer, se necessário</li>
+</ol>
+</section>
+</div><div class="column" style="width:8%;">
+
+</div><div class="column" style="width:46%;">
+<section id="variâncias-diferentes" class="box-yellow" data-number="6.5.2">
+<h3 data-number="6.5.2"><span class="header-section-number">6.5.2</span> Variâncias diferentes</h3>
+<ol type="1">
+<li>ANOVA de Welch</li>
+<li>Games–Howell, se necessário</li>
+</ol>
+</section>
+</div></div>
+<div class="box-gray" style="font-size: 0.78em;">
+<p>A escolha deve considerar o planejamento do estudo, os tamanhos amostrais, gráficos dos resíduos e evidências sobre a igualdade das variâncias.</p>
+</div>
+</section>
+<section id="síntese" class="slide level2" data-number="6.6">
+<h2><span class="header-section-number">6.6</span> Síntese</h2>
+<div class="columns">
+<div class="column" style="width:31%;">
+<h3 data-number="6.6.1" id="anova-clássica-1"><span class="header-section-number">6.6.1</span> ANOVA clássica</h3>
+<p>Usa uma variância residual comum para testar a igualdade das médias.</p>
+</div><div class="column" style="width:3%;">
+
+</div><div class="column" style="width:31%;">
+<h3 data-number="6.6.2" id="welch-1"><span class="header-section-number">6.6.2</span> Welch</h3>
+<p>Pondera os grupos pela precisão e ajusta os graus de liberdade.</p>
+</div><div class="column" style="width:3%;">
+
+</div><div class="column" style="width:31%;">
+<h3 data-number="6.6.3" id="gameshowell-1"><span class="header-section-number">6.6.3</span> Games–Howell</h3>
+<p>Compara os pares sem exigir uma variância comum.</p>
+</div></div>
+<div class="formula-principal">
+<p>Heterogeneidade não impede a comparação das médias; ela exige um procedimento compatível com os dados.</p>
+</div>
+</section>
+<section id="referências" class="title-slide slide level1 glass Transicao center" data-background-image="imagens/Transicao.png" data-background-size="cover" data-background-position="center" data-number="7">
+<h1><span class="header-section-number">7</span> Referências</h1>
+<div class="referencias">
+<ul>
+<li><p>FISHER, R. A. <em>Statistical Methods for Research Workers</em>. Edinburgh: Oliver &amp; Boyd, 1925.</p></li>
+<li><p>GAMES, P. A.; HOWELL, J. F. Pairwise multiple comparison procedures with unequal n’s and/or variances: a Monte Carlo study. <em>Journal of Educational Statistics</em>, v. 1, n.&nbsp;2, p.&nbsp;113–125, 1976.</p></li>
+<li><p>MONTGOMERY, D. C. <em>Design and Analysis of Experiments</em>. 10. ed.&nbsp;Hoboken: Wiley, 2019.</p></li>
+<li><p>TUKEY, J. W. Comparing individual means in the analysis of variance. <em>Biometrics</em>, v. 5, n.&nbsp;2, p.&nbsp;99–114, 1949.</p></li>
+<li><p>WELCH, B. L. On the comparison of several mean values: an alternative approach. <em>Biometrika</em>, v. 38, n.&nbsp;3/4, p.&nbsp;330–336, 1951.</p></li>
+</ul>
+</div>
+</section>
+
+<section id="fim" class="title-slide slide level1 unnumbered center">
+<h1>Fim</h1>
+
+</section>
+
+<section id="obrigado" class="title-slide slide level1 pergunta-central center" data-number="8">
+<h1><span class="header-section-number">8</span> Obrigado!</h1>
+<p>Perguntas?</p>
+</section>
+
+
+
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<div class="footer footer-default">
+
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="../site_libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="../site_libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="../site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="../site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="../site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="../site_libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'fade',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'fade',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1280,
+
+        height: 720,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 7.0e-2,
+
+        math: {
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <script id="quarto-html-after-body" type="application/javascript">
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
+          }
+          return false;
+        }
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copied!");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copied!");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp('/' + window.location.host + '/');
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
+          });
+        }
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
+    
+
+</body></html>

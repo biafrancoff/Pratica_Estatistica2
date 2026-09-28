@@ -4,14 +4,14 @@
     "href": "index.html",
     "title": "Prática Estatística II",
     "section": "",
-    "text": "UFF • ESTATÍSTICA\n\n\n\n\nAtividades Avaliativas • 2026.2\n\n\nBeatriz Franco • Paolla Pinheiro"
+    "text": "UFF • ESTATÍSTICA\n\n\n\n\nPortfólio acadêmico • 2026.2\n\n\nBeatriz Franco de Freitas"
   },
   {
     "objectID": "index.html#atividades-avaliativas",
     "href": "index.html#atividades-avaliativas",
     "title": "Prática Estatística II",
-    "section": "",
-    "text": "Atividade Avaliativa 1"
+    "section": "Atividades avaliativas",
+    "text": "Atividades avaliativas\nTrabalhos e avaliações realizados ao longo da disciplina.\n\n\n\nTrabalho em Grupo\n\n\nAtividade Avaliativa 1\n\nTestes de Independência na Literatura\n\nABRIR ATIVIDADE →\n\n\n\n\nTrabalho em Grupo\n\n\nAtividade Avaliativa 2\n\nTabela e Análise de Associação com o pacote gtsummary\n\nABRIR ATIVIDADE →\n\n\n\n\nAvaliação Individual\n\n\nAtividade Avaliativa 3\n\nRevisão de Testes de Hipóteses\n\nABRIR ATIVIDADE →\n\n\n\n\nTrabalho em Grupo\n\n\nAtividade Avaliativa 4\n\nTestes de Hipóteses para 1, 2 ou mais populações na Literatura\n\nABRIR ATIVIDADE →\n\n\n\n\nTrabalho em Grupo\n\n\nAtividade Avaliativa 5\n\nEm breve\n\nABRIR ATIVIDADE →"
   },
   {
     "objectID": "Atividade_1/index.html#artigo-e-autores",
@@ -137,7 +137,7 @@
     "href": "index.html#atividades",
     "title": "Prática Estatística II",
     "section": "Atividades",
-    "text": "Atividades\n\n\n\n01\n\n\nAtividade Avaliativa 1\n\nTestes de Independência na Literatura\n\n ABRIR ATIVIDADE →\n\n\n\n\n02\n\n\nAtividade Avaliativa 2\n\nTabela e Análise de Associação com o pacote gtsummary\n\nABRIR ATIVIDADE →\n\n\n\n\n03\n\n\nAtividade Avaliativa 3\n\nEm breve"
+    "text": "Atividades\nTrabalhos desenvolvidos em colaboração com Paolla Pinheiro.\n\n\n\n01\n\n\nAtividade Avaliativa 1\n\nTestes de Independência na Literatura\n\nABRIR ATIVIDADE →\n\n\n\n\n02\n\n\nAtividade Avaliativa 2\n\nTabela e Análise de Associação com o pacote gtsummary\n\nABRIR ATIVIDADE →\n\n\n\n\n03\n\n\nAtividade Avaliativa 3\n\nRevisão de Testes de Hipóteses\n\nABRIR ATIVIDADE →\n\n\n\n\n04\n\n\nAtividade Avaliativa 4\n\nTestes de Hipóteses para 1, 2 ou mais populações na Literatura\n\nABRIR ATIVIDADE →\n\n\n\n\n05\n\n\nAtividade Avaliativa 5\n\nEm breve\n\nABRIR ATIVIDADE →"
   },
   {
     "objectID": "Atividade_2/index.html#artigo-e-autores",
@@ -173,5 +173,761 @@
     "title": "PRÁTICA ESTATÍSTICA II",
     "section": "2.1 Principais achados",
     "text": "2.1 Principais achados\nAssociação significativa:\n\n\nSaúde Mental × Asma — p = 0,012\nCramér = 0,170\n\n\n\n\n\nDistribuição da asma:\n\nNenhum dia → 9,7%\n1 a 13 dias → 20%\n14 dias ou mais → 25%\n\n9,7% → 20% → 25%\n\n\n\n\n\nInterpretação:\n\nMais dias de saúde mental não boa → maior proporção de asma\n“Nenhum dia” apresentou resíduos padronizados elevados\nAssociação de baixa intensidade"
+  },
+  {
+    "objectID": "Atividade_4/index.html#artigo-e-autores",
+    "href": "Atividade_4/index.html#artigo-e-autores",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "1.1 Artigo e autores:",
+    "text": "1.1 Artigo e autores:\n\n\nRelação entre a etiologia da respiração oral e a pressão máxima da língua\n\nAutores:\n\nTiago Costa Pereira;\nRenata Maria Moreira Moraes Furlan;\nAndréa Rodrigues Motta."
+  },
+  {
+    "objectID": "Atividade_4/index.html#motivação",
+    "href": "Atividade_4/index.html#motivação",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "1.2 Motivação:",
+    "text": "1.2 Motivação:\n\n\nTransformações da sociedade contemporânea que impactam a subjetividade:\n\nProcesso de globalização, avanços na industrialização, dependência da informática e da realidade virtual.\n\nAumentos de quadros associados a narcisismo, depressão, ansiedade, desesperança\nNecessidade de investigação quantitativa dessas relações em jovens universitários."
+  },
+  {
+    "objectID": "Atividade_4/index.html#objetivos",
+    "href": "Atividade_4/index.html#objetivos",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "1.3 Objetivos:",
+    "text": "1.3 Objetivos:\n\n\nObjetivo geral:\n\nAnalisar a relação entre a etiologia da respiração oral e a pressão máxima da língua em crianças.\n\n\n\nPergunta de interesse: a pressão máxima da língua está relacionada à causa e ao grau de obstrução da respiração oral?"
+  },
+  {
+    "objectID": "Atividade_4/index.html#amostra",
+    "href": "Atividade_4/index.html#amostra",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "1.4 Amostra:",
+    "text": "1.4 Amostra:\n\n\nAmostra: 59 crianças respiradoras orais;\n\n20 meninas (33%);\n39 meninos (67%).\n\nIdade: entre 3 e 12 anos.\nLocal: Ambulatório do Respirador Oral do Hospital das Clínicas da Universidade Federal de Minas Gerais (UFMG).\nColeta:\n\nPressão máxima da língua medida com o aparelho IOPI;\nRealização de três medições para cada participante;\nInformações sobre a causa da respiração oral e a oclusão dentária coletadas nos prontuários."
+  },
+  {
+    "objectID": "Atividade_4/index.html#instrumentos",
+    "href": "Atividade_4/index.html#instrumentos",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "1.5 Instrumentos:",
+    "text": "1.5 Instrumentos:\n\n\n\n\n\n\n\n\nInstrumento\nO que mede\nDireção do escore\n\n\n\n\nBAIInventário de Ansiedade de Beck\nIntensidade da ansiedade\n\\(\\uparrow\\) escore = \\(\\uparrow\\) ansiedade\n\n\nBHSEscala de Desesperança de Beck\nGrau de desesperança\n\\(\\uparrow\\) escore = \\(\\uparrow\\) desesperança\n\n\nBDI-IIInventário de Depressão de Beck-II\nIntensidade da depressão\n\\(\\uparrow\\) escore = \\(\\uparrow\\) depressão\n\n\nRosenbergEscala de Rosenberg\nAutoestima global\n\\(\\uparrow\\) escore = \\(\\uparrow\\) autoestima\n\n\nNPIInventário de Personalidade Narcisista\nTraços de Narcisismo\n\\(\\uparrow\\) escore = \\(\\uparrow\\) narcisismo"
+  },
+  {
+    "objectID": "Atividade_4/index.html#variáveis-analisadas",
+    "href": "Atividade_4/index.html#variáveis-analisadas",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "2.1 Variáveis analisadas:",
+    "text": "2.1 Variáveis analisadas:\n\n\nDesfecho: Pressão máxima da língua, medida em quilopascal (kPa).\nFatores de exposição:\n\nidade;\ngênero;\nhipertrofia das tonsilas palatinas;\nhipertrofia da tonsila faríngea;\npresença e tipo de rinite;\noclusão dentária;\ntratamento medicamentoso ou cirúrgico."
+  },
+  {
+    "objectID": "Atividade_4/index.html#testes-aplicados",
+    "href": "Atividade_4/index.html#testes-aplicados",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "2.2 Testes aplicados:",
+    "text": "2.2 Testes aplicados:\n\n\nTeste t de Student: comparação da pressão entre dois grupos.\n\n\\[\n\\begin{cases}\nH_0:\\mu_1=\\mu_2\\\\\nH_1:\\mu_1\\neq\\mu_2\n\\end{cases}\n\\]\n\n\n\nANOVA (com pós-teste de Tukey): comparação entre três ou mais grupos.\n\n\\[\n\\begin{cases}\nH_0: \\mu_1 = \\mu_2 = \\cdots = \\mu_k \\quad \\text{(todas as médias iguais)}\\\\\nH_1: \\exists\\, i,j \\text{ tal que } \\mu_i \\neq \\mu_j \\quad \\text{(pelo menos uma média difere)}\n\\end{cases}\n\\]\n\n\n\nNível de significância: \\(\\alpha=0{,}05\\) (5%).\nDecisão: se \\(p&lt;0{,}05\\), rejeita-se \\(H_0\\) → há diferença estatisticamente significativa."
+  },
+  {
+    "objectID": "Atividade_4/index.html#t-teste",
+    "href": "Atividade_4/index.html#t-teste",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "3.1 T-teste:",
+    "text": "3.1 T-teste:"
+  },
+  {
+    "objectID": "Atividade_4/index.html#pearson",
+    "href": "Atividade_4/index.html#pearson",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "3.2 Pearson:",
+    "text": "3.2 Pearson:"
+  },
+  {
+    "objectID": "Atividade_4/index.html#anova",
+    "href": "Atividade_4/index.html#anova",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "3.3 ANOVA:",
+    "text": "3.3 ANOVA:\n\nTabelaFigura"
+  },
+  {
+    "objectID": "Atividade_4/index.html#resultados-1",
+    "href": "Atividade_4/index.html#resultados-1",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "3.4 Resultados",
+    "text": "3.4 Resultados\n\n\n\n\n\n\nVariável\nTeste\nValor de p\n\n\n\n\nTonsilas palatinas\nANOVA\n0,008\n\n\nTonsila faríngea\nTeste t\n0,043\n\n\n\n\nVariável desfecho: pressão máxima da língua (kPa).\n\n\n\nTonsilas palatinas — teste de Tukey\n\nA diferença significativa ocorreu entre:\n\nGraus 0 e I: 45,3 kPa;\nGrau II: 31,2 kPa.\n\n\n\n\\(p = 0{,}009\\)"
+  },
+  {
+    "objectID": "Atividade_4/index.html#principais-achados",
+    "href": "Atividade_4/index.html#principais-achados",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "4.1 Principais Achados:",
+    "text": "4.1 Principais Achados:\n\n\nAs obstruções mecânicas, relacionadas às tonsilas palatinas e à tonsila faríngea, apresentaram relação com a redução da pressão máxima da língua.\nNão foram encontradas diferenças significativas na pressão máxima da língua em relação aos diferentes tipos de oclusão dentária analisados.\nA avaliação da pressão da língua pode ajudar a identificar possíveis alterações e orientar um tratamento mais individualizado para crianças respiradoras orais."
+  },
+  {
+    "objectID": "Atividade_4/index.html#importância-do-teste-de-associação",
+    "href": "Atividade_4/index.html#importância-do-teste-de-associação",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "4.2 Importância do Teste de Associação:",
+    "text": "4.2 Importância do Teste de Associação:\n\n\nOs testes t de Student e ANOVA permitiram verificar diferenças na pressão máxima da língua entre os grupos analisados.\nO pós-teste de Tukey identificou entre quais classificações das tonsilas palatinas ocorreu a diferença estatisticamente significativa."
+  },
+  {
+    "objectID": "Atividade_4/index.html#contribuição-para-a-sociedade",
+    "href": "Atividade_4/index.html#contribuição-para-a-sociedade",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "4.3 Contribuição para a Sociedade:",
+    "text": "4.3 Contribuição para a Sociedade:\n\n\nO estudo contribui para compreender a relação entre a respiração oral e a pressão da língua em crianças.\nOs resultados reforçam a importância de:\n\nidentificar precocemente possíveis alterações;\napoiar a avaliação multiprofissional;\norientar o acompanhamento e o tratamento das crianças."
+  },
+  {
+    "objectID": "Atividade_4/index.html#contextualização-e-motivação",
+    "href": "Atividade_4/index.html#contextualização-e-motivação",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "1.2 Contextualização e Motivação:",
+    "text": "1.2 Contextualização e Motivação:\n\n\nA respiração nasal contribui para a proteção das vias aéreas e para o desenvolvimento adequado das estruturas da face e da boca.\nA respiração oral pode ser causada por obstruções mecânicas ou por condições como a rinite.\nCrianças respiradoras orais podem apresentar alterações na fala, deglutição, oclusão dentária e posição da língua.\nApesar dessas alterações, ainda existiam poucos estudos relacionando a causa da respiração oral à pressão máxima da língua."
+  },
+  {
+    "objectID": "Atividade_4/index.html#resultados",
+    "href": "Atividade_4/index.html#resultados",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "2.6 Resultados:",
+    "text": "2.6 Resultados:\n\n\nHomens: com maior narcisismo (NPI; t, p &lt; 0,001);\nMulheres: com maior autoestima(Rosenberg; t, p = 0,01), ansiedade (BAI; t, p &lt; 0,001) e depressão (BDI; t, p = 0,008)\n\n\n\n\n\n\n\n\n\nCorrelações significativas positivas:\n\nNarcisismo x Autoestima;\nAnsiedade x Depressão;\nDepressão x Desesperança;\nDesesperança x Autoestima. *\n\n\n\n\n\n\n\n\nCorrelações significativas negativas:\n\nAutoestima x Depressão;\nAutoestima x Ansiedade;\nAnsiedade x Depressão.\n\n\n\n\n\n\n\n\n\nNarcisismo por curso: Maior média em Exatas e menor em Humanas (NPI; F, p &lt; 0,001)\nAutoestima por curso: Maior média em Humanas e menor em Exatas (Rosenberg; F, p &lt; 0,001)"
+  },
+  {
+    "objectID": "Atividade_4/index.html#tabela-1",
+    "href": "Atividade_4/index.html#tabela-1",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "3.1 Tabela 1",
+    "text": "3.1 Tabela 1"
+  },
+  {
+    "objectID": "Atividade_4/index.html#tabela-1.2",
+    "href": "Atividade_4/index.html#tabela-1.2",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "3.2 Tabela 1.2",
+    "text": "3.2 Tabela 1.2"
+  },
+  {
+    "objectID": "Atividade_4/index.html#tabela-2.1",
+    "href": "Atividade_4/index.html#tabela-2.1",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "3.3 Tabela 2.1",
+    "text": "3.3 Tabela 2.1"
+  },
+  {
+    "objectID": "Atividade_4/index.html#tabela-anova",
+    "href": "Atividade_4/index.html#tabela-anova",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "3.2 Tabela ANOVA",
+    "text": "3.2 Tabela ANOVA"
+  },
+  {
+    "objectID": "Atividade_4/index.html#tabela-teste_t",
+    "href": "Atividade_4/index.html#tabela-teste_t",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "3.2 Tabela Teste_T",
+    "text": "3.2 Tabela Teste_T"
+  },
+  {
+    "objectID": "Atividade_4/index.html#tabela-teste-t",
+    "href": "Atividade_4/index.html#tabela-teste-t",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "3.3 Tabela Teste-T",
+    "text": "3.3 Tabela Teste-T"
+  },
+  {
+    "objectID": "Atividade_4/index.html#resultados-2",
+    "href": "Atividade_4/index.html#resultados-2",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "3.4 Resultados",
+    "text": "3.4 Resultados\n\nVariável desfecho: pressão máxima da língua (kPa).\n\n\n\n3.4.1 Resultados gerais\n\n\n\nVariável\nTeste\nValor de p\n\n\n\n\nTonsilas palatinas\nANOVA\n0,008\n\n\nTonsila faríngea\nTeste t\n0,043\n\n\n\n\n\n3.4.2 Pós-teste de Tukey\n\nA diferença significativa ocorreu entre:\n\nGraus 0 e I: 45,3 kPa;\nGrau II: 31,2 kPa.\n\n\n\\[\np=0{,}009\n\\]"
+  },
+  {
+    "objectID": "Atividade_4/index.html#tabela-anova-1",
+    "href": "Atividade_4/index.html#tabela-anova-1",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "3.2 Tabela ANOVA",
+    "text": "3.2 Tabela ANOVA"
+  },
+  {
+    "objectID": "Atividade_4/index.html#tabela-anova-e-teste-t-oclusão-dentária",
+    "href": "Atividade_4/index.html#tabela-anova-e-teste-t-oclusão-dentária",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "3.1 Tabela ANOVA e Teste-T (Oclusão Dentária)",
+    "text": "3.1 Tabela ANOVA e Teste-T (Oclusão Dentária)"
+  },
+  {
+    "objectID": "Atividade_4/index.html#oclusão-dentária-anova-e-teste-t",
+    "href": "Atividade_4/index.html#oclusão-dentária-anova-e-teste-t",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "3.1 Oclusão Dentária — ANOVA e Teste-T",
+    "text": "3.1 Oclusão Dentária — ANOVA e Teste-T"
+  },
+  {
+    "objectID": "Atividade_4/index.html#anova-e-teste-t-oclusão-dentária",
+    "href": "Atividade_4/index.html#anova-e-teste-t-oclusão-dentária",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "3.1 ANOVA e Teste-T — Oclusão Dentária",
+    "text": "3.1 ANOVA e Teste-T — Oclusão Dentária"
+  },
+  {
+    "objectID": "Atividade_4/index.html#anova-etiologia-da-respiração-oral",
+    "href": "Atividade_4/index.html#anova-etiologia-da-respiração-oral",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "3.2 ANOVA — Etiologia da Respiração Oral",
+    "text": "3.2 ANOVA — Etiologia da Respiração Oral"
+  },
+  {
+    "objectID": "Atividade_4/index.html#teste-t-etiologia-da-respiração-oral",
+    "href": "Atividade_4/index.html#teste-t-etiologia-da-respiração-oral",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "3.3 Teste-T — Etiologia da Respiração Oral",
+    "text": "3.3 Teste-T — Etiologia da Respiração Oral"
+  },
+  {
+    "objectID": "Atividade_5/index.html#anova-clássica",
+    "href": "Atividade_5/index.html#anova-clássica",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "1.1 ANOVA Clássica",
+    "text": "1.1 ANOVA Clássica\n\n\n\nObjetivo:\nComparar médias de k grupos\n\nHipótese:\n\\[\n\\begin{cases}\nH_0: \\mu_1 = \\mu_2 = \\cdots = \\mu_k \\\\\nH_1: \\exists\\, i,j \\text{ tal que } \\mu_i \\neq \\mu_j\n\\end{cases}\n\\]\n\nEstatística de teste:\n\\[\nF =\n\\frac{QM_{Entre}}{QM_{Dentro}}\n=\n\\frac{\\frac{SQ_{Entre}}{k-1}}\n{\\frac{SQ_{Dentro}}{N-k}}\n\\]\n\n\n\\(QM_{Dentro}\\) é um estimador não viesado para \\(\\sigma^2\\)\n\\[\nE(QM_{Dentro}) = \\sigma^2\n\\]\n\n\n\n\n\nSuposições:\n\nIndependência\n\nNormalidade\n\nHomocedasticidade\n\n\\[\n\\sigma_1^2 = \\cdots = \\sigma_k^2\n\\]\n\n\n\n\n\nInterpretação do teste:\n\n\\(F \\approx 1\\): a variação entre as médias dos grupos é semelhante em relação à variação dentro dos grupos\n\\(F\\) elevado: a variação entre as médias dos grupos é maior em relação à variação dentro dos grupos\n\\(p\\)-valor &lt; \\(\\alpha\\): rejeitamos \\(H_0\\)"
+  },
+  {
+    "objectID": "Atividade_5/index.html#teste-de-tukey",
+    "href": "Atividade_5/index.html#teste-de-tukey",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "1.3 Teste de Tukey",
+    "text": "1.3 Teste de Tukey\n\nObjetivo:\nIdentificar quais pares de médias diferem após rejeitar \\(H_0\\) na ANOVA\n\nEstatística de teste:\n\\[\nq_{ij} =\n\\frac{\\bar{y}_i - \\bar{y}_j}\n{\\sqrt{\\frac{{QM_{Dentro}}}{n}}}\n\\]\n\nCompara pares de médias \\(i\\) e \\(j\\)\nValores altos de \\(q_{ij}\\) indicam diferença significativa"
+  },
+  {
+    "objectID": "Atividade_5/index.html#o-papel-da-homogeneidade",
+    "href": "Atividade_5/index.html#o-papel-da-homogeneidade",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "1.2 O papel da Homogeneidade",
+    "text": "1.2 O papel da Homogeneidade\n\n\n\nOnde é utilizada?\n\nA homogeneidade aparece no denominador:\n\n\\[\nQM_{\\text{Dentro}}\n\\]\n\nEstima uma variância comum para todos os grupos\n\n\\[\nF =\n\\frac{QM_{\\text{Entre}}}\n{\\color{#2563eb}{QM_{\\text{Dentro}}}}\n=\n\\frac{\n\\dfrac{SQ_{\\text{Entre}}}{k-1}\n}{\n\\color{#2563eb}{\n\\dfrac{SQ_{\\text{Dentro}}}{N-k}\n}\n}\n\\]\n\n\n\n\n\nO problema da heterogeneidade\nQuando:\n\\[\n\\sigma_i^2 \\neq \\sigma_j^2\n\\]\n\n\\(QM_{\\text{Dentro}}\\) pode não representar corretamente o erro\nA confiabilidade da estatística \\(F\\) pode ser comprometida"
+  },
+  {
+    "objectID": "Atividade_5/index.html#anova-de-welch-1",
+    "href": "Atividade_5/index.html#anova-de-welch-1",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "2.1 ANOVA de Welch",
+    "text": "2.1 ANOVA de Welch\n\n\n\nQuando usar?\nQuando a hipótese de homocedasticidade não é satisfeita\n\n\n\nEstatística\n\\[\nF_W =\n\\frac{\n\\sum w_i(\\bar{y}_i-\\bar{y}_w)^2/(k-1)\n}{\n1+\\frac{2(k-2)}{k^2-1}\n\\sum\\frac{1}{n_i-1}\n\\left(1-\\frac{w_i}{\\sum w_i}\\right)^2\n}\n\\]\n\n\n\n\n\nIdeia\n\nCada grupo tem sua própria variância\nGrupos com menor variância recebem mais peso\n\n\\[\nw_i=\\frac{n_i}{s_i^2}\n\\]\n\n\n\n\n\nInterpretação de \\(\\boldsymbol{F_W}\\)\n\nNumerador: diferença ponderada entre as médias\nDenominador: correção para variâncias diferentes"
+  },
+  {
+    "objectID": "Atividade_5/index.html#comparação-da-estatística",
+    "href": "Atividade_5/index.html#comparação-da-estatística",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "2.2 Comparação da Estatística",
+    "text": "2.2 Comparação da Estatística\n\n\\[\n\\color{#052034}{\nF\n=\n\\frac{\n\\frac{\\color{#7C3AED}{SQ_{\\text{Entre}}}}{k-1}\n}{\n\\frac{\\color{#2563eb}{SQ_{\\text{Dentro}}}}{N-k}\n}\n=\n\\frac{\n\\frac{1}{k-1}\n\\sum_{i=1}^k\nn_i\n(\\bar{y}_i-\\bar{y})^2\n}{\n\\frac{1}{N-k}\n\\sum_{i=1}^k \\sum_{j=1}^{n_i}\n(y_{ij}-\\bar{y}_i)^2\n}\n\\sim\nF_{k-1,\\,N-k}\n}\n\\]\n\n\\[\n\\color{#052034}{\nF_W =\n\\frac{\n\\frac{1}{k-1}\n\\sum_i\nw_i\n(\\bar{y}_i-\\bar{y}_w)^2\n}{\n1+\n\\frac{2(k-2)}{k^2-1}\n\\sum_i\n\\frac{1}{n_i-1}\n\\left(\n1-\\frac{w_i}{\\sum_i w_i}\n\\right)^2\n}\n\\sim\nF_{k-1,\\,\\nu}\n\\;;\\;\n\\nu \\approx\n\\frac{k^2-1}{\n3\\displaystyle\\sum_i\n\\frac{\\left(1-w_i/\\sum_i w_i\\right)^2}{n_i-1}\n}\n}\n\\]"
+  },
+  {
+    "objectID": "Atividade_5/index.html#comparação-das-comparações-múltiplas",
+    "href": "Atividade_5/index.html#comparação-das-comparações-múltiplas",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "3.1 Comparação das comparações múltiplas",
+    "text": "3.1 Comparação das comparações múltiplas\n\n\nApós rejeitar a igualdade das médias, queremos descobrir quais pares de médias diferem.\n\n\n\n\nLimitação do Tukey\n\\[\nq_{ij} =\n\\frac{\\bar{y}_i - \\bar{y}_j}\n{\\sqrt{\n\\frac{\\color{#2563eb}{MQ_{\\text{Dentro}}}}{n}\n}}\n\\sim q_{k,\\color{#2563eb}{gl}}\n\\]\n\nNecessita de homocedasticidade\n\nUsa o mesmo erro para todos os pares\n\n\n\n\n\n\nEstatística de Games-Howell\n\\[\nq_{ij} =\n\\frac{\\bar{y}_i - \\bar{y}_j}\n{\\sqrt{\n\\color{#D97706}{\n\\frac{s_i^2}{n_i} + \\frac{s_j^2}{n_j}\n}\n}}\n\\sim q_{k,\\color{#D97706}{gl_{ij}}}\n\\]\n\nCada par \\((i,j)\\) usa variância específica\n\nAs variâncias são diferentes\nOs tamanhos amostrais podem ser diferentes\nGeneraliza o teste t de Welch"
+  },
+  {
+    "objectID": "Atividade_5/index.html#lógica",
+    "href": "Atividade_5/index.html#lógica",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "3.2 Lógica",
+    "text": "3.2 Lógica\n\n\n\nANOVA\n\nHomocedasticidade\nPós teste de Tukey\n\n\n\n\n\n\nWelch\n\nVariância por grupo\n\nPonderação pela precisão\n\n\n\n\n\n\nGames-Howell\n\nVariância por grupo\nComparação múltipla"
+  },
+  {
+    "objectID": "apresentacao_anova_welch.html#roteiro",
+    "href": "apresentacao_anova_welch.html#roteiro",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "",
+    "text": "O que a ANOVA clássica testa\nEstatística \\(F\\) e suas suposições\nConsequências da heterogeneidade\n\n\n\n\n\n\nAjuste da ANOVA de Welch\nComparações com Games–Howell\nQuando usar cada procedimento"
+  },
+  {
+    "objectID": "apresentacao_anova_welch.html#contexto-1",
+    "href": "apresentacao_anova_welch.html#contexto-1",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "1. Contexto",
+    "text": "1. Contexto"
+  },
+  {
+    "objectID": "apresentacao_anova_welch.html#o-que-a-anova-clássica-testa",
+    "href": "apresentacao_anova_welch.html#o-que-a-anova-clássica-testa",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "O que a ANOVA clássica testa?",
+    "text": "O que a ANOVA clássica testa?\nConsidere \\(k\\) grupos independentes, com médias populacionais \\(\\mu_1,\\ldots,\\mu_k\\).\n\n\n\nHipótese nula\n\\[\nH_0:\\mu_1=\\mu_2=\\cdots=\\mu_k\n\\]\nAs médias populacionais são iguais.\n\n\n\nHipótese alternativa\n\\[\nH_1:\\text{pelo menos uma média difere}\n\\]\nA ANOVA não informa diretamente quais grupos diferem."
+  },
+  {
+    "objectID": "apresentacao_anova_welch.html#de-onde-vem-a-estatística-f",
+    "href": "apresentacao_anova_welch.html#de-onde-vem-a-estatística-f",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "De onde vem a estatística \\(F\\)?",
+    "text": "De onde vem a estatística \\(F\\)?\nA variabilidade total é separada em duas partes:\n\\[\nSQ_T=SQ_{\\text{entre}}+SQ_{\\text{dentro}}\n\\]\n\n\n\\[\nQM_{\\text{entre}}=\\frac{SQ_{\\text{entre}}}{k-1}\n\\]\nVariação explicada pelas diferenças entre as médias.\n\n\\[\nQM_{\\text{dentro}}=\\frac{SQ_{\\text{dentro}}}{N-k}\n\\]\nVariação existente dentro dos grupos.\n\n\n\n\\[\nF=\\frac{QM_{\\text{entre}}}{QM_{\\text{dentro}}}\n\\]\nQuanto maior \\(F\\), maior a evidência contra \\(H_0\\)."
+  },
+  {
+    "objectID": "apresentacao_anova_welch.html#suposições-principais",
+    "href": "apresentacao_anova_welch.html#suposições-principais",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "Suposições principais",
+    "text": "Suposições principais\n\nPara a ANOVA clássica\n\nIndependência: observações independentes dentro e entre os grupos.\nNormalidade: erros aproximadamente normais em cada população.\nHomocedasticidade: mesma variância populacional em todos os grupos.\n\n\\[\n\\sigma_1^2=\\sigma_2^2=\\cdots=\\sigma_k^2\n\\]"
+  },
+  {
+    "objectID": "apresentacao_anova_welch.html#onde-a-homogeneidade-é-utilizada",
+    "href": "apresentacao_anova_welch.html#onde-a-homogeneidade-é-utilizada",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "Onde a homogeneidade é utilizada?",
+    "text": "Onde a homogeneidade é utilizada?\nNa ANOVA clássica, as variâncias dos grupos são combinadas em uma estimativa comum:\n\\[\nQM_{\\text{dentro}}\n=\n\\frac{\\displaystyle\\sum_{i=1}^{k}(n_i-1)s_i^2}{N-k}\n\\]\n\nEssa variância combinada aparece no denominador da estatística \\(F\\) e também no teste de Tukey. Se as variâncias forem muito diferentes, ela pode representar mal os grupos."
+  },
+  {
+    "objectID": "apresentacao_anova_welch.html#o-problema-das-variâncias-diferentes",
+    "href": "apresentacao_anova_welch.html#o-problema-das-variâncias-diferentes",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "O problema das variâncias diferentes",
+    "text": "O problema das variâncias diferentes\nQuando \\(\\sigma_1^2,\\ldots,\\sigma_k^2\\) são diferentes, principalmente com tamanhos amostrais desiguais:\n\n\n\nErro tipo I\nA taxa real de falsos positivos pode se afastar de \\(\\alpha\\).\n\n\n\nGrupo dominante\nGrupos maiores ou mais variáveis podem influenciar excessivamente o teste.\n\n\n\nDecisão inadequada\nO valor de \\(F\\) e o \\(p\\)-valor podem ficar distorcidos.\n\n\n\n\nO problema não é simplesmente “ter variâncias diferentes”, mas usar uma variância comum quando essa aproximação não é adequada."
+  },
+  {
+    "objectID": "apresentacao_anova_welch.html#comparações-múltiplas-tukey",
+    "href": "apresentacao_anova_welch.html#comparações-múltiplas-tukey",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "Comparações múltiplas: Tukey",
+    "text": "Comparações múltiplas: Tukey\nApós uma ANOVA significativa, o teste de Tukey compara os pares de médias controlando o erro familiar.\nPara tamanhos amostrais diferentes, a estatística de Tukey–Kramer é:\n\\[\nq_{ij}=\n\\frac{|\\bar X_i-\\bar X_j|}\n{\\sqrt{\\dfrac{QM_{\\text{dentro}}}{2}\n\\left(\\dfrac{1}{n_i}+\\dfrac{1}{n_j}\\right)}}\n\\]\n\nO mesmo \\(QM_{\\text{dentro}}\\) é utilizado em todas as comparações. Portanto, o método continua dependendo da homogeneidade das variâncias."
+  },
+  {
+    "objectID": "apresentacao_anova_welch.html#anova-de-welch",
+    "href": "apresentacao_anova_welch.html#anova-de-welch",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "2. ANOVA de Welch",
+    "text": "2. ANOVA de Welch"
+  },
+  {
+    "objectID": "apresentacao_anova_welch.html#o-que-muda-na-anova-de-welch",
+    "href": "apresentacao_anova_welch.html#o-que-muda-na-anova-de-welch",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "O que muda na ANOVA de Welch?",
+    "text": "O que muda na ANOVA de Welch?\n\n\n\nANOVA clássica\n\nUtiliza uma variância combinada.\nPressupõe homocedasticidade.\nGraus de liberdade usuais: \\(k-1\\) e \\(N-k\\).\n\n\n\n\nANOVA de Welch\n\nNão combina as variâncias em uma única estimativa.\nConsidera \\(s_i^2\\) e \\(n_i\\) separadamente.\nAjusta a estatística e os graus de liberdade."
+  },
+  {
+    "objectID": "apresentacao_anova_welch.html#pesos-e-média-ponderada",
+    "href": "apresentacao_anova_welch.html#pesos-e-média-ponderada",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "Pesos e média ponderada",
+    "text": "Pesos e média ponderada\nCada grupo recebe um peso proporcional à precisão de sua média:\n\\[\nw_i=\\frac{n_i}{s_i^2},\n\\qquad\nW=\\sum_{i=1}^{k}w_i\n\\]\n\\[\n\\bar X_w=\\frac{\\displaystyle\\sum_{i=1}^{k}w_i\\bar X_i}{W}\n\\]\n\nUm grupo com maior \\(n_i\\) recebe mais peso; um grupo com maior variância \\(s_i^2\\) recebe menos peso."
+  },
+  {
+    "objectID": "apresentacao_anova_welch.html#estatística-de-welch",
+    "href": "apresentacao_anova_welch.html#estatística-de-welch",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "Estatística de Welch",
+    "text": "Estatística de Welch\nDefina:\n\\[\nA=\\frac{\\displaystyle\\sum_{i=1}^{k}w_i(\\bar X_i-\\bar X_w)^2}{k-1}\n\\]\n\\[\nC=\\sum_{i=1}^{k}\n\\frac{\\left(1-\\dfrac{w_i}{W}\\right)^2}{n_i-1}\n\\]\nEntão:\n\\[\nF_W=\n\\frac{A}\n{1+\\dfrac{2(k-2)}{k^2-1}C}\n\\]"
+  },
+  {
+    "objectID": "apresentacao_anova_welch.html#graus-de-liberdade-ajustados",
+    "href": "apresentacao_anova_welch.html#graus-de-liberdade-ajustados",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "Graus de liberdade ajustados",
+    "text": "Graus de liberdade ajustados\nA estatística \\(F_W\\) é comparada a uma distribuição \\(F\\) aproximada com:\n\\[\n\\nu_1=k-1\n\\]\n\\[\n\\nu_2=\\frac{k^2-1}{3C}\n\\]\n\nOs graus de liberdade podem ser fracionários. Esse ajuste ajuda a manter a taxa de erro tipo I quando as variâncias e os tamanhos amostrais são diferentes."
+  },
+  {
+    "objectID": "apresentacao_anova_welch.html#lógica-estatística-do-ajuste",
+    "href": "apresentacao_anova_welch.html#lógica-estatística-do-ajuste",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "Lógica estatística do ajuste",
+    "text": "Lógica estatística do ajuste\n\n\n\n\n\nflowchart LR\n  A[Variâncias diferentes] --&gt; B[Pesos específicos]\n  B --&gt; C[Média ponderada]\n  C --&gt; D[Correção de F]\n  D --&gt; E[Graus de liberdade ajustados]\n\n\n\n\n\n\n\nWelch compara as médias sem fingir que todos os grupos possuem a mesma precisão."
+  },
+  {
+    "objectID": "apresentacao_anova_welch.html#gameshowell",
+    "href": "apresentacao_anova_welch.html#gameshowell",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "3. Games–Howell",
+    "text": "3. Games–Howell"
+  },
+  {
+    "objectID": "apresentacao_anova_welch.html#por-que-não-usar-tukey-após-welch",
+    "href": "apresentacao_anova_welch.html#por-que-não-usar-tukey-após-welch",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "Por que não usar Tukey após Welch?",
+    "text": "Por que não usar Tukey após Welch?\n\n\n\nTukey–Kramer\n\nEmprega \\(QM_{\\text{dentro}}\\) comum.\nUsa os mesmos graus de liberdade residuais.\nÉ adequado sob homogeneidade de variâncias.\n\n\n\n\nGames–Howell\n\nUsa as variâncias dos dois grupos comparados.\nCalcula graus de liberdade para cada par.\nNão exige tamanhos amostrais iguais."
+  },
+  {
+    "objectID": "apresentacao_anova_welch.html#estatística-de-gameshowell",
+    "href": "apresentacao_anova_welch.html#estatística-de-gameshowell",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "Estatística de Games–Howell",
+    "text": "Estatística de Games–Howell\nPara comparar os grupos \\(i\\) e \\(j\\):\n\\[\nq_{ij}=\n\\frac{|\\bar X_i-\\bar X_j|}\n{\\sqrt{\\dfrac{1}{2}\n\\left(\\dfrac{s_i^2}{n_i}+\\dfrac{s_j^2}{n_j}\\right)}}\n\\]\nOs graus de liberdade do par são aproximados por Welch–Satterthwaite:\n\\[\n\\nu_{ij}=\n\\frac{\\left(\\dfrac{s_i^2}{n_i}+\\dfrac{s_j^2}{n_j}\\right)^2}\n{\\dfrac{(s_i^2/n_i)^2}{n_i-1}\n+\\dfrac{(s_j^2/n_j)^2}{n_j-1}}\n\\]"
+  },
+  {
+    "objectID": "apresentacao_anova_welch.html#como-interpretar-o-gameshowell",
+    "href": "apresentacao_anova_welch.html#como-interpretar-o-gameshowell",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "Como interpretar o Games–Howell?",
+    "text": "Como interpretar o Games–Howell?\nPara cada par de grupos, o procedimento fornece:\n\ndiferença estimada entre as médias;\nintervalo de confiança simultâneo;\n\\(p\\)-valor ajustado para comparações múltiplas.\n\n\nSe o \\(p\\)-valor ajustado for menor que \\(\\alpha\\), há evidência de diferença entre as médias daquele par."
+  },
+  {
+    "objectID": "apresentacao_anova_welch.html#escolha-do-procedimento",
+    "href": "apresentacao_anova_welch.html#escolha-do-procedimento",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "Escolha do procedimento",
+    "text": "Escolha do procedimento\n\n\n\n\n\n\n\n\nSituação\nTeste global\nPós-hoc\n\n\n\n\nVariâncias semelhantes\nANOVA clássica\nTukey ou Tukey–Kramer\n\n\nVariâncias diferentes\nANOVA de Welch\nGames–Howell\n\n\nDúvida sobre a igualdade das variâncias\nAvaliar gráficos e teste de Levene\nEscolher de forma coerente com o teste global\n\n\n\n\nO pós-hoc deve respeitar as mesmas condições consideradas no teste global."
+  },
+  {
+    "objectID": "apresentacao_anova_welch.html#conclusão",
+    "href": "apresentacao_anova_welch.html#conclusão",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "Conclusão",
+    "text": "Conclusão\n\n\n\nANOVA clássica\nCompara médias usando uma variância residual comum.\n\n\n\nWelch\nPondera os grupos e ajusta os graus de liberdade.\n\n\n\nGames–Howell\nCompara pares utilizando variâncias e graus de liberdade próprios.\n\n\n\n\nQuando há heterogeneidade de variâncias, especialmente com amostras de tamanhos diferentes, Welch e Games–Howell formam uma combinação mais adequada."
+  },
+  {
+    "objectID": "apresentacao_anova_welch.html#referências",
+    "href": "apresentacao_anova_welch.html#referências",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "Referências",
+    "text": "Referências\n\n\nGAMES, P. A.; HOWELL, J. F. Pairwise multiple comparison procedures with unequal n’s and/or variances. Journal of Educational Statistics, v. 1, n. 2, p. 113–125, 1976.\nMONTGOMERY, D. C. Design and Analysis of Experiments. 10. ed. Hoboken: Wiley, 2019.\nTUKEY, J. W. Comparing individual means in the analysis of variance. Biometrics, v. 5, n. 2, p. 99–114, 1949.\nWELCH, B. L. On the comparison of several mean values: an alternative approach. Biometrika, v. 38, n. 3/4, p. 330–336, 1951."
+  },
+  {
+    "objectID": "apresentacao_anova_welch.html#obrigado",
+    "href": "apresentacao_anova_welch.html#obrigado",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "Obrigado!",
+    "text": "Obrigado!"
+  },
+  {
+    "objectID": "Atividade_5/atividade_avaliativa_4_anova_welch_v2.html#a-pergunta-da-anova",
+    "href": "Atividade_5/atividade_avaliativa_4_anova_welch_v2.html#a-pergunta-da-anova",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "2.1 A pergunta da ANOVA",
+    "text": "2.1 A pergunta da ANOVA\n\nTemos \\(k\\) grupos independentes. As diferenças observadas entre suas médias podem ser atribuídas apenas à variabilidade amostral?\n\n\n\\[\nH_0:\\mu_1=\\mu_2=\\cdots=\\mu_k\n\\qquad\\text{versus}\\qquad\nH_1:\\text{pelo menos uma média difere}\n\\]"
+  },
+  {
+    "objectID": "Atividade_5/atividade_avaliativa_4_anova_welch_v2.html#duas-fontes-de-variação",
+    "href": "Atividade_5/atividade_avaliativa_4_anova_welch_v2.html#duas-fontes-de-variação",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "2.2 Duas fontes de variação",
+    "text": "2.2 Duas fontes de variação\n\n\n\n2.2.1 Entre os grupos\nMede o afastamento das médias dos grupos em relação à média geral.\n\\[\nQM_{Entre}=\\frac{SQ_{Entre}}{k-1}\n\\]\n\n\n\n\n\n2.2.2 Dentro dos grupos\nMede a variabilidade das observações em torno da média de cada grupo.\n\\[\nQM_{Dentro}=\\frac{SQ_{Dentro}}{N-k}\n\\]\n\n\n\n\\[\nF=\\frac{QM_{Entre}}{QM_{Dentro}}\n\\]"
+  },
+  {
+    "objectID": "Atividade_5/atividade_avaliativa_4_anova_welch_v2.html#quando-a-anova-clássica-funciona-bem",
+    "href": "Atividade_5/atividade_avaliativa_4_anova_welch_v2.html#quando-a-anova-clássica-funciona-bem",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "2.3 Quando a ANOVA clássica funciona bem?",
+    "text": "2.3 Quando a ANOVA clássica funciona bem?\n\n\n\n2.3.1 1. Independência\nUma observação não determina o valor de outra.\n\n\n\n\n\n2.3.2 2. Normalidade\nOs erros são aproximadamente normais em cada grupo.\n\n\n\n\n\n2.3.3 3. Homocedasticidade\n\\[\n\\sigma_1^2=\\cdots=\\sigma_k^2\n\\]"
+  },
+  {
+    "objectID": "Atividade_5/atividade_avaliativa_4_anova_welch_v2.html#a-variância-comum-aparece-duas-vezes",
+    "href": "Atividade_5/atividade_avaliativa_4_anova_welch_v2.html#a-variância-comum-aparece-duas-vezes",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "2.4 A variância comum aparece duas vezes",
+    "text": "2.4 A variância comum aparece duas vezes\n\n\n2.4.1 No teste global\n\\[\nF=\\frac{QM_{Entre}}{\\color{red}{QM_{Dentro}}}\n\\]\n\\(QM_{Dentro}\\) combina as variâncias de todos os grupos.\n\n\n\n2.4.2 Nas comparações de Tukey–Kramer\n\\[\nq_{ij}=\n\\frac{|\\bar y_i-\\bar y_j|}\n{\\sqrt{\\dfrac{\\color{red}{QM_{Dentro}}}{2}\n\\left(\\dfrac1{n_i}+\\dfrac1{n_j}\\right)}}\n\\]\n\n\nOs dois procedimentos tratam \\(QM_{Dentro}\\) como uma boa representação da variância residual de todos os grupos."
+  },
+  {
+    "objectID": "Atividade_5/atividade_avaliativa_4_anova_welch_v2.html#e-se-as-variâncias-forem-diferentes",
+    "href": "Atividade_5/atividade_avaliativa_4_anova_welch_v2.html#e-se-as-variâncias-forem-diferentes",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "2.5 E se as variâncias forem diferentes?",
+    "text": "2.5 E se as variâncias forem diferentes?\n\n\n\n\\[\n\\sigma_1^2\\neq\\sigma_2^2\\neq\\cdots\\neq\\sigma_k^2\n\\]\nUma única variância combinada deixa de representar adequadamente todos os grupos.\n\n\n\n\n\nO nível real do teste pode se afastar de \\(\\alpha\\).\nA combinação de variâncias e amostras desiguais pode distorcer \\(F\\).\nO problema é maior quando o grupo mais variável tem o menor tamanho amostral.\n\n\n\nPrecisamos comparar as médias sem impor uma variância comum."
+  },
+  {
+    "objectID": "Atividade_5/atividade_avaliativa_4_anova_welch_v2.html#a-mudança-essencial",
+    "href": "Atividade_5/atividade_avaliativa_4_anova_welch_v2.html#a-mudança-essencial",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "4.1 A mudança essencial",
+    "text": "4.1 A mudança essencial\n\n\n\n4.1.1 ANOVA clássica\nCombina as variâncias em \\(QM_{Dentro}\\) e atribui peso principalmente pelo tamanho da amostra.\n\n\n\\[\n\\Longrightarrow\n\\]\n\n\n4.1.2 Welch\nMantém as variâncias separadas e pondera cada grupo pela precisão.\n\\[\nw_i=\\frac{n_i}{s_i^2}\n\\]"
+  },
+  {
+    "objectID": "Atividade_5/atividade_avaliativa_4_anova_welch_v2.html#como-os-pesos-funcionam",
+    "href": "Atividade_5/atividade_avaliativa_4_anova_welch_v2.html#como-os-pesos-funcionam",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "4.2 Como os pesos funcionam?",
+    "text": "4.2 Como os pesos funcionam?\n\\[\nw_i=\\frac{n_i}{s_i^2}\n\\qquad\nW=\\sum_{i=1}^{k}w_i\n\\qquad\n\\bar y_w=\\frac{\\sum_{i=1}^{k}w_i\\bar y_i}{W}\n\\]\n\n\n\nMaior \\(n_i\\) \\(\\Rightarrow\\) maior precisão \\(\\Rightarrow\\) maior peso.\n\n\n\n\n\nMaior \\(s_i^2\\) \\(\\Rightarrow\\) menor precisão \\(\\Rightarrow\\) menor peso."
+  },
+  {
+    "objectID": "Atividade_5/atividade_avaliativa_4_anova_welch_v2.html#a-estatística-de-welch",
+    "href": "Atividade_5/atividade_avaliativa_4_anova_welch_v2.html#a-estatística-de-welch",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "4.3 A estatística de Welch",
+    "text": "4.3 A estatística de Welch\nDefina a correção:\n\\[\nC=\\sum_{i=1}^{k}\n\\frac{\\left(1-\\dfrac{w_i}{W}\\right)^2}{n_i-1}\n\\]\n\n\\[\nF_W=\n\\frac{\n\\dfrac{1}{k-1}\\sum_{i=1}^{k}w_i(\\bar y_i-\\bar y_w)^2\n}\n{\n1+\\dfrac{2(k-2)}{k^2-1}C\n}\n\\]"
+  },
+  {
+    "objectID": "Atividade_5/atividade_avaliativa_4_anova_welch_v2.html#por-que-os-graus-de-liberdade-mudam",
+    "href": "Atividade_5/atividade_avaliativa_4_anova_welch_v2.html#por-que-os-graus-de-liberdade-mudam",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "4.4 Por que os graus de liberdade mudam?",
+    "text": "4.4 Por que os graus de liberdade mudam?\n\\[\nF_W\\sim F_{\\nu_1,\\nu_2}\n\\]\n\\[\n\\nu_1=k-1\n\\qquad\\text{e}\\qquad\n\\nu_2=\\frac{k^2-1}{3C}\n\\]\n\n\n\\(\\nu_2\\) pode ser fracionário.\nO ajuste considera os tamanhos e as variâncias observadas.\nIsso melhora o controle do erro tipo I sob heterocedasticidade."
+  },
+  {
+    "objectID": "Atividade_5/atividade_avaliativa_4_anova_welch_v2.html#o-raciocínio-completo",
+    "href": "Atividade_5/atividade_avaliativa_4_anova_welch_v2.html#o-raciocínio-completo",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "4.5 O raciocínio completo",
+    "text": "4.5 O raciocínio completo\n\n\n\n1. Variâncias diferentes\n\n\n\\[\\rightarrow\\]\n\n\n2. Pesos específicos\n\n\n\\[\\rightarrow\\]\n\n\n3. Correção de \\(F\\)\n\n\n\\[\\rightarrow\\]\n\n\n4. Graus de liberdade ajustados\n\n\n\n\nWelch testa a igualdade das médias sem exigir homogeneidade das variâncias."
+  },
+  {
+    "objectID": "Atividade_5/atividade_avaliativa_4_anova_welch_v2.html#por-que-tukey-não-acompanha-welch",
+    "href": "Atividade_5/atividade_avaliativa_4_anova_welch_v2.html#por-que-tukey-não-acompanha-welch",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "6.1 Por que Tukey não acompanha Welch?",
+    "text": "6.1 Por que Tukey não acompanha Welch?\n\n\n\n\n\n\n\n\n\nAspecto\nTukey–Kramer\nGames–Howell\n\n\n\n\nVariância no denominador\n\\(QM_{Dentro}\\) comum\n\\(s_i^2\\) e \\(s_j^2\\) separadas\n\n\nGraus de liberdade\nIguais em todos os pares\nCalculados para cada par\n\n\nVariâncias iguais\nNecessárias\nNão necessárias\n\n\nTamanhos iguais\nNão são obrigatórios\nNão são obrigatórios\n\n\nCombinação usual\nANOVA clássica + Tukey\nWelch + Games–Howell"
+  },
+  {
+    "objectID": "Atividade_5/atividade_avaliativa_4_anova_welch_v2.html#comparação-entre-dois-grupos",
+    "href": "Atividade_5/atividade_avaliativa_4_anova_welch_v2.html#comparação-entre-dois-grupos",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "6.2 Comparação entre dois grupos",
+    "text": "6.2 Comparação entre dois grupos\nPara cada par \\((i,j)\\), o Games–Howell utiliza o erro-padrão:\n\\[\nEP_{ij}=\\sqrt{\\frac{s_i^2}{n_i}+\\frac{s_j^2}{n_j}}\n\\]\n\n\\[\nt_{ij}=\\frac{|\\bar y_i-\\bar y_j|}{EP_{ij}}\n\\]\n\nCada comparação utiliza apenas as variâncias dos dois grupos envolvidos."
+  },
+  {
+    "objectID": "Atividade_5/atividade_avaliativa_4_anova_welch_v2.html#graus-de-liberdade-de-cada-par",
+    "href": "Atividade_5/atividade_avaliativa_4_anova_welch_v2.html#graus-de-liberdade-de-cada-par",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "6.3 Graus de liberdade de cada par",
+    "text": "6.3 Graus de liberdade de cada par\nO ajuste de Welch–Satterthwaite é:\n\\[\n\\nu_{ij}=\n\\frac{\n\\left(\\dfrac{s_i^2}{n_i}+\\dfrac{s_j^2}{n_j}\\right)^2\n}\n{\n\\dfrac{(s_i^2/n_i)^2}{n_i-1}\n+\n\\dfrac{(s_j^2/n_j)^2}{n_j-1}\n}\n\\]\n\nComo \\(\\nu_{ij}\\) depende de \\(i\\) e \\(j\\), pares diferentes podem ter graus de liberdade diferentes."
+  },
+  {
+    "objectID": "Atividade_5/atividade_avaliativa_4_anova_welch_v2.html#o-que-o-resultado-informa",
+    "href": "Atividade_5/atividade_avaliativa_4_anova_welch_v2.html#o-que-o-resultado-informa",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "6.4 O que o resultado informa?",
+    "text": "6.4 O que o resultado informa?\nPara cada par de grupos, o Games–Howell apresenta:\n\n\n\n6.4.1 Diferença\n\\(\\bar y_i-\\bar y_j\\)\n\n\n\n\n\n6.4.2 Intervalo\nIntervalo de confiança simultâneo\n\n\n\n\n\n6.4.3 Decisão\n\\(p\\)-valor ajustado\n\n\n\nSe o \\(p\\)-valor ajustado for menor que \\(\\alpha\\), há evidência de diferença entre aquele par de médias."
+  },
+  {
+    "objectID": "Atividade_5/atividade_avaliativa_4_anova_welch_v2.html#qual-caminho-seguir",
+    "href": "Atividade_5/atividade_avaliativa_4_anova_welch_v2.html#qual-caminho-seguir",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "6.5 Qual caminho seguir?",
+    "text": "6.5 Qual caminho seguir?\n\n\n\n6.5.1 Variâncias semelhantes\n\nANOVA clássica\nTukey–Kramer, se necessário\n\n\n\n\n\n\n6.5.2 Variâncias diferentes\n\nANOVA de Welch\nGames–Howell, se necessário\n\n\n\n\nA escolha deve considerar o planejamento do estudo, os tamanhos amostrais, gráficos dos resíduos e evidências sobre a igualdade das variâncias."
+  },
+  {
+    "objectID": "Atividade_5/atividade_avaliativa_4_anova_welch_v2.html#síntese",
+    "href": "Atividade_5/atividade_avaliativa_4_anova_welch_v2.html#síntese",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "6.6 Síntese",
+    "text": "6.6 Síntese\n\n\n6.6.1 ANOVA clássica\nUsa uma variância residual comum para testar a igualdade das médias.\n\n\n\n6.6.2 Welch\nPondera os grupos pela precisão e ajusta os graus de liberdade.\n\n\n\n6.6.3 Games–Howell\nCompara os pares sem exigir uma variância comum.\n\n\nHeterogeneidade não impede a comparação das médias; ela exige um procedimento compatível com os dados."
+  },
+  {
+    "objectID": "Atividade_5/index.html#referências-1",
+    "href": "Atividade_5/index.html#referências-1",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "4.1 Referências",
+    "text": "4.1 Referências\n\n\nFISHER, R. A. (1925). Statistical Methods for Research Workers. Edinburgh: Oliver & Boyd.\nTUKEY, J. W. (1949). Comparing individual means in the analysis of variance. Biometrics, 5(2), 99–114.\nDelacre, M., Leys, C., Mora, Y. L., & Lakens, D. (2019). Taking Parametric Assumptions Seriously: Arguments for the Use of Welch’s F-test instead of the Classical F-test in One-Way ANOVA. International Review of Social Psychology, 32(1). DOI: 10.5334/irsp.198.\nMaxwell, S. E., Delaney, H. D., & Kelley, K. Designing Experiments and Analyzing Data: A Model Comparison Perspective.\nGAMES, P. A.; HOWELL, J. F. (1976). Pairwise multiple comparison procedures with unequal n’s and/or variances: A Monte Carlo study. Journal of Educational Statistics, 1(2), 113–125."
+  },
+  {
+    "objectID": "Atividade_5/index.html#lógica-dos-procedimentos",
+    "href": "Atividade_5/index.html#lógica-dos-procedimentos",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "3.2 Lógica dos procedimentos",
+    "text": "3.2 Lógica dos procedimentos\n\nANOVA clássica\n\nUsa uma variância comum e pressupõe homocedasticidade.\nPós-teste: Tukey–Kramer.\n\n\n\nANOVA de Welch\n\nConsidera a variância de cada grupo.\nAjusta a estatística \\(F\\) e os graus de liberdade.\n\n\n\nGames–Howell\n\nCompara os pares de médias após Welch.\nNão exige homogeneidade das variâncias."
+  },
+  {
+    "objectID": "Atividade_5/index.html#síntese-dos-métodos",
+    "href": "Atividade_5/index.html#síntese-dos-métodos",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "3.2 Síntese dos métodos",
+    "text": "3.2 Síntese dos métodos\n\nANOVA clássica\n\nUsa uma variância comum e pressupõe homocedasticidade\nPós-teste de Tukey para comparar os pares de médias\n\n\n\nANOVA de Welch\n\nConsidera a variância de cada grupo\nAjusta a estatística \\(F\\) e os graus de liberdade\n\n\n\nGames–Howell\n\nCompara os pares de médias após Welch\nNão exige homogeneidade das variâncias"
+  },
+  {
+    "objectID": "Atividade_5/index.html#comparação-das-estatísticas",
+    "href": "Atividade_5/index.html#comparação-das-estatísticas",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "2.2 Comparação das Estatísticas",
+    "text": "2.2 Comparação das Estatísticas\n\n\\[\n\\color{#052034}{\nF\n=\n\\frac{\n\\frac{\\color{#7C3AED}{SQ_{\\text{Entre}}}}{k-1}\n}{\n\\frac{\\color{#2563eb}{SQ_{\\text{Dentro}}}}{N-k}\n}\n=\n\\frac{\n\\frac{1}{k-1}\n\\sum_{i=1}^k\nn_i\n(\\bar{y}_i-\\bar{y})^2\n}{\n\\frac{1}{N-k}\n\\sum_{i=1}^k \\sum_{j=1}^{n_i}\n(y_{ij}-\\bar{y}_i)^2\n}\n\\sim\nF_{k-1,\\,N-k}\n}\n\\]\n\n\\[\n\\color{#052034}{\nF_W =\n\\frac{\n\\frac{1}{k-1}\n\\sum_i\nw_i\n(\\bar{y}_i-\\bar{y}_w)^2\n}{\n1+\n\\frac{2(k-2)}{k^2-1}\n\\sum_i\n\\frac{1}{n_i-1}\n\\left(\n1-\\frac{w_i}{\\sum_i w_i}\n\\right)^2\n}\n\\sim\nF_{k-1,\\,\\nu}\n\\;;\\;\n\\nu \\approx\n\\frac{k^2-1}{\n3\\displaystyle\\sum_i\n\\frac{\\left(1-w_i/\\sum_i w_i\\right)^2}{n_i-1}\n}\n}\n\\]"
+  },
+  {
+    "objectID": "Atividade_5/index.html#escolha-do-método-pós-hoc",
+    "href": "Atividade_5/index.html#escolha-do-método-pós-hoc",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "3.1 Escolha do método pós-hoc",
+    "text": "3.1 Escolha do método pós-hoc\n\n\n\n\nApós rejeitar a igualdade das médias, queremos descobrir quais pares de médias diferem\n\n\n\n\nLimitação do Tukey\n\\[\nq_{ij} =\n\\frac{\\bar{y}_i - \\bar{y}_j}\n{\\sqrt{\n\\frac{\\color{#2563eb}{QM_{\\text{Dentro}}}}{n}\n}}\n\\sim q_{k,\\color{#2563eb}{gl}}\n\\]\n\nNecessita de homocedasticidade\n\nUsa o mesmo erro para todos os pares\n\n\n\n\n\n\nEstatística de Games-Howell\n\\[\nt_{ij} =\n\\frac{\\bar{y}_i - \\bar{y}_j}\n{\\sqrt{\n\\color{#D97706}{\n\\frac{s_i^2}{n_i} + \\frac{s_j^2}{n_j}\n}\n}}\n\\sim t_{k,\\color{#D97706}{gl_{ij}}}\n\\]\n\nCada par \\((i,j)\\) usa variância específica\n\nPermite variâncias e tamanhos amostrais diferentes\nGeneraliza o teste \\(t\\) de Welch para comparações múltiplas"
+  },
+  {
+    "objectID": "Atividade_5/apresentacao_anova_welch.html",
+    "href": "Atividade_5/apresentacao_anova_welch.html",
+    "title": "ANOVA de Welch",
+    "section": "",
+    "text": "O que a ANOVA clássica testa\nEstatística \\(F\\) e suas suposições\nConsequências da heterogeneidade\n\n\n\n\n\n\nAjuste da ANOVA de Welch\nComparações com Games–Howell\nQuando usar cada procedimento"
+  },
+  {
+    "objectID": "Atividade_5/apresentacao_anova_welch.html#roteiro",
+    "href": "Atividade_5/apresentacao_anova_welch.html#roteiro",
+    "title": "ANOVA de Welch",
+    "section": "",
+    "text": "O que a ANOVA clássica testa\nEstatística \\(F\\) e suas suposições\nConsequências da heterogeneidade\n\n\n\n\n\n\nAjuste da ANOVA de Welch\nComparações com Games–Howell\nQuando usar cada procedimento"
+  },
+  {
+    "objectID": "Atividade_5/apresentacao_anova_welch.html#contexto-1",
+    "href": "Atividade_5/apresentacao_anova_welch.html#contexto-1",
+    "title": "ANOVA de Welch",
+    "section": "1. Contexto",
+    "text": "1. Contexto"
+  },
+  {
+    "objectID": "Atividade_5/apresentacao_anova_welch.html#o-que-a-anova-clássica-testa",
+    "href": "Atividade_5/apresentacao_anova_welch.html#o-que-a-anova-clássica-testa",
+    "title": "ANOVA de Welch",
+    "section": "O que a ANOVA clássica testa?",
+    "text": "O que a ANOVA clássica testa?\nConsidere \\(k\\) grupos independentes, com médias populacionais \\(\\mu_1,\\ldots,\\mu_k\\).\n\n\n\nHipótese nula\n\\[\nH_0:\\mu_1=\\mu_2=\\cdots=\\mu_k\n\\]\nAs médias populacionais são iguais.\n\n\n\nHipótese alternativa\n\\[\nH_1:\\text{pelo menos uma média difere}\n\\]\nA ANOVA não informa diretamente quais grupos diferem."
+  },
+  {
+    "objectID": "Atividade_5/apresentacao_anova_welch.html#de-onde-vem-a-estatística-f",
+    "href": "Atividade_5/apresentacao_anova_welch.html#de-onde-vem-a-estatística-f",
+    "title": "ANOVA de Welch",
+    "section": "De onde vem a estatística \\(F\\)?",
+    "text": "De onde vem a estatística \\(F\\)?\nA variabilidade total é separada em duas partes:\n\\[\nSQ_T=SQ_{\\text{entre}}+SQ_{\\text{dentro}}\n\\]\n\n\n\\[\nQM_{\\text{entre}}=\\frac{SQ_{\\text{entre}}}{k-1}\n\\]\nVariação explicada pelas diferenças entre as médias.\n\n\\[\nQM_{\\text{dentro}}=\\frac{SQ_{\\text{dentro}}}{N-k}\n\\]\nVariação existente dentro dos grupos.\n\n\n\n\\[\nF=\\frac{QM_{\\text{entre}}}{QM_{\\text{dentro}}}\n\\]\nQuanto maior \\(F\\), maior a evidência contra \\(H_0\\)."
+  },
+  {
+    "objectID": "Atividade_5/apresentacao_anova_welch.html#suposições-principais",
+    "href": "Atividade_5/apresentacao_anova_welch.html#suposições-principais",
+    "title": "ANOVA de Welch",
+    "section": "Suposições principais",
+    "text": "Suposições principais\n\nPara a ANOVA clássica\n\nIndependência: observações independentes dentro e entre os grupos.\nNormalidade: erros aproximadamente normais em cada população.\nHomocedasticidade: mesma variância populacional em todos os grupos.\n\n\\[\n\\sigma_1^2=\\sigma_2^2=\\cdots=\\sigma_k^2\n\\]"
+  },
+  {
+    "objectID": "Atividade_5/apresentacao_anova_welch.html#onde-a-homogeneidade-é-utilizada",
+    "href": "Atividade_5/apresentacao_anova_welch.html#onde-a-homogeneidade-é-utilizada",
+    "title": "ANOVA de Welch",
+    "section": "Onde a homogeneidade é utilizada?",
+    "text": "Onde a homogeneidade é utilizada?\nNa ANOVA clássica, as variâncias dos grupos são combinadas em uma estimativa comum:\n\\[\nQM_{\\text{dentro}}\n=\n\\frac{\\displaystyle\\sum_{i=1}^{k}(n_i-1)s_i^2}{N-k}\n\\]\n\nEssa variância combinada aparece no denominador da estatística \\(F\\) e também no teste de Tukey. Se as variâncias forem muito diferentes, ela pode representar mal os grupos."
+  },
+  {
+    "objectID": "Atividade_5/apresentacao_anova_welch.html#o-problema-das-variâncias-diferentes",
+    "href": "Atividade_5/apresentacao_anova_welch.html#o-problema-das-variâncias-diferentes",
+    "title": "ANOVA de Welch",
+    "section": "O problema das variâncias diferentes",
+    "text": "O problema das variâncias diferentes\nQuando \\(\\sigma_1^2,\\ldots,\\sigma_k^2\\) são diferentes, principalmente com tamanhos amostrais desiguais:\n\n\n\nErro tipo I\nA taxa real de falsos positivos pode se afastar de \\(\\alpha\\).\n\n\n\nGrupo dominante\nGrupos maiores ou mais variáveis podem influenciar excessivamente o teste.\n\n\n\nDecisão inadequada\nO valor de \\(F\\) e o \\(p\\)-valor podem ficar distorcidos.\n\n\n\n\nO problema não é simplesmente “ter variâncias diferentes”, mas usar uma variância comum quando essa aproximação não é adequada."
+  },
+  {
+    "objectID": "Atividade_5/apresentacao_anova_welch.html#comparações-múltiplas-tukey",
+    "href": "Atividade_5/apresentacao_anova_welch.html#comparações-múltiplas-tukey",
+    "title": "ANOVA de Welch",
+    "section": "Comparações múltiplas: Tukey",
+    "text": "Comparações múltiplas: Tukey\nApós uma ANOVA significativa, o teste de Tukey compara os pares de médias controlando o erro familiar.\nPara tamanhos amostrais diferentes, a estatística de Tukey–Kramer é:\n\\[\nq_{ij}=\n\\frac{|\\bar X_i-\\bar X_j|}\n{\\sqrt{\\dfrac{QM_{\\text{dentro}}}{2}\n\\left(\\dfrac{1}{n_i}+\\dfrac{1}{n_j}\\right)}}\n\\]\n\nO mesmo \\(QM_{\\text{dentro}}\\) é utilizado em todas as comparações. Portanto, o método continua dependendo da homogeneidade das variâncias."
+  },
+  {
+    "objectID": "Atividade_5/apresentacao_anova_welch.html#anova-de-welch",
+    "href": "Atividade_5/apresentacao_anova_welch.html#anova-de-welch",
+    "title": "ANOVA de Welch",
+    "section": "2. ANOVA de Welch",
+    "text": "2. ANOVA de Welch"
+  },
+  {
+    "objectID": "Atividade_5/apresentacao_anova_welch.html#o-que-muda-na-anova-de-welch",
+    "href": "Atividade_5/apresentacao_anova_welch.html#o-que-muda-na-anova-de-welch",
+    "title": "ANOVA de Welch",
+    "section": "O que muda na ANOVA de Welch?",
+    "text": "O que muda na ANOVA de Welch?\n\n\n\nANOVA clássica\n\nUtiliza uma variância combinada.\nPressupõe homocedasticidade.\nGraus de liberdade usuais: \\(k-1\\) e \\(N-k\\).\n\n\n\n\nANOVA de Welch\n\nNão combina as variâncias em uma única estimativa.\nConsidera \\(s_i^2\\) e \\(n_i\\) separadamente.\nAjusta a estatística e os graus de liberdade."
+  },
+  {
+    "objectID": "Atividade_5/apresentacao_anova_welch.html#pesos-e-média-ponderada",
+    "href": "Atividade_5/apresentacao_anova_welch.html#pesos-e-média-ponderada",
+    "title": "ANOVA de Welch",
+    "section": "Pesos e média ponderada",
+    "text": "Pesos e média ponderada\nCada grupo recebe um peso proporcional à precisão de sua média:\n\\[\nw_i=\\frac{n_i}{s_i^2},\n\\qquad\nW=\\sum_{i=1}^{k}w_i\n\\]\n\\[\n\\bar X_w=\\frac{\\displaystyle\\sum_{i=1}^{k}w_i\\bar X_i}{W}\n\\]\n\nUm grupo com maior \\(n_i\\) recebe mais peso; um grupo com maior variância \\(s_i^2\\) recebe menos peso."
+  },
+  {
+    "objectID": "Atividade_5/apresentacao_anova_welch.html#estatística-de-welch",
+    "href": "Atividade_5/apresentacao_anova_welch.html#estatística-de-welch",
+    "title": "ANOVA de Welch",
+    "section": "Estatística de Welch",
+    "text": "Estatística de Welch\nDefina:\n\\[\nA=\\frac{\\displaystyle\\sum_{i=1}^{k}w_i(\\bar X_i-\\bar X_w)^2}{k-1}\n\\]\n\\[\nC=\\sum_{i=1}^{k}\n\\frac{\\left(1-\\dfrac{w_i}{W}\\right)^2}{n_i-1}\n\\]\nEntão:\n\\[\nF_W=\n\\frac{A}\n{1+\\dfrac{2(k-2)}{k^2-1}C}\n\\]"
+  },
+  {
+    "objectID": "Atividade_5/apresentacao_anova_welch.html#graus-de-liberdade-ajustados",
+    "href": "Atividade_5/apresentacao_anova_welch.html#graus-de-liberdade-ajustados",
+    "title": "ANOVA de Welch",
+    "section": "Graus de liberdade ajustados",
+    "text": "Graus de liberdade ajustados\nA estatística \\(F_W\\) é comparada a uma distribuição \\(F\\) aproximada com:\n\\[\n\\nu_1=k-1\n\\]\n\\[\n\\nu_2=\\frac{k^2-1}{3C}\n\\]\n\nOs graus de liberdade podem ser fracionários. Esse ajuste ajuda a manter a taxa de erro tipo I quando as variâncias e os tamanhos amostrais são diferentes."
+  },
+  {
+    "objectID": "Atividade_5/apresentacao_anova_welch.html#lógica-estatística-do-ajuste",
+    "href": "Atividade_5/apresentacao_anova_welch.html#lógica-estatística-do-ajuste",
+    "title": "ANOVA de Welch",
+    "section": "Lógica estatística do ajuste",
+    "text": "Lógica estatística do ajuste\n\n\n\n\n\nflowchart LR\n  A[Variâncias diferentes] --&gt; B[Pesos específicos]\n  B --&gt; C[Média ponderada]\n  C --&gt; D[Correção de F]\n  D --&gt; E[Graus de liberdade ajustados]\n\n\n\n\n\n\n\nWelch compara as médias sem fingir que todos os grupos possuem a mesma precisão."
+  },
+  {
+    "objectID": "Atividade_5/apresentacao_anova_welch.html#gameshowell",
+    "href": "Atividade_5/apresentacao_anova_welch.html#gameshowell",
+    "title": "ANOVA de Welch",
+    "section": "3. Games–Howell",
+    "text": "3. Games–Howell"
+  },
+  {
+    "objectID": "Atividade_5/apresentacao_anova_welch.html#por-que-não-usar-tukey-após-welch",
+    "href": "Atividade_5/apresentacao_anova_welch.html#por-que-não-usar-tukey-após-welch",
+    "title": "ANOVA de Welch",
+    "section": "Por que não usar Tukey após Welch?",
+    "text": "Por que não usar Tukey após Welch?\n\n\n\nTukey–Kramer\n\nEmprega \\(QM_{\\text{dentro}}\\) comum.\nUsa os mesmos graus de liberdade residuais.\nÉ adequado sob homogeneidade de variâncias.\n\n\n\n\nGames–Howell\n\nUsa as variâncias dos dois grupos comparados.\nCalcula graus de liberdade para cada par.\nNão exige tamanhos amostrais iguais."
+  },
+  {
+    "objectID": "Atividade_5/apresentacao_anova_welch.html#estatística-de-gameshowell",
+    "href": "Atividade_5/apresentacao_anova_welch.html#estatística-de-gameshowell",
+    "title": "ANOVA de Welch",
+    "section": "Estatística de Games–Howell",
+    "text": "Estatística de Games–Howell\nPara comparar os grupos \\(i\\) e \\(j\\):\n\\[\nq_{ij}=\n\\frac{|\\bar X_i-\\bar X_j|}\n{\\sqrt{\\dfrac{1}{2}\n\\left(\\dfrac{s_i^2}{n_i}+\\dfrac{s_j^2}{n_j}\\right)}}\n\\]\nOs graus de liberdade do par são aproximados por Welch–Satterthwaite:\n\\[\n\\nu_{ij}=\n\\frac{\\left(\\dfrac{s_i^2}{n_i}+\\dfrac{s_j^2}{n_j}\\right)^2}\n{\\dfrac{(s_i^2/n_i)^2}{n_i-1}\n+\\dfrac{(s_j^2/n_j)^2}{n_j-1}}\n\\]"
+  },
+  {
+    "objectID": "Atividade_5/apresentacao_anova_welch.html#como-interpretar-o-gameshowell",
+    "href": "Atividade_5/apresentacao_anova_welch.html#como-interpretar-o-gameshowell",
+    "title": "ANOVA de Welch",
+    "section": "Como interpretar o Games–Howell?",
+    "text": "Como interpretar o Games–Howell?\nPara cada par de grupos, o procedimento fornece:\n\ndiferença estimada entre as médias;\nintervalo de confiança simultâneo;\n\\(p\\)-valor ajustado para comparações múltiplas.\n\n\nSe o \\(p\\)-valor ajustado for menor que \\(\\alpha\\), há evidência de diferença entre as médias daquele par."
+  },
+  {
+    "objectID": "Atividade_5/apresentacao_anova_welch.html#escolha-do-procedimento",
+    "href": "Atividade_5/apresentacao_anova_welch.html#escolha-do-procedimento",
+    "title": "ANOVA de Welch",
+    "section": "Escolha do procedimento",
+    "text": "Escolha do procedimento\n\n\n\n\n\n\n\n\nSituação\nTeste global\nPós-hoc\n\n\n\n\nVariâncias semelhantes\nANOVA clássica\nTukey ou Tukey–Kramer\n\n\nVariâncias diferentes\nANOVA de Welch\nGames–Howell\n\n\nDúvida sobre a igualdade das variâncias\nAvaliar gráficos e teste de Levene\nEscolher de forma coerente com o teste global\n\n\n\n\nO pós-hoc deve respeitar as mesmas condições consideradas no teste global."
+  },
+  {
+    "objectID": "Atividade_5/apresentacao_anova_welch.html#conclusão",
+    "href": "Atividade_5/apresentacao_anova_welch.html#conclusão",
+    "title": "ANOVA de Welch",
+    "section": "Conclusão",
+    "text": "Conclusão\n\n\n\nANOVA clássica\nCompara médias usando uma variância residual comum.\n\n\n\nWelch\nPondera os grupos e ajusta os graus de liberdade.\n\n\n\nGames–Howell\nCompara pares utilizando variâncias e graus de liberdade próprios.\n\n\n\n\nQuando há heterogeneidade de variâncias, especialmente com amostras de tamanhos diferentes, Welch e Games–Howell formam uma combinação mais adequada."
+  },
+  {
+    "objectID": "Atividade_5/apresentacao_anova_welch.html#referências",
+    "href": "Atividade_5/apresentacao_anova_welch.html#referências",
+    "title": "ANOVA de Welch",
+    "section": "Referências",
+    "text": "Referências\n\n\nGAMES, P. A.; HOWELL, J. F. Pairwise multiple comparison procedures with unequal n’s and/or variances. Journal of Educational Statistics, v. 1, n. 2, p. 113–125, 1976.\nMONTGOMERY, D. C. Design and Analysis of Experiments. 10. ed. Hoboken: Wiley, 2019.\nTUKEY, J. W. Comparing individual means in the analysis of variance. Biometrics, v. 5, n. 2, p. 99–114, 1949.\nWELCH, B. L. On the comparison of several mean values: an alternative approach. Biometrika, v. 38, n. 3/4, p. 330–336, 1951."
+  },
+  {
+    "objectID": "Atividade_5/apresentacao_anova_welch.html#obrigado",
+    "href": "Atividade_5/apresentacao_anova_welch.html#obrigado",
+    "title": "ANOVA de Welch",
+    "section": "Obrigado!",
+    "text": "Obrigado!"
+  },
+  {
+    "objectID": "Atividade_1/index.html",
+    "href": "Atividade_1/index.html",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "",
+    "text": "Bem-estar subjetivo de residentes da região metropolitana do Rio de Janeiro durante a COVID-19\n\nAutores:\n\nDeise Breder dos Santos Batista;\nAdriana Lenho de Figueiredo Pereira;\nAlan de Souza Campello Junior;\nClaudia da Silva Teixeira de Santana;\nJuliana Amaral Prata;\nClaudia Silvia Rocha Oliveira.\n\n\n\n\n\n\n\nA pandemia de COVID-19 trouxe consequências sociais, econômicas e psicológicas.\nO isolamento social esteve associado a experiências como:\n\nestresse;\nsolidão;\nirritabilidade;\nmedo;\nfrustração;\ntédio;\ninsegurança.\n\nDiante disso, tornou-se importante investigar os impactos da pandemia sobre o bem-estar subjetivo da população.\n\n\n\n\n\n\n\nO Bem-Estar Subjetivo (BES) representa a forma como os indivíduos avaliam e vivenciam seu próprio bem-estar.\nNo estudo, o BES foi avaliado por meio do Índice de Bem-Estar da OMS (OMS-5).\nO OMS-5 é composto por cinco questões relacionadas a aspectos positivos do bem-estar.\nO índice gera um escore de 0 a 100, no qual valores maiores indicam maior nível de bem-estar.\n\n\n\n\n\n\n\nObjetivo geral:\n\nIdentificar o nível do bem-estar subjetivo e seus fatores associados em residentes na região metropolitana do Rio de Janeiro durante a pandemia da COVID-19.\n\n\nPergunta de interesse: quais características e fatores estão associados ao bem-estar subjetivo?\n\n\n\n\n\n\nAmostra: 143 adultos\n\n98 mulheres (68,5%);\n45 homens (31,5%).\n\nLocal: primeira região metropolitana do RJ (Município do Rio de Janeiro e Baixada Fluminense).\nPeríodo: janeiro a maio de 2021.\nColeta:\n\nQuestionário eletrônico autoadministrado;\nDivulgação por redes sociais e aplicativos de mensagens."
+  },
+  {
+    "objectID": "apresentacao_anova_welch.html",
+    "href": "apresentacao_anova_welch.html",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "",
+    "text": "O que a ANOVA clássica testa\nEstatística \\(F\\) e suas suposições\nConsequências da heterogeneidade\n\n\n\n\n\n\nAjuste da ANOVA de Welch\nComparações com Games–Howell\nQuando usar cada procedimento"
+  },
+  {
+    "objectID": "Atividade_2/index.html",
+    "href": "Atividade_2/index.html",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "",
+    "text": "tabela\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nVariáveis\n\nAsma\n\nValor-p\nCramér\n\n\nNão257 (86%)\nSim43 (14%)\n\n\n\n\nIMCQ\n\n\n\n\n0,696\n0,050\n\n\n    Menos de 25\n78 (88%)\n11 (12%)\n\n\n\n\n\n\n    25 a 29,9\n99 (86%)\n16 (14%)\n\n\n\n\n\n\n    30 ou mais\n80 (83%)\n16 (17%)\n\n\n\n\n\n\nCigarroQ\n\n\n\n\n0,136\n0,090\n\n\n    Não\n145 (88%)\n19 (12%)\n\n\n\n\n\n\n    Sim\n112 (82%)\n24 (18%)\n\n\n\n\n\n\nConsumo de ÁlcoolF\n\n\n\n\n0,755\n0,030\n\n\n    Não\n238 (86%)\n39 (14%)\n\n\n\n\n\n\n    Sim\n19 (83%)\n4 (17%)\n\n\n\n\n\n\nSaúde FísicaQ\n\n\n\n\n0,781\n0,040\n\n\n    Nenhum dia\n181 (87%)\n28 (13%)\n\n\n\n\n\n\n    1 a 13 dias\n41 (84%)\n8 (16%)\n\n\n\n\n\n\n    14 dias ou mais\n35 (83%)\n7 (17%)\n\n\n\n\n\n\nSaúde MentalQ\n\n\n\n\n0,012\n0,170\n\n\n    Nenhum dia\n167 (90%)\n18 (9,7%)\n\n\n\n\n\n\n    1 a 13 dias\n63 (80%)\n16 (20%)\n\n\n\n\n\n\n    14 dias ou mais\n27 (75%)\n9 (25%)\n\n\n\n\n\n\nDificuldade de AndarQ\n\n\n\n\n0,812\n0,010\n\n\n    Não\n213 (86%)\n35 (14%)\n\n\n\n\n\n\n    Sim\n44 (85%)\n8 (15%)\n\n\n\n\n\n\nSexoQ\n\n\n\n\n0,230\n0,070\n\n\n    Feminino\n130 (83%)\n26 (17%)\n\n\n\n\n\n\n    Masculino\n127 (88%)\n17 (12%)\n\n\n\n\n\n\nIdadeQ\n\n\n\n\n0,194\n0,100\n\n\n    18 a 44 anos\n57 (79%)\n15 (21%)\n\n\n\n\n\n\n    45 a 64 anos\n97 (87%)\n14 (13%)\n\n\n\n\n\n\n    65 anos ou mais\n103 (88%)\n14 (12%)\n\n\n\n\n\n\nRaçaF\n\n\n\n\n0,120\n0,120\n\n\n    Branco\n208 (88%)\n29 (12%)\n\n\n\n\n\n\n    Preto\n17 (77%)\n5 (23%)\n\n\n\n\n\n\n    Outros\n32 (78%)\n9 (22%)\n\n\n\n\n\n\nAtividade FísicaQ\n\n\n\n\n0,399\n0,050\n\n\n    Não\n63 (89%)\n8 (11%)\n\n\n\n\n\n\n    Sim\n194 (85%)\n35 (15%)\n\n\n\n\n\n\nSaúde GeralQ\n\n\n\n\n0,310\n0,090\n\n\n    Razoável/Ruim\n43 (83%)\n9 (17%)\n\n\n\n\n\n\n    Boa\n80 (82%)\n17 (18%)\n\n\n\n\n\n\n    Excelente/Muito boa\n134 (89%)\n17 (11%)\n\n\n\n\n\n\nTempo de DormirF\n\n\n\n\n0,060\n0,130\n\n\n    Menos de 7 horas\n76 (80%)\n19 (20%)\n\n\n\n\n\n\n    7 a 9 horas\n171 (89%)\n21 (11%)\n\n\n\n\n\n\n    Mais de 9 horas\n10 (77%)\n3 (23%)\n\n\n\n\n\n\n\n\nQ: Teste qui-quadrado de Pearson;\nF: Teste exato de Fisher;\nr: Resíduo padronizado;\n■ Acima do esperado (r &gt; 1,96)     ■ Abaixo do esperado (r &lt; -1,96)     ■ Associação significativa (p &lt; 0,05)"
+  },
+  {
+    "objectID": "index.html#atividades-em-grupo",
+    "href": "index.html#atividades-em-grupo",
+    "title": "Prática Estatística II",
+    "section": "Atividades em grupo",
+    "text": "Atividades em grupo\nTrabalhos desenvolvidos em colaboração com Paolla Pinheiro.\n\n\n\n01\n\n\nAtividade Avaliativa 1\n\nTestes de Independência na Literatura\n\nABRIR ATIVIDADE →\n\n\n\n\n02\n\n\nAtividade Avaliativa 2\n\nTabela e Análise de Associação com o pacote gtsummary\n\nABRIR ATIVIDADE →\n\n\n\n\n03\n\n\nAtividade Avaliativa 3\n\nRevisão de Testes de Hipóteses\n\nABRIR ATIVIDADE →\n\n\n\n\n04\n\n\nAtividade Avaliativa 4\n\nTestes de Hipóteses para uma, duas ou mais populações na Literatura\n\nABRIR ATIVIDADE →\n\n\n\n\n05\n\n\nAtividade Avaliativa 5\n\nTema a definir\n\nEM BREVE"
+  },
+  {
+    "objectID": "index.html#projetos-individuais",
+    "href": "index.html#projetos-individuais",
+    "title": "Prática Estatística II",
+    "section": "Projetos individuais",
+    "text": "Projetos individuais\nProjetos individuais desenvolvidos na etapa final da disciplina.\n\n\n\nP1\n\n\nProjeto I\n\nEm breve\n\nABRIR PROJETO →\n\n\n\n\nP2\n\n\nProjeto II\n\nEm breve\n\nABRIR PROJETO →"
+  },
+  {
+    "objectID": "index.html#projetos-finais",
+    "href": "index.html#projetos-finais",
+    "title": "Prática Estatística II",
+    "section": "Projetos Finais",
+    "text": "Projetos Finais\n\nProjetos individuais desenvolvidos ao longo da disciplina\n\n\n\n\nPROJETO 01\n\n\nProjeto Final 1\n\nAtividades 6 e 7\n\n\nEM BREVE\n\n\n\n\n\nPROJETO 02\n\n\nProjeto Final 2\n\nAtividades 9 e 10\n\n\nEM BREVE"
   }
 ]

@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR" xml:lang="pt-BR"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Nome 1">
+<meta name="author" content="Nome 2">
+<meta name="author" content="Nome 3">
+
+<title>ANOVA de Welch</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-ece42c8223ec2bf36298a08f122c9a68.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Nenhum resultado",
+    "search-matching-documents-text": "documentos correspondentes",
+    "search-copy-link-title": "Copiar link para a busca",
+    "search-hide-matches-text": "Esconder correspondências adicionais",
+    "search-more-match-text": "mais correspondência neste documento",
+    "search-more-matches-text": "mais correspondências neste documento",
+    "search-clear-button-title": "Limpar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Procurar"
+  }
+}</script>
+<script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="quarto-light">
+
+<div id="quarto-search-results"></div>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    <div class="quarto-alternate-formats"><h2>Outros formatos</h2><ul><li><a href="apresentacao_anova_welch.html"><i class="bi bi-file-slides"></i>RevealJS</a></li></ul></div></div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">ANOVA de Welch</h1>
+<p class="subtitle lead">Comparação de médias quando as variâncias são diferentes</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Autores</div>
+    <div class="quarto-title-meta-contents">
+             <p>Nome 1 </p>
+             <p>Nome 2 </p>
+             <p>Nome 3 </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<style>
+.transicao-box {
+  width: 58%;
+  margin: 260px auto 0 auto;
+  padding: 28px 42px;
+  border-radius: 16px;
+  background: rgba(5, 32, 52, 0.78);
+  color: white;
+  text-align: center;
+  backdrop-filter: blur(3px);
+}
+
+.transicao-box h1,
+.transicao-box p {
+  color: white !important;
+  text-align: center;
+}
+
+.referencias {
+  font-size: 0.72em;
+}
+</style>
+<section id="roteiro" class="level2">
+<h2 class="anchored" data-anchor-id="roteiro">Roteiro</h2>
+<div class="columns">
+<div class="column" style="width:48%;">
+<section id="contexto" class="level3">
+<h3 class="anchored" data-anchor-id="contexto">Contexto</h3>
+<ul>
+<li>O que a ANOVA clássica testa</li>
+<li>Estatística <span class="math inline">\(F\)</span> e suas suposições</li>
+<li>Consequências da heterogeneidade</li>
+</ul>
+</section>
+</div><div class="column" style="width:48%;">
+<section id="alternativas" class="level3">
+<h3 class="anchored" data-anchor-id="alternativas">Alternativas</h3>
+<ul>
+<li>Ajuste da ANOVA de Welch</li>
+<li>Comparações com Games–Howell</li>
+<li>Quando usar cada procedimento</li>
+</ul>
+</section>
+</div>
+</div>
+</section>
+<section id="contexto-1" class="level2" data-background-image="imagens/transicao.jpg" data-background-size="cover" data-background-position="center">
+<h2 data-background-image="imagens/transicao.jpg" data-background-size="cover" data-background-position="center" class="anchored" data-anchor-id="contexto-1">1. Contexto</h2>
+</section>
+<section id="anova-clássica" class="level1 transicao-box">
+<h1>ANOVA clássica</h1>
+<p>Como comparar as médias de vários grupos?</p>
+</section>
+<section id="o-que-a-anova-clássica-testa" class="level2">
+<h2 class="anchored" data-anchor-id="o-que-a-anova-clássica-testa">O que a ANOVA clássica testa?</h2>
+<p>Considere <span class="math inline">\(k\)</span> grupos independentes, com médias populacionais <span class="math inline">\(\mu_1,\ldots,\mu_k\)</span>.</p>
+<div class="columns">
+<div class="column" style="width:48%;">
+<section id="hipótese-nula" class="level3">
+<h3 class="anchored" data-anchor-id="hipótese-nula">Hipótese nula</h3>
+<p><span class="math display">\[
+H_0:\mu_1=\mu_2=\cdots=\mu_k
+\]</span></p>
+<p>As médias populacionais são iguais.</p>
+</section>
+</div><div class="column" style="width:48%;">
+<section id="hipótese-alternativa" class="level3">
+<h3 class="anchored" data-anchor-id="hipótese-alternativa">Hipótese alternativa</h3>
+<p><span class="math display">\[
+H_1:\text{pelo menos uma média difere}
+\]</span></p>
+<p>A ANOVA não informa diretamente quais grupos diferem.</p>
+</section>
+</div>
+</div>
+</section>
+<section id="de-onde-vem-a-estatística-f" class="level2">
+<h2 class="anchored" data-anchor-id="de-onde-vem-a-estatística-f">De onde vem a estatística <span class="math inline">\(F\)</span>?</h2>
+<p>A variabilidade total é separada em duas partes:</p>
+<p><span class="math display">\[
+SQ_T=SQ_{\text{entre}}+SQ_{\text{dentro}}
+\]</span></p>
+<div class="columns">
+<div class="column" style="width:48%;">
+<p><span class="math display">\[
+QM_{\text{entre}}=\frac{SQ_{\text{entre}}}{k-1}
+\]</span></p>
+<p>Variação explicada pelas diferenças entre as médias.</p>
+</div><div class="column" style="width:48%;">
+<p><span class="math display">\[
+QM_{\text{dentro}}=\frac{SQ_{\text{dentro}}}{N-k}
+\]</span></p>
+<p>Variação existente dentro dos grupos.</p>
+</div>
+</div>
+<div class="box-blue">
+<p><span class="math display">\[
+F=\frac{QM_{\text{entre}}}{QM_{\text{dentro}}}
+\]</span></p>
+<p>Quanto maior <span class="math inline">\(F\)</span>, maior a evidência contra <span class="math inline">\(H_0\)</span>.</p>
+</div>
+</section>
+<section id="suposições-principais" class="level2">
+<h2 class="anchored" data-anchor-id="suposições-principais">Suposições principais</h2>
+<section id="para-a-anova-clássica" class="level3 box-yellow">
+<h3 class="anchored" data-anchor-id="para-a-anova-clássica">Para a ANOVA clássica</h3>
+<ul>
+<li><strong>Independência:</strong> observações independentes dentro e entre os grupos.</li>
+<li><strong>Normalidade:</strong> erros aproximadamente normais em cada população.</li>
+<li><strong>Homocedasticidade:</strong> mesma variância populacional em todos os grupos.</li>
+</ul>
+<p><span class="math display">\[
+\sigma_1^2=\sigma_2^2=\cdots=\sigma_k^2
+\]</span></p>
+</section>
+</section>
+<section id="onde-a-homogeneidade-é-utilizada" class="level2">
+<h2 class="anchored" data-anchor-id="onde-a-homogeneidade-é-utilizada">Onde a homogeneidade é utilizada?</h2>
+<p>Na ANOVA clássica, as variâncias dos grupos são combinadas em uma estimativa comum:</p>
+<p><span class="math display">\[
+QM_{\text{dentro}}
+=
+\frac{\displaystyle\sum_{i=1}^{k}(n_i-1)s_i^2}{N-k}
+\]</span></p>
+<div class="box-gray">
+<p>Essa variância combinada aparece no denominador da estatística <span class="math inline">\(F\)</span> e também no teste de Tukey. Se as variâncias forem muito diferentes, ela pode representar mal os grupos.</p>
+</div>
+</section>
+<section id="o-problema-das-variâncias-diferentes" class="level2">
+<h2 class="anchored" data-anchor-id="o-problema-das-variâncias-diferentes">O problema das variâncias diferentes</h2>
+<p>Quando <span class="math inline">\(\sigma_1^2,\ldots,\sigma_k^2\)</span> são diferentes, principalmente com tamanhos amostrais desiguais:</p>
+<div class="columns">
+<div class="column" style="width:31%;">
+<section id="erro-tipo-i" class="level3">
+<h3 class="anchored" data-anchor-id="erro-tipo-i">Erro tipo I</h3>
+<p>A taxa real de falsos positivos pode se afastar de <span class="math inline">\(\alpha\)</span>.</p>
+</section>
+</div><div class="column" style="width:31%;">
+<section id="grupo-dominante" class="level3">
+<h3 class="anchored" data-anchor-id="grupo-dominante">Grupo dominante</h3>
+<p>Grupos maiores ou mais variáveis podem influenciar excessivamente o teste.</p>
+</section>
+</div><div class="column" style="width:31%;">
+<section id="decisão-inadequada" class="level3">
+<h3 class="anchored" data-anchor-id="decisão-inadequada">Decisão inadequada</h3>
+<p>O valor de <span class="math inline">\(F\)</span> e o <span class="math inline">\(p\)</span>-valor podem ficar distorcidos.</p>
+</section>
+</div>
+</div>
+<div class="box-blue">
+<p>O problema não é simplesmente “ter variâncias diferentes”, mas usar uma variância comum quando essa aproximação não é adequada.</p>
+</div>
+</section>
+<section id="comparações-múltiplas-tukey" class="level2">
+<h2 class="anchored" data-anchor-id="comparações-múltiplas-tukey">Comparações múltiplas: Tukey</h2>
+<p>Após uma ANOVA significativa, o teste de Tukey compara os pares de médias controlando o erro familiar.</p>
+<p>Para tamanhos amostrais diferentes, a estatística de Tukey–Kramer é:</p>
+<p><span class="math display">\[
+q_{ij}=
+\frac{|\bar X_i-\bar X_j|}
+{\sqrt{\dfrac{QM_{\text{dentro}}}{2}
+\left(\dfrac{1}{n_i}+\dfrac{1}{n_j}\right)}}
+\]</span></p>
+<div class="box-yellow">
+<p>O mesmo <span class="math inline">\(QM_{\text{dentro}}\)</span> é utilizado em todas as comparações. Portanto, o método continua dependendo da homogeneidade das variâncias.</p>
+</div>
+</section>
+<section id="anova-de-welch" class="level2" data-background-image="imagens/transicao.jpg" data-background-size="cover" data-background-position="center">
+<h2 data-background-image="imagens/transicao.jpg" data-background-size="cover" data-background-position="center" class="anchored" data-anchor-id="anova-de-welch">2. ANOVA de Welch</h2>
+</section>
+<section id="anova-de-welch-1" class="level1 transicao-box">
+<h1>ANOVA de Welch</h1>
+<p>Pesos diferentes para grupos com precisões diferentes</p>
+</section>
+<section id="o-que-muda-na-anova-de-welch" class="level2">
+<h2 class="anchored" data-anchor-id="o-que-muda-na-anova-de-welch">O que muda na ANOVA de Welch?</h2>
+<div class="columns">
+<div class="column" style="width:48%;">
+<section id="anova-clássica-1" class="level3">
+<h3 class="anchored" data-anchor-id="anova-clássica-1">ANOVA clássica</h3>
+<ul>
+<li>Utiliza uma variância combinada.</li>
+<li>Pressupõe homocedasticidade.</li>
+<li>Graus de liberdade usuais: <span class="math inline">\(k-1\)</span> e <span class="math inline">\(N-k\)</span>.</li>
+</ul>
+</section>
+</div><div class="column" style="width:48%;">
+<section id="anova-de-welch-2" class="level3">
+<h3 class="anchored" data-anchor-id="anova-de-welch-2">ANOVA de Welch</h3>
+<ul>
+<li>Não combina as variâncias em uma única estimativa.</li>
+<li>Considera <span class="math inline">\(s_i^2\)</span> e <span class="math inline">\(n_i\)</span> separadamente.</li>
+<li>Ajusta a estatística e os graus de liberdade.</li>
+</ul>
+</section>
+</div>
+</div>
+</section>
+<section id="pesos-e-média-ponderada" class="level2">
+<h2 class="anchored" data-anchor-id="pesos-e-média-ponderada">Pesos e média ponderada</h2>
+<p>Cada grupo recebe um peso proporcional à precisão de sua média:</p>
+<p><span class="math display">\[
+w_i=\frac{n_i}{s_i^2},
+\qquad
+W=\sum_{i=1}^{k}w_i
+\]</span></p>
+<p><span class="math display">\[
+\bar X_w=\frac{\displaystyle\sum_{i=1}^{k}w_i\bar X_i}{W}
+\]</span></p>
+<div class="box-blue">
+<p>Um grupo com maior <span class="math inline">\(n_i\)</span> recebe mais peso; um grupo com maior variância <span class="math inline">\(s_i^2\)</span> recebe menos peso.</p>
+</div>
+</section>
+<section id="estatística-de-welch" class="level2">
+<h2 class="anchored" data-anchor-id="estatística-de-welch">Estatística de Welch</h2>
+<p>Defina:</p>
+<p><span class="math display">\[
+A=\frac{\displaystyle\sum_{i=1}^{k}w_i(\bar X_i-\bar X_w)^2}{k-1}
+\]</span></p>
+<p><span class="math display">\[
+C=\sum_{i=1}^{k}
+\frac{\left(1-\dfrac{w_i}{W}\right)^2}{n_i-1}
+\]</span></p>
+<p>Então:</p>
+<p><span class="math display">\[
+F_W=
+\frac{A}
+{1+\dfrac{2(k-2)}{k^2-1}C}
+\]</span></p>
+</section>
+<section id="graus-de-liberdade-ajustados" class="level2">
+<h2 class="anchored" data-anchor-id="graus-de-liberdade-ajustados">Graus de liberdade ajustados</h2>
+<p>A estatística <span class="math inline">\(F_W\)</span> é comparada a uma distribuição <span class="math inline">\(F\)</span> aproximada com:</p>
+<p><span class="math display">\[
+\nu_1=k-1
+\]</span></p>
+<p><span class="math display">\[
+\nu_2=\frac{k^2-1}{3C}
+\]</span></p>
+<div class="box-gray">
+<p>Os graus de liberdade podem ser fracionários. Esse ajuste ajuda a manter a taxa de erro tipo I quando as variâncias e os tamanhos amostrais são diferentes.</p>
+</div>
+</section>
+<section id="lógica-estatística-do-ajuste" class="level2">
+<h2 class="anchored" data-anchor-id="lógica-estatística-do-ajuste">Lógica estatística do ajuste</h2>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+  A[Variâncias diferentes] --&gt; B[Pesos específicos]
+  B --&gt; C[Média ponderada]
+  C --&gt; D[Correção de F]
+  D --&gt; E[Graus de liberdade ajustados]
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<div class="box-blue">
+<p>Welch compara as médias sem fingir que todos os grupos possuem a mesma precisão.</p>
+</div>
+</section>
+<section id="gameshowell" class="level2" data-background-image="imagens/transicao.jpg" data-background-size="cover" data-background-position="center">
+<h2 data-background-image="imagens/transicao.jpg" data-background-size="cover" data-background-position="center" class="anchored" data-anchor-id="gameshowell">3. Games–Howell</h2>
+</section>
+<section id="teste-de-gameshowell" class="level1 transicao-box">
+<h1>Teste de Games–Howell</h1>
+<p>Quais pares de médias são diferentes?</p>
+</section>
+<section id="por-que-não-usar-tukey-após-welch" class="level2">
+<h2 class="anchored" data-anchor-id="por-que-não-usar-tukey-após-welch">Por que não usar Tukey após Welch?</h2>
+<div class="columns">
+<div class="column" style="width:48%;">
+<section id="tukeykramer" class="level3">
+<h3 class="anchored" data-anchor-id="tukeykramer">Tukey–Kramer</h3>
+<ul>
+<li>Emprega <span class="math inline">\(QM_{\text{dentro}}\)</span> comum.</li>
+<li>Usa os mesmos graus de liberdade residuais.</li>
+<li>É adequado sob homogeneidade de variâncias.</li>
+</ul>
+</section>
+</div><div class="column" style="width:48%;">
+<section id="gameshowell-1" class="level3">
+<h3 class="anchored" data-anchor-id="gameshowell-1">Games–Howell</h3>
+<ul>
+<li>Usa as variâncias dos dois grupos comparados.</li>
+<li>Calcula graus de liberdade para cada par.</li>
+<li>Não exige tamanhos amostrais iguais.</li>
+</ul>
+</section>
+</div>
+</div>
+</section>
+<section id="estatística-de-gameshowell" class="level2">
+<h2 class="anchored" data-anchor-id="estatística-de-gameshowell">Estatística de Games–Howell</h2>
+<p>Para comparar os grupos <span class="math inline">\(i\)</span> e <span class="math inline">\(j\)</span>:</p>
+<p><span class="math display">\[
+q_{ij}=
+\frac{|\bar X_i-\bar X_j|}
+{\sqrt{\dfrac{1}{2}
+\left(\dfrac{s_i^2}{n_i}+\dfrac{s_j^2}{n_j}\right)}}
+\]</span></p>
+<p>Os graus de liberdade do par são aproximados por Welch–Satterthwaite:</p>
+<p><span class="math display">\[
+\nu_{ij}=
+\frac{\left(\dfrac{s_i^2}{n_i}+\dfrac{s_j^2}{n_j}\right)^2}
+{\dfrac{(s_i^2/n_i)^2}{n_i-1}
++\dfrac{(s_j^2/n_j)^2}{n_j-1}}
+\]</span></p>
+</section>
+<section id="como-interpretar-o-gameshowell" class="level2">
+<h2 class="anchored" data-anchor-id="como-interpretar-o-gameshowell">Como interpretar o Games–Howell?</h2>
+<p>Para cada par de grupos, o procedimento fornece:</p>
+<ul>
+<li>diferença estimada entre as médias;</li>
+<li>intervalo de confiança simultâneo;</li>
+<li><span class="math inline">\(p\)</span>-valor ajustado para comparações múltiplas.</li>
+</ul>
+<div class="box-yellow">
+<p>Se o <span class="math inline">\(p\)</span>-valor ajustado for menor que <span class="math inline">\(\alpha\)</span>, há evidência de diferença entre as médias daquele par.</p>
+</div>
+</section>
+<section id="escolha-do-procedimento" class="level2">
+<h2 class="anchored" data-anchor-id="escolha-do-procedimento">Escolha do procedimento</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Situação</th>
+<th>Teste global</th>
+<th>Pós-hoc</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Variâncias semelhantes</td>
+<td>ANOVA clássica</td>
+<td>Tukey ou Tukey–Kramer</td>
+</tr>
+<tr class="even">
+<td>Variâncias diferentes</td>
+<td>ANOVA de Welch</td>
+<td>Games–Howell</td>
+</tr>
+<tr class="odd">
+<td>Dúvida sobre a igualdade das variâncias</td>
+<td>Avaliar gráficos e teste de Levene</td>
+<td>Escolher de forma coerente com o teste global</td>
+</tr>
+</tbody>
+</table>
+<div class="box-blue">
+<p>O pós-hoc deve respeitar as mesmas condições consideradas no teste global.</p>
+</div>
+</section>
+<section id="conclusão" class="level2">
+<h2 class="anchored" data-anchor-id="conclusão">Conclusão</h2>
+<div class="columns">
+<div class="column" style="width:31%;">
+<section id="anova-clássica-2" class="level3">
+<h3 class="anchored" data-anchor-id="anova-clássica-2">ANOVA clássica</h3>
+<p>Compara médias usando uma variância residual comum.</p>
+</section>
+</div><div class="column" style="width:31%;">
+<section id="welch" class="level3">
+<h3 class="anchored" data-anchor-id="welch">Welch</h3>
+<p>Pondera os grupos e ajusta os graus de liberdade.</p>
+</section>
+</div><div class="column" style="width:31%;">
+<section id="gameshowell-2" class="level3">
+<h3 class="anchored" data-anchor-id="gameshowell-2">Games–Howell</h3>
+<p>Compara pares utilizando variâncias e graus de liberdade próprios.</p>
+</section>
+</div>
+</div>
+<div class="box-gray">
+<p>Quando há heterogeneidade de variâncias, especialmente com amostras de tamanhos diferentes, Welch e Games–Howell formam uma combinação mais adequada.</p>
+</div>
+</section>
+<section id="referências" class="level2">
+<h2 class="anchored" data-anchor-id="referências">Referências</h2>
+<div class="referencias">
+<ul>
+<li>GAMES, P. A.; HOWELL, J. F. Pairwise multiple comparison procedures with unequal n’s and/or variances. <em>Journal of Educational Statistics</em>, v. 1, n.&nbsp;2, p.&nbsp;113–125, 1976.</li>
+<li>MONTGOMERY, D. C. <em>Design and Analysis of Experiments</em>. 10. ed.&nbsp;Hoboken: Wiley, 2019.</li>
+<li>TUKEY, J. W. Comparing individual means in the analysis of variance. <em>Biometrics</em>, v. 5, n.&nbsp;2, p.&nbsp;99–114, 1949.</li>
+<li>WELCH, B. L. On the comparison of several mean values: an alternative approach. <em>Biometrika</em>, v. 38, n.&nbsp;3/4, p.&nbsp;330–336, 1951.</li>
+</ul>
+</div>
+</section>
+<section id="obrigado" class="level2">
+<h2 class="anchored" data-anchor-id="obrigado">Obrigado!</h2>
+</section>
+<section id="perguntas" class="level1 box-blue">
+<h1>Perguntas?</h1>
+</section>
+
+
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copiada");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copiada");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

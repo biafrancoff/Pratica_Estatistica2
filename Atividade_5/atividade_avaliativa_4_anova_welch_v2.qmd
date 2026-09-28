@@ -1,0 +1,577 @@
+---
+title: "**PRÁTICA ESTATÍSTICA II**"
+subtitle: "**ATIVIDADE AVALIATIVA 4**"
+author: "Beatriz Franco (<beatrizff@id.uff.br>) <br> Paolla Pinheiro (<paollapp@id.uff.br>)"
+date: 2026-09-28
+date-format: "DD/MM/YYYY"
+institute: "Universidade Federal Fluminense"
+format:
+  revealjs:
+    css: custom.css
+    slide-number: true
+    incremental: false
+    transition: fade
+    background-transition: fade
+    width: 1280
+    height: 720
+    margin: 0.07
+    auto-stretch: false
+    number-sections: true
+    title-slide-attributes:
+      data-background-image: "imagens/Capa.png"
+      data-background-size: cover
+      data-background-position: center
+---
+
+```{=html}
+<style>
+.pergunta-central {
+  margin: 120px auto 0 auto;
+  width: 72%;
+  padding: 28px 34px;
+  border-left: 9px solid #0f172a;
+  border-radius: 10px;
+  background: rgba(239, 246, 255, 0.94);
+  text-align: center;
+  font-size: 1.15em;
+}
+
+.transicao-texto {
+  width: 62%;
+  margin: 250px auto 0 auto;
+  padding: 20px 30px;
+  border-radius: 12px;
+  background: rgba(5, 32, 52, 0.78);
+  color: white;
+  text-align: center;
+}
+
+.transicao-texto h1,
+.transicao-texto p {
+  color: white !important;
+  text-align: center;
+}
+
+.formula-principal {
+  padding: 18px 24px;
+  border-radius: 10px;
+  background: #e6f2ff;
+  border-left: 8px solid #052034;
+  text-align: center;
+}
+
+.comparacao {
+  font-size: 0.82em;
+}
+
+.referencias {
+  font-size: 0.66em;
+}
+</style>
+```
+
+# O problema {.Transicao data-background-image="imagens/Transicao.png" data-background-size="cover" data-background-position="center"}
+
+::: {.transicao-texto}
+# Uma variância comum é sempre adequada?
+
+O ponto de partida para entender a ANOVA de Welch
+:::
+
+## A pergunta da ANOVA
+
+::: {.pergunta-central}
+Temos $k$ grupos independentes. As diferenças observadas entre suas médias podem ser atribuídas apenas à variabilidade amostral?
+:::
+
+<br>
+
+$$
+H_0:\mu_1=\mu_2=\cdots=\mu_k
+\qquad\text{versus}\qquad
+H_1:\text{pelo menos uma média difere}
+$$
+
+## Duas fontes de variação
+
+:::: columns
+
+::: {.column width="47%"}
+::: {.box-blue}
+### Entre os grupos
+
+Mede o afastamento das médias dos grupos em relação à média geral.
+
+$$
+QM_{Entre}=\frac{SQ_{Entre}}{k-1}
+$$
+:::
+:::
+
+::: {.column width="6%"}
+:::
+
+::: {.column width="47%"}
+::: {.box-gray}
+### Dentro dos grupos
+
+Mede a variabilidade das observações em torno da média de cada grupo.
+
+$$
+QM_{Dentro}=\frac{SQ_{Dentro}}{N-k}
+$$
+:::
+:::
+
+::::
+
+::: {.formula-principal}
+$$
+F=\frac{QM_{Entre}}{QM_{Dentro}}
+$$
+:::
+
+## Quando a ANOVA clássica funciona bem?
+
+:::: columns
+
+::: {.column width="31%"}
+::: {.box-gray}
+### 1. Independência
+
+Uma observação não determina o valor de outra.
+:::
+:::
+
+::: {.column width="3%"}
+:::
+
+::: {.column width="31%"}
+::: {.box-gray}
+### 2. Normalidade
+
+Os erros são aproximadamente normais em cada grupo.
+:::
+:::
+
+::: {.column width="3%"}
+:::
+
+::: {.column width="31%"}
+::: {.box-yellow}
+### 3. Homocedasticidade
+
+$$
+\sigma_1^2=\cdots=\sigma_k^2
+$$
+:::
+:::
+
+::::
+
+## A variância comum aparece duas vezes
+
+:::: columns
+
+::: {.column width="48%"}
+### No teste global
+
+$$
+F=\frac{QM_{Entre}}{\color{red}{QM_{Dentro}}}
+$$
+
+$QM_{Dentro}$ combina as variâncias de todos os grupos.
+:::
+
+::: {.column width="4%"}
+:::
+
+::: {.column width="48%"}
+### Nas comparações de Tukey–Kramer
+
+$$
+q_{ij}=
+\frac{|\bar y_i-\bar y_j|}
+{\sqrt{\dfrac{\color{red}{QM_{Dentro}}}{2}
+\left(\dfrac1{n_i}+\dfrac1{n_j}\right)}}
+$$
+:::
+
+::::
+
+::: {.box-gray style="font-size: 0.75em;"}
+Os dois procedimentos tratam $QM_{Dentro}$ como uma boa representação da variância residual de todos os grupos.
+:::
+
+## E se as variâncias forem diferentes?
+
+:::: columns
+
+::: {.column width="42%"}
+::: {.box-yellow}
+$$
+\sigma_1^2\neq\sigma_2^2\neq\cdots\neq\sigma_k^2
+$$
+
+Uma única variância combinada deixa de representar adequadamente todos os grupos.
+:::
+:::
+
+::: {.column width="6%"}
+:::
+
+::: {.column width="52%"}
+- O nível real do teste pode se afastar de $\alpha$.
+- A combinação de variâncias e amostras desiguais pode distorcer $F$.
+- O problema é maior quando o grupo mais variável tem o menor tamanho amostral.
+:::
+
+::::
+
+::: {.formula-principal}
+Precisamos comparar as médias sem impor uma variância comum.
+:::
+
+# A solução de Welch {.Transicao data-background-image="imagens/Transicao.png" data-background-size="cover" data-background-position="center"}
+
+::: {.transicao-texto}
+# ANOVA de Welch
+
+Cada grupo contribui de acordo com a precisão de sua média
+:::
+
+## A mudança essencial
+
+:::: columns
+
+::: {.column width="45%"}
+::: {.box-blue}
+### ANOVA clássica
+
+Combina as variâncias em $QM_{Dentro}$ e atribui peso principalmente pelo tamanho da amostra.
+:::
+:::
+
+::: {.column width="10%"}
+
+$$
+\Longrightarrow
+$$
+
+:::
+
+::: {.column width="45%"}
+::: {.box-yellow}
+### Welch
+
+Mantém as variâncias separadas e pondera cada grupo pela precisão.
+
+$$
+w_i=\frac{n_i}{s_i^2}
+$$
+:::
+:::
+
+::::
+
+## Como os pesos funcionam?
+
+$$
+w_i=\frac{n_i}{s_i^2}
+\qquad
+W=\sum_{i=1}^{k}w_i
+\qquad
+\bar y_w=\frac{\sum_{i=1}^{k}w_i\bar y_i}{W}
+$$
+
+:::: columns
+
+::: {.column width="48%"}
+::: {.box-blue}
+**Maior $n_i$** $\Rightarrow$ maior precisão $\Rightarrow$ maior peso.
+:::
+:::
+
+::: {.column width="4%"}
+:::
+
+::: {.column width="48%"}
+::: {.box-yellow}
+**Maior $s_i^2$** $\Rightarrow$ menor precisão $\Rightarrow$ menor peso.
+:::
+:::
+
+::::
+
+## A estatística de Welch
+
+Defina a correção:
+
+$$
+C=\sum_{i=1}^{k}
+\frac{\left(1-\dfrac{w_i}{W}\right)^2}{n_i-1}
+$$
+
+::: {.formula-principal}
+$$
+F_W=
+\frac{
+\dfrac{1}{k-1}\sum_{i=1}^{k}w_i(\bar y_i-\bar y_w)^2
+}
+{
+1+\dfrac{2(k-2)}{k^2-1}C
+}
+$$
+:::
+
+## Por que os graus de liberdade mudam?
+
+$$
+F_W\sim F_{\nu_1,\nu_2}
+$$
+
+$$
+\nu_1=k-1
+\qquad\text{e}\qquad
+\nu_2=\frac{k^2-1}{3C}
+$$
+
+::: {.box-gray}
+- $\nu_2$ pode ser fracionário.
+- O ajuste considera os tamanhos e as variâncias observadas.
+- Isso melhora o controle do erro tipo I sob heterocedasticidade.
+:::
+
+## O raciocínio completo
+
+:::: columns
+
+::: {.column width="22%"}
+::: {.box-gray}
+**1.** Variâncias diferentes
+:::
+:::
+
+::: {.column width="4%"}
+$$\rightarrow$$
+:::
+
+::: {.column width="22%"}
+::: {.box-blue}
+**2.** Pesos específicos
+:::
+:::
+
+::: {.column width="4%"}
+$$\rightarrow$$
+:::
+
+::: {.column width="22%"}
+::: {.box-yellow}
+**3.** Correção de $F$
+:::
+:::
+
+::: {.column width="4%"}
+$$\rightarrow$$
+:::
+
+::: {.column width="22%"}
+::: {.box-gray}
+**4.** Graus de liberdade ajustados
+:::
+:::
+
+::::
+
+<br>
+
+::: {.formula-principal}
+Welch testa a igualdade das médias sem exigir homogeneidade das variâncias.
+:::
+
+# Depois do teste global {.Transicao data-background-image="imagens/Transicao.png" data-background-size="cover" data-background-position="center"}
+
+::: {.transicao-texto}
+# Games–Howell
+
+Se Welch rejeita $H_0$, quais pares diferem?
+:::
+
+## Por que Tukey não acompanha Welch?
+
+::: {.comparacao}
+| Aspecto | Tukey–Kramer | Games–Howell |
+|---|---|---|
+| Variância no denominador | $QM_{Dentro}$ comum | $s_i^2$ e $s_j^2$ separadas |
+| Graus de liberdade | Iguais em todos os pares | Calculados para cada par |
+| Variâncias iguais | Necessárias | Não necessárias |
+| Tamanhos iguais | Não são obrigatórios | Não são obrigatórios |
+| Combinação usual | ANOVA clássica + Tukey | Welch + Games–Howell |
+:::
+
+## Comparação entre dois grupos
+
+Para cada par $(i,j)$, o Games–Howell utiliza o erro-padrão:
+
+$$
+EP_{ij}=\sqrt{\frac{s_i^2}{n_i}+\frac{s_j^2}{n_j}}
+$$
+
+::: {.formula-principal}
+$$
+t_{ij}=\frac{|\bar y_i-\bar y_j|}{EP_{ij}}
+$$
+:::
+
+Cada comparação utiliza apenas as variâncias dos dois grupos envolvidos.
+
+## Graus de liberdade de cada par
+
+O ajuste de Welch–Satterthwaite é:
+
+$$
+\nu_{ij}=
+\frac{
+\left(\dfrac{s_i^2}{n_i}+\dfrac{s_j^2}{n_j}\right)^2
+}
+{
+\dfrac{(s_i^2/n_i)^2}{n_i-1}
++
+\dfrac{(s_j^2/n_j)^2}{n_j-1}
+}
+$$
+
+::: {.box-yellow}
+Como $\nu_{ij}$ depende de $i$ e $j$, pares diferentes podem ter graus de liberdade diferentes.
+:::
+
+## O que o resultado informa?
+
+Para cada par de grupos, o Games–Howell apresenta:
+
+:::: columns
+
+::: {.column width="31%"}
+::: {.box-blue}
+### Diferença
+
+$\bar y_i-\bar y_j$
+:::
+:::
+
+::: {.column width="3%"}
+:::
+
+::: {.column width="31%"}
+::: {.box-gray}
+### Intervalo
+
+Intervalo de confiança simultâneo
+:::
+:::
+
+::: {.column width="3%"}
+:::
+
+::: {.column width="31%"}
+::: {.box-yellow}
+### Decisão
+
+$p$-valor ajustado
+:::
+:::
+
+::::
+
+::: {.formula-principal style="font-size: 0.86em;"}
+Se o $p$-valor ajustado for menor que $\alpha$, há evidência de diferença entre aquele par de médias.
+:::
+
+## Qual caminho seguir?
+
+:::: columns
+
+::: {.column width="46%"}
+::: {.box-blue}
+### Variâncias semelhantes
+
+1. ANOVA clássica
+2. Tukey–Kramer, se necessário
+:::
+:::
+
+::: {.column width="8%"}
+:::
+
+::: {.column width="46%"}
+::: {.box-yellow}
+### Variâncias diferentes
+
+1. ANOVA de Welch
+2. Games–Howell, se necessário
+:::
+:::
+
+::::
+
+::: {.box-gray style="font-size: 0.78em;"}
+A escolha deve considerar o planejamento do estudo, os tamanhos amostrais, gráficos dos resíduos e evidências sobre a igualdade das variâncias.
+:::
+
+## Síntese
+
+:::: columns
+
+::: {.column width="31%"}
+### ANOVA clássica
+
+Usa uma variância residual comum para testar a igualdade das médias.
+:::
+
+::: {.column width="3%"}
+:::
+
+::: {.column width="31%"}
+### Welch
+
+Pondera os grupos pela precisão e ajusta os graus de liberdade.
+:::
+
+::: {.column width="3%"}
+:::
+
+::: {.column width="31%"}
+### Games–Howell
+
+Compara os pares sem exigir uma variância comum.
+:::
+
+::::
+
+::: {.formula-principal}
+Heterogeneidade não impede a comparação das médias; ela exige um procedimento compatível com os dados.
+:::
+
+# Referências {.glass .Transicao data-background-image="imagens/Transicao.png" data-background-size="cover" data-background-position="center"}
+
+::: {.referencias}
+- FISHER, R. A. *Statistical Methods for Research Workers*. Edinburgh: Oliver & Boyd, 1925.
+
+- GAMES, P. A.; HOWELL, J. F. Pairwise multiple comparison procedures with unequal n's and/or variances: a Monte Carlo study. *Journal of Educational Statistics*, v. 1, n. 2, p. 113–125, 1976.
+
+- MONTGOMERY, D. C. *Design and Analysis of Experiments*. 10. ed. Hoboken: Wiley, 2019.
+
+- TUKEY, J. W. Comparing individual means in the analysis of variance. *Biometrics*, v. 5, n. 2, p. 99–114, 1949.
+
+- WELCH, B. L. On the comparison of several mean values: an alternative approach. *Biometrika*, v. 38, n. 3/4, p. 330–336, 1951.
+:::
+
+# Fim {.unnumbered}
+
+::: {.pergunta-central}
+# Obrigado!
+
+Perguntas?
+:::
+

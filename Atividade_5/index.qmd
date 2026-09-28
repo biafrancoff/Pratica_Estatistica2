@@ -1,0 +1,447 @@
+---
+title: "**PRÁTICA ESTATÍSTICA II**"
+subtitle: "**ATIVIDADE AVALIATIVA 5**"
+author: "Beatriz Franco (<beatrizff@id.uff.br>) <br> Paolla Pinheiro (<paollapp@id.uff.br>)"
+date: 2026-09-28
+date-format: "DD/MM/YYYY"
+institute: "Universidade Federal Fluminense"
+format:
+  revealjs:
+    css: custom.css
+    slide-number: true
+    incremental: false
+    transition: slide
+    background-transition: fade
+    width: 1280
+    height: 720
+    margin: 0.07
+    auto-stretch: false
+    number-sections: true
+    title-slide-attributes:
+      data-background-image: "imagens/Capa.png"
+      data-background-size: cover
+---
+
+# Contextualização  {.Transicao data-background-image="imagens/Transicao.png" data-background-size="cover"}
+
+## ANOVA Clássica
+
+:::: columns
+
+::: {.column width="55%"}
+
+::: {.box-blue style="font-size: 0.8em; min-height: 350px; text-align: left;margin-bottom: 15px;"}
+
+**Objetivo:**  
+
+Comparar médias de *k* grupos
+
+---
+
+**Hipótese:**
+
+$$
+\begin{cases}
+H_0: \mu_1 = \mu_2 = \cdots = \mu_k \\ 
+H_1: \exists\, i,j \text{ tal que } \mu_i \neq \mu_j
+\end{cases}
+$$
+
+---
+
+**Estatística de teste:**
+
+$$
+F =
+\frac{QM_{Entre}}{QM_{Dentro}}
+=
+\frac{\frac{SQ_{Entre}}{k-1}}
+{\frac{SQ_{Dentro}}{N-k}}
+$$
+
+:::
+
+
+
+::: {.box-blue style="font-size: 0.70em;text-align: center;"}
+
+$QM_{Dentro}$ é um estimador não viesado para $\sigma^2$
+
+$$
+E(QM_{Dentro}) = \sigma^2
+$$
+
+:::
+
+
+:::
+
+::: {.column width="3%"}
+
+:::
+
+::: {.column width="42%"}
+
+::: {.box-blue style="font-size: 0.8em; min-height: 100px; text-align: left;"}
+**Suposições:**
+
+- Independência  
+- Normalidade  
+- **Homocedasticidade**
+
+$$
+\sigma_1^2 = \cdots = \sigma_k^2
+$$
+
+:::
+
+<div style="height: 30px;"></div>
+
+::: {.box-blue style="font-size: 0.71em; min-height: 60px; text-align: left;"}
+
+**Interpretação do teste:**
+
+- $F \approx 1$: a variação entre as médias dos grupos é **semelhante** em relação à variação dentro dos grupos
+
+- $F$ elevado: a variação entre as médias dos grupos é **maior** em relação à variação dentro dos grupos
+
+- $p$-valor < $\alpha$: rejeitamos $H_0$
+
+:::
+
+:::
+
+::::
+
+## O papel da Homogeneidade 
+
+:::: {.columns}
+
+::: {.column width="47%"}
+
+::: {.box-blue style="font-size: 0.9em; min-height: 80px; text-align: left;"}
+
+**Onde é utilizada?**
+
+- A homogeneidade aparece no denominador:
+
+$$
+QM_{\text{Dentro}}
+$$
+
+- Estima uma **variância comum** para todos os grupos
+
+$$
+F =
+\frac{QM_{\text{Entre}}}
+{\color{#2563eb}{QM_{\text{Dentro}}}}
+=
+\frac{
+\dfrac{SQ_{\text{Entre}}}{k-1}
+}{
+\color{#2563eb}{
+\dfrac{SQ_{\text{Dentro}}}{N-k}
+}
+}
+$$
+:::
+
+:::
+
+::: {.column width="4%"}
+
+:::
+
+::: {.column width="47%"}
+
+::: {.box-yellow style="font-size: 0.9em; min-height: 100px; text-align: left;"}
+
+**O problema da heterogeneidade**
+
+Quando:
+
+$$
+\sigma_i^2 \neq \sigma_j^2
+$$
+
+- $QM_{\text{Dentro}}$ pode não representar corretamente o erro
+
+- A confiabilidade da estatística $F$ pode ser comprometida
+
+:::
+
+:::
+
+::::
+
+## Teste de Tukey
+
+::: box-gray
+
+**Objetivo:**  
+
+Identificar **quais pares de médias diferem** após rejeitar $H_0$ na ANOVA
+
+---
+
+**Estatística de teste:**
+
+$$
+q_{ij} =
+\frac{\bar{y}_i - \bar{y}_j}
+{\sqrt{\frac{{QM_{Dentro}}}{n}}}
+$$
+
+- Compara pares de médias $i$ e $j$
+- Valores altos de $q_{ij}$ indicam diferença significativa  
+
+:::
+
+
+
+# ANOVA de Welch  {.Transicao data-background-image="imagens/Transicao.png" data-background-size="cover"}
+
+## ANOVA de Welch
+
+:::: columns
+
+::: {.column width="48%"}
+
+::: {.box-gray style="font-size: 0.82em; height: 190px; box-sizing: border-box;"}
+
+**Quando usar?**
+
+Quando a hipótese de homocedasticidade **não é satisfeita**
+
+:::
+
+<br>
+
+::: {.box-blue style="font-size: 0.82em; height: 280px; box-sizing: border-box;"}
+
+**Estatística**
+
+$$
+F_W =
+\frac{
+\sum w_i(\bar{y}_i-\bar{y}_w)^2/(k-1)
+}{
+1+\frac{2(k-2)}{k^2-1}
+\sum\frac{1}{n_i-1}
+\left(1-\frac{w_i}{\sum w_i}\right)^2
+}
+$$
+
+:::
+
+:::
+
+::: {.column width="4%"}
+
+:::
+
+::: {.column width="48%"}
+
+::: {.box-gray style="font-size: 0.82em; height: 290px;"}
+
+**Ideia**
+
+- Cada grupo tem sua própria variância
+- Grupos com **menor variância** recebem **mais peso**
+
+$$
+w_i=\frac{n_i}{s_i^2}
+$$
+
+:::
+
+<div style="height: 30px;"></div>
+
+::: {.box-yellow style="font-size: 0.82em; height: 280px; box-sizing: border-box;"}
+
+**Interpretação de $\boldsymbol{F_W}$**
+
+- **Numerador:** diferença ponderada entre as médias
+- **Denominador:** correção para variâncias diferentes
+
+:::
+
+:::
+
+::::
+
+## Comparação das Estatísticas
+
+::: {.box-gray}
+
+$$
+\color{#052034}{
+F
+=
+\frac{
+\frac{\color{#7C3AED}{SQ_{\text{Entre}}}}{k-1}
+}{
+\frac{\color{#2563eb}{SQ_{\text{Dentro}}}}{N-k}
+}
+=
+\frac{
+\frac{1}{k-1}
+\sum_{i=1}^k 
+n_i
+(\bar{y}_i-\bar{y})^2
+}{
+\frac{1}{N-k}
+\sum_{i=1}^k \sum_{j=1}^{n_i} 
+(y_{ij}-\bar{y}_i)^2
+}
+\sim
+F_{k-1,\,N-k}
+}
+$$
+
+---
+
+$$
+\color{#052034}{
+F_W =
+\frac{
+\frac{1}{k-1}
+\sum_i
+w_i
+(\bar{y}_i-\bar{y}_w)^2
+}{
+1+
+\frac{2(k-2)}{k^2-1}
+\sum_i
+\frac{1}{n_i-1}
+\left(
+1-\frac{w_i}{\sum_i w_i}
+\right)^2
+}
+\sim
+F_{k-1,\,\nu}
+\;;\;
+\nu \approx
+\frac{k^2-1}{
+3\displaystyle\sum_i
+\frac{\left(1-w_i/\sum_i w_i\right)^2}{n_i-1}
+}
+}
+$$
+
+:::
+
+# Teste de Games-Howell  {.Transicao data-background-image="imagens/Transicao.png" data-background-size="cover"}
+
+## Escolha do método pós-hoc
+
+<div style="height: 30px;"></div>
+
+::: {.box-blue style="font-size: 0.70em; padding: 0.4em 0.8em; margin: 0 auto 50px auto; width: 72%; text-align: left;"}
+
+Após rejeitar a igualdade das médias, queremos descobrir **quais pares de médias diferem**
+
+:::
+
+:::: columns
+
+::: {.column width="48%"}
+
+::: {.box-blue style="font-size: 0.88em; padding: 0.35em 0.7em; margin-bottom: px; text-align: left;"}
+
+**Limitação do Tukey**
+
+$$
+q_{ij} =
+\frac{\bar{y}_i - \bar{y}_j}
+{\sqrt{
+\frac{\color{#2563eb}{QM_{\text{Dentro}}}}{n}
+}}
+\sim q_{k,\color{#2563eb}{gl}}
+$$
+
+- Necessita de **homocedasticidade**  
+- Usa o mesmo erro para todos os pares
+
+:::
+
+:::
+
+::: {.column width="4%"}
+
+:::
+
+::: {.column width="48%"}
+
+::: {.box-blue style="font-size: 0.88em; padding: 0.35em 0.7em; margin-bottom: 30px; text-align: left;"}
+
+**Estatística de Games-Howell**
+
+$$
+t_{ij} =
+\frac{\bar{y}_i - \bar{y}_j}
+{\sqrt{
+\color{#D97706}{
+\frac{s_i^2}{n_i} + \frac{s_j^2}{n_j}
+}
+}}
+\sim t_{k,\color{#D97706}{gl_{ij}}}
+$$
+
+- Cada par $(i,j)$ usa **variância específica**  
+- Permite variâncias e tamanhos amostrais diferentes
+- Generaliza o teste $t$ de Welch para comparações múltiplas
+
+:::
+
+:::
+
+::::
+
+## Síntese dos métodos
+
+::: {.box-blue style="font-size: 0.82em; padding: 0.35em 0.7em; margin-bottom: 30px; text-align: left;"}
+
+**ANOVA clássica**
+
+- Usa uma variância comum e pressupõe homocedasticidade
+- Pós-teste de **Tukey** para comparar os pares de médias
+
+:::
+
+::: {.box-gray style="font-size: 0.82em; padding: 0.35em 0.7em; margin-bottom: 30px; text-align: left;"}
+
+**ANOVA de Welch**
+
+- Considera a variância de cada grupo
+- Ajusta a estatística $F$ e os graus de liberdade
+
+:::
+
+::: {.box-yellow style="font-size: 0.82em; padding: 0.35em 0.7em; text-align: left;"}
+
+**Games–Howell**
+
+- Compara os pares de médias após Welch
+- Não exige homogeneidade das variâncias
+
+:::
+
+# Referências {.Transicao data-background-image="imagens/Transicao.png" data-background-size="cover"}
+
+## Referências 
+
+::: box-blue
+
+- FISHER, R. A. (1925). *Statistical Methods for Research Workers*. Edinburgh: Oliver & Boyd.  
+
+- TUKEY, J. W. (1949). *Comparing individual means in the analysis of variance*. Biometrics, 5(2), 99–114.  
+
+- Delacre, M., Leys, C., Mora, Y. L., & Lakens, D. (2019). *Taking Parametric Assumptions Seriously: Arguments for the Use of Welch’s F-test instead of the Classical F-test in One-Way ANOVA*. International Review of Social Psychology, 32(1). DOI: 10.5334/irsp.198.  
+
+- Maxwell, S. E., Delaney, H. D., & Kelley, K. *Designing Experiments and Analyzing Data: A Model Comparison Perspective.*
+
+- GAMES, P. A.; HOWELL, J. F. (1976). *Pairwise multiple comparison procedures with unequal n's and/or variances: A Monte Carlo study*. Journal of Educational Statistics, 1(2), 113–125.  
+::: 
+
+# Obrigado. {.unnumbered .Transicao data-background-image="imagens/Transicao.png" data-background-size="cover"}

@@ -1,0 +1,419 @@
+---
+title: "ANOVA de Welch"
+subtitle: "Comparação de médias quando as variâncias são diferentes"
+author:
+  - "Nome 1"
+  - "Nome 2"
+  - "Nome 3"
+format:
+  revealjs:
+    theme: default
+    css: custom.css
+    slide-number: true
+    progress: true
+    transition: fade
+    background-transition: fade
+    width: 1920
+    height: 1080
+    margin: 0.06
+    center: false
+    footer: "ANOVA de Welch e teste de Games–Howell"
+    chalkboard: false
+lang: pt-BR
+---
+
+```{=html}
+<style>
+.transicao-box {
+  width: 58%;
+  margin: 260px auto 0 auto;
+  padding: 28px 42px;
+  border-radius: 16px;
+  background: rgba(5, 32, 52, 0.78);
+  color: white;
+  text-align: center;
+  backdrop-filter: blur(3px);
+}
+
+.transicao-box h1,
+.transicao-box p {
+  color: white !important;
+  text-align: center;
+}
+
+.referencias {
+  font-size: 0.72em;
+}
+</style>
+```
+
+## Roteiro
+
+::: {.columns}
+::: {.column width="48%"}
+### Contexto
+
+- O que a ANOVA clássica testa
+- Estatística $F$ e suas suposições
+- Consequências da heterogeneidade
+:::
+
+::: {.column width="48%"}
+### Alternativas
+
+- Ajuste da ANOVA de Welch
+- Comparações com Games–Howell
+- Quando usar cada procedimento
+:::
+:::
+
+## 1. Contexto {background-image="imagens/transicao.jpg" background-size="cover" background-position="center"}
+
+::: {.transicao-box}
+# ANOVA clássica
+
+Como comparar as médias de vários grupos?
+:::
+
+## O que a ANOVA clássica testa?
+
+Considere $k$ grupos independentes, com médias populacionais $\mu_1,\ldots,\mu_k$.
+
+::: {.columns}
+::: {.column width="48%"}
+### Hipótese nula
+
+$$
+H_0:\mu_1=\mu_2=\cdots=\mu_k
+$$
+
+As médias populacionais são iguais.
+:::
+
+::: {.column width="48%"}
+### Hipótese alternativa
+
+$$
+H_1:\text{pelo menos uma média difere}
+$$
+
+A ANOVA não informa diretamente quais grupos diferem.
+:::
+:::
+
+## De onde vem a estatística $F$?
+
+A variabilidade total é separada em duas partes:
+
+$$
+SQ_T=SQ_{\text{entre}}+SQ_{\text{dentro}}
+$$
+
+::: {.columns}
+::: {.column width="48%"}
+$$
+QM_{\text{entre}}=\frac{SQ_{\text{entre}}}{k-1}
+$$
+
+Variação explicada pelas diferenças entre as médias.
+:::
+
+::: {.column width="48%"}
+$$
+QM_{\text{dentro}}=\frac{SQ_{\text{dentro}}}{N-k}
+$$
+
+Variação existente dentro dos grupos.
+:::
+:::
+
+::: {.box-blue}
+$$
+F=\frac{QM_{\text{entre}}}{QM_{\text{dentro}}}
+$$
+
+Quanto maior $F$, maior a evidência contra $H_0$.
+:::
+
+## Suposições principais
+
+::: {.box-yellow}
+### Para a ANOVA clássica
+
+- **Independência:** observações independentes dentro e entre os grupos.
+- **Normalidade:** erros aproximadamente normais em cada população.
+- **Homocedasticidade:** mesma variância populacional em todos os grupos.
+
+$$
+\sigma_1^2=\sigma_2^2=\cdots=\sigma_k^2
+$$
+:::
+
+## Onde a homogeneidade é utilizada?
+
+Na ANOVA clássica, as variâncias dos grupos são combinadas em uma estimativa comum:
+
+$$
+QM_{\text{dentro}}
+=
+\frac{\displaystyle\sum_{i=1}^{k}(n_i-1)s_i^2}{N-k}
+$$
+
+::: {.box-gray}
+Essa variância combinada aparece no denominador da estatística $F$ e também no teste de Tukey. Se as variâncias forem muito diferentes, ela pode representar mal os grupos.
+:::
+
+## O problema das variâncias diferentes
+
+Quando $\sigma_1^2,\ldots,\sigma_k^2$ são diferentes, principalmente com tamanhos amostrais desiguais:
+
+::: {.columns}
+::: {.column width="31%"}
+### Erro tipo I
+
+A taxa real de falsos positivos pode se afastar de $\alpha$.
+:::
+
+::: {.column width="31%"}
+### Grupo dominante
+
+Grupos maiores ou mais variáveis podem influenciar excessivamente o teste.
+:::
+
+::: {.column width="31%"}
+### Decisão inadequada
+
+O valor de $F$ e o $p$-valor podem ficar distorcidos.
+:::
+:::
+
+::: {.box-blue}
+O problema não é simplesmente “ter variâncias diferentes”, mas usar uma variância comum quando essa aproximação não é adequada.
+:::
+
+## Comparações múltiplas: Tukey
+
+Após uma ANOVA significativa, o teste de Tukey compara os pares de médias controlando o erro familiar.
+
+Para tamanhos amostrais diferentes, a estatística de Tukey–Kramer é:
+
+$$
+q_{ij}=
+\frac{|\bar X_i-\bar X_j|}
+{\sqrt{\dfrac{QM_{\text{dentro}}}{2}
+\left(\dfrac{1}{n_i}+\dfrac{1}{n_j}\right)}}
+$$
+
+::: {.box-yellow}
+O mesmo $QM_{\text{dentro}}$ é utilizado em todas as comparações. Portanto, o método continua dependendo da homogeneidade das variâncias.
+:::
+
+## 2. ANOVA de Welch {background-image="imagens/transicao.jpg" background-size="cover" background-position="center"}
+
+::: {.transicao-box}
+# ANOVA de Welch
+
+Pesos diferentes para grupos com precisões diferentes
+:::
+
+## O que muda na ANOVA de Welch?
+
+::: {.columns}
+::: {.column width="48%"}
+### ANOVA clássica
+
+- Utiliza uma variância combinada.
+- Pressupõe homocedasticidade.
+- Graus de liberdade usuais: $k-1$ e $N-k$.
+:::
+
+::: {.column width="48%"}
+### ANOVA de Welch
+
+- Não combina as variâncias em uma única estimativa.
+- Considera $s_i^2$ e $n_i$ separadamente.
+- Ajusta a estatística e os graus de liberdade.
+:::
+:::
+
+## Pesos e média ponderada
+
+Cada grupo recebe um peso proporcional à precisão de sua média:
+
+$$
+w_i=\frac{n_i}{s_i^2},
+\qquad
+W=\sum_{i=1}^{k}w_i
+$$
+
+$$
+\bar X_w=\frac{\displaystyle\sum_{i=1}^{k}w_i\bar X_i}{W}
+$$
+
+::: {.box-blue}
+Um grupo com maior $n_i$ recebe mais peso; um grupo com maior variância $s_i^2$ recebe menos peso.
+:::
+
+## Estatística de Welch
+
+Defina:
+
+$$
+A=\frac{\displaystyle\sum_{i=1}^{k}w_i(\bar X_i-\bar X_w)^2}{k-1}
+$$
+
+$$
+C=\sum_{i=1}^{k}
+\frac{\left(1-\dfrac{w_i}{W}\right)^2}{n_i-1}
+$$
+
+Então:
+
+$$
+F_W=
+\frac{A}
+{1+\dfrac{2(k-2)}{k^2-1}C}
+$$
+
+## Graus de liberdade ajustados
+
+A estatística $F_W$ é comparada a uma distribuição $F$ aproximada com:
+
+$$
+\nu_1=k-1
+$$
+
+$$
+\nu_2=\frac{k^2-1}{3C}
+$$
+
+::: {.box-gray}
+Os graus de liberdade podem ser fracionários. Esse ajuste ajuda a manter a taxa de erro tipo I quando as variâncias e os tamanhos amostrais são diferentes.
+:::
+
+## Lógica estatística do ajuste
+
+```{mermaid}
+flowchart LR
+  A[Variâncias diferentes] --> B[Pesos específicos]
+  B --> C[Média ponderada]
+  C --> D[Correção de F]
+  D --> E[Graus de liberdade ajustados]
+```
+
+::: {.box-blue}
+Welch compara as médias sem fingir que todos os grupos possuem a mesma precisão.
+:::
+
+## 3. Games–Howell {background-image="imagens/transicao.jpg" background-size="cover" background-position="center"}
+
+::: {.transicao-box}
+# Teste de Games–Howell
+
+Quais pares de médias são diferentes?
+:::
+
+## Por que não usar Tukey após Welch?
+
+::: {.columns}
+::: {.column width="48%"}
+### Tukey–Kramer
+
+- Emprega $QM_{\text{dentro}}$ comum.
+- Usa os mesmos graus de liberdade residuais.
+- É adequado sob homogeneidade de variâncias.
+:::
+
+::: {.column width="48%"}
+### Games–Howell
+
+- Usa as variâncias dos dois grupos comparados.
+- Calcula graus de liberdade para cada par.
+- Não exige tamanhos amostrais iguais.
+:::
+:::
+
+## Estatística de Games–Howell
+
+Para comparar os grupos $i$ e $j$:
+
+$$
+q_{ij}=
+\frac{|\bar X_i-\bar X_j|}
+{\sqrt{\dfrac{1}{2}
+\left(\dfrac{s_i^2}{n_i}+\dfrac{s_j^2}{n_j}\right)}}
+$$
+
+Os graus de liberdade do par são aproximados por Welch–Satterthwaite:
+
+$$
+\nu_{ij}=
+\frac{\left(\dfrac{s_i^2}{n_i}+\dfrac{s_j^2}{n_j}\right)^2}
+{\dfrac{(s_i^2/n_i)^2}{n_i-1}
++\dfrac{(s_j^2/n_j)^2}{n_j-1}}
+$$
+
+## Como interpretar o Games–Howell?
+
+Para cada par de grupos, o procedimento fornece:
+
+- diferença estimada entre as médias;
+- intervalo de confiança simultâneo;
+- $p$-valor ajustado para comparações múltiplas.
+
+::: {.box-yellow}
+Se o $p$-valor ajustado for menor que $\alpha$, há evidência de diferença entre as médias daquele par.
+:::
+
+## Escolha do procedimento
+
+| Situação | Teste global | Pós-hoc |
+|---|---|---|
+| Variâncias semelhantes | ANOVA clássica | Tukey ou Tukey–Kramer |
+| Variâncias diferentes | ANOVA de Welch | Games–Howell |
+| Dúvida sobre a igualdade das variâncias | Avaliar gráficos e teste de Levene | Escolher de forma coerente com o teste global |
+
+::: {.box-blue}
+O pós-hoc deve respeitar as mesmas condições consideradas no teste global.
+:::
+
+## Conclusão
+
+::: {.columns}
+::: {.column width="31%"}
+### ANOVA clássica
+
+Compara médias usando uma variância residual comum.
+:::
+
+::: {.column width="31%"}
+### Welch
+
+Pondera os grupos e ajusta os graus de liberdade.
+:::
+
+::: {.column width="31%"}
+### Games–Howell
+
+Compara pares utilizando variâncias e graus de liberdade próprios.
+:::
+:::
+
+::: {.box-gray}
+Quando há heterogeneidade de variâncias, especialmente com amostras de tamanhos diferentes, Welch e Games–Howell formam uma combinação mais adequada.
+:::
+
+## Referências
+
+::: {.referencias}
+- GAMES, P. A.; HOWELL, J. F. Pairwise multiple comparison procedures with unequal n's and/or variances. *Journal of Educational Statistics*, v. 1, n. 2, p. 113–125, 1976.
+- MONTGOMERY, D. C. *Design and Analysis of Experiments*. 10. ed. Hoboken: Wiley, 2019.
+- TUKEY, J. W. Comparing individual means in the analysis of variance. *Biometrics*, v. 5, n. 2, p. 99–114, 1949.
+- WELCH, B. L. On the comparison of several mean values: an alternative approach. *Biometrika*, v. 38, n. 3/4, p. 330–336, 1951.
+:::
+
+## Obrigado!
+
+::: {.box-blue}
+# Perguntas?
+:::
