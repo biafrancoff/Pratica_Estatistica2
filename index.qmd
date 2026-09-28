@@ -97,7 +97,7 @@ Análise de Variânica e Testes Pós-hoc: ANOVA, Welch, Tukey e Games-Howell
 ### Atividade Avaliativa 6
 
 <div class="tema">
-Em breve
+Em breve.
 </div>
 
 [ABRIR ATIVIDADE →](Atividade_5/)
