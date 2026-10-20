@@ -1,0 +1,1206 @@
+---
+title: "**PRÁTICA ESTATÍSTICA II**"
+subtitle: "**PROJETO I**"
+author: "Beatriz Franco (<beatrizff@id.uff.br>)"
+date: 2026-10-21
+date-format: "DD/MM/YYYY"
+institute: "Universidade Federal Fluminense"
+format:
+  revealjs:
+    css: custom.css
+    slide-number: true
+    incremental: false
+    transition: slide
+    background-transition: fade
+    width: 1280
+    height: 720
+    margin: 0.07
+    auto-stretch: false
+    number-sections: true
+    title-slide-attributes:
+      data-background-image: "imagens/Capa.png"
+      data-background-size: cover
+---
+
+# Introdução {.transicao data-background-image="imagens/Transicao.png" data-background-size="cover"}
+
+## A Pesquisa {style="font-size: 0.9em;"}
+
+::: box-blue
+
+<u>**Contexto**</u>
+
+::: {style="display:flex; align-items:center; gap:1em;"}
+
+::: {style="flex:1;"}
+- A **pandemia de COVID-19** provocou mudanças para a vida da população; 
+- Mudanças sociais, econômicas e comportamentais;
+- O isolamento social modificou a rotina das pessoas.
+:::
+
+
+:::
+:::
+
+<br>
+
+::: box-blue
+
+<u>**Motivação**</u>
+
+::: {style="display:flex; align-items:center; gap:1em;"}
+
+::: {style="flex:1;"}
+- Diferentes fatores podem estar associados a alterações no comportamento alimentar;
+- O **consumo de refrigerantes** é o foco da investigação.
+:::
+
+
+:::
+:::
+
+## Objetivo
+
+::: box-blue
+
+<u>**Problema de pesquisa**</u>
+
+::: {style="display:flex; align-items:center; gap:1em;"}
+
+::: {style="flex:1;"}
+- Quais **fatores** estão associados às **mudanças no consumo de refrigerante** durante a pandemia de COVID-19? 
+:::
+
+
+:::
+:::
+
+<br>
+
+:::: {.columns style="font-size: 0.85em;"}
+
+::: {.column width="48%"}
+
+::: {.box-blue style="position: relative; top: -25px; height: 340px;"}
+
+<u>**Variável Desfecho**</u> 
+
+- **Refrigerante**: mudança no consumo durante a pandemia:
+  - Aumentou;
+  - Diminuiu; 
+  - Não alterou;
+  - [Não consumo]{.highlight-gray}.
+  
+:::
+
+:::
+
+::: {.column width="4%"}
+:::
+
+::: {.column width="48%"}
+
+::: {.box-blue style="position: relative; top: -25px; height: 340px;"}
+
+<u>**Variáveis Explicativas**</u>
+
+- Sociodemográficas;  
+- Econômicas;  
+- Relacionadas à pandemia;
+- Antropométricas; 
+- Comportamentais.
+  
+  
+:::
+
+:::
+
+::::
+
+# Metodologia {.transicao data-background-image="imagens/Transicao.png" data-background-size="cover"}
+
+## Tratamento dos Dados
+
+::: {.box-blue style="font-size: 0.76em; padding: 0.35em 0.7em; margin-bottom: 50px; text-align: left;"}
+
+<u>**Tratamento das variáveis explicativas:**</u>
+
+   - **Gênero:** agrupamento das categorias “Outro” e “Prefiro não responder"  na categoria “Outros/Prefiro não responder”.
+   - **Raça/cor:** agrupamento das categorias “Amarelo”, “Indígena” e “Outro” na nova categoria “Outros”.
+   - **Escolaridade:** agrupamento das categorias “Analfabeto” e “Ensino fundamental completo” na nova categoria “Até ensino fundamental completo”.
+  
+:::
+
+::: {.box-blue style="font-size: 0.76em; padding: 0.35em 0.7em; margin-bottom: 30px; text-align: left;"}
+
+- **Pacotes do R:** openxlsx, dplyr, gtsummary, gt, rstatix, ggplot2, qqplotr, DescTools, multcompView.
+
+:::
+
+## Sobre os Dados
+
+::: {.box-blue style="font-size: 0.76em; padding: 0.35em 0.7em; margin-bottom: 30px; text-align: left;"}
+
+- **Amostra:** 
+  - 2.155 indivíduos adultos; 
+- **Coleta:**
+  - Dados obtidos por questionário online;
+  - Coletados por alunas da pós-graduação em Nutrição na UFF;
+  - Aplicado no ano de 2022.
+
+:::
+
+::: {.box-blue style="font-size: 0.76em; padding: 0.35em 0.7em; margin-bottom: 30px; text-align: left;"}
+
+- <u>**Variável resposta:**</u> 
+  - **Refrigerante:** variável que representa as mudanças no consumo de refrigerante durante a pandemia de COVID-19.
+
+
+- <u>**Variáveis explicativas:**</u>
+  - **Qualitativas:** gênero, raça/cor, região, isolamento social, situação de trabalho, faixa de renda familiar, nível de escolaridade, diagnóstico de covid-19, consulta com nutricionista, dificuldade financeira, consumo de cigarro, ansiedade, depressão, insônia e enxaqueca.
+  - **Quantitativas:** idade, peso, altura e IMC.
+
+
+:::
+
+
+
+## Testes Aplicados
+
+::: {.box-blue style="font-size: 0.85em; padding: 0.35em 0.7em; margin-bottom: 50px; text-align: left;"}
+
+<u>**Verificação de Suposições**</u>
+
+  - **Normalidade:** avaliação gráfica (Densidade e QQ-plot);
+  - **Homocedasticidade:** teste de Levene;
+  - **Independência:** assumida com base no delineamento do estudo.
+
+:::
+
+:::: columns
+
+::: {.column width="48%"}
+
+::: {.box-blue style="font-size: 0.85em; padding: 0.35em 0.7em; margin-bottom: 30px; text-align: left;"}
+
+<u>**Variáveis qualitativas**</u>
+
+  - Teste qui-quadrado;
+  - Teste exato de Fisher;  
+  - Coeficiente de Cramér; 
+  - Análise de resíduos padronizados.
+
+:::
+
+:::
+
+::: {.column width="4%"}
+
+:::
+
+::: {.column width="48%"}
+
+::: {.box-blue style="font-size: 0.85em; padding: 0.35em 0.7em; margin-bottom: 30px; text-align: left;"}
+
+<u>**Variáveis quantitativas**</u> 
+
+  - ANOVA de Welch;  
+  - Comparações múltiplas de Games-Howell.
+
+:::
+
+::: {.box-blue style="font-size: 0.85em; padding: 0.35em 0.7em; margin-top: -10px; text-align: left;"}
+
+<u>**Nível de significância:**</u>  $\alpha = 0{,}05$ (5%).
+
+:::
+
+:::
+
+::::
+
+
+
+# Resultados: {.transicao data-background-image="imagens/Transicao.png" data-background-size="cover"}
+
+## Tabela das variáveis qualitativas
+
+```{r, include=FALSE}
+
+#pacotes
+library(openxlsx)
+library(dplyr)
+library(gtsummary)
+library(gt)
+library(rstatix)
+
+gtsummary::theme_gtsummary_language(
+  language = "pt",
+  big.mark = ".",
+  decimal.mark = ","
+)
+
+DadosNutricao <- openxlsx::read.xlsx("Nutrição.xlsx")
+
+DadosQuali = DadosNutricao %>% select(Refrigerante, Genero, Raca_cor, Regiao, Isolamento,
+                              Trabalha, Renda_familiar, Escolaridade,
+                              Covid, Consulta_Nutricionista, Dificuldade_Financeira,
+                              cigarro, Ansiedade, Depressao, Insonia, Enxaqueca)
+
+# Tabelas de contingencia iniciais ---------------------------------------------
+tbl_summary(data = DadosQuali)
+
+tbl_summary(data = DadosQuali,
+            by = Refrigerante)
+
+tbl_summary(data = DadosQuali,
+            by = Refrigerante,
+            percent = 'row')
+
+# Verificação da Matriz Esperada (dados brutos) --------------------------------
+chisq.test(DadosQuali$Genero, DadosQuali$Refrigerante)$expected     ######
+chisq.test(DadosQuali$Raca_cor, DadosQuali$Refrigerante)$expected   ######
+chisq.test(DadosQuali$Regiao, DadosQuali$Refrigerante)$expected     #qui-quadrado
+chisq.test(DadosQuali$Isolamento, DadosQuali$Refrigerante)$expected #qui-quadrado
+chisq.test(DadosQuali$Trabalha, DadosQuali$Refrigerante)$expected   #qui-quadrado
+chisq.test(DadosQuali$Renda_familiar, DadosQuali$Refrigerante)$expected #qui-quadrado
+chisq.test(DadosQuali$Escolaridade, DadosQuali$Refrigerante)$expected   ######
+chisq.test(DadosQuali$Covid, DadosQuali$Refrigerante)$expected       #qui-quadrado
+chisq.test(DadosQuali$Consulta_Nutricionista, DadosQuali$Refrigerante)$expected #qui-quadado
+chisq.test(DadosQuali$Dificuldade_Financeira, DadosQuali$Refrigerante)$expected #qui-quadrado
+chisq.test(DadosQuali$cigarro, DadosQuali$Refrigerante)$expected    #qui-quadrado
+chisq.test(DadosQuali$Ansiedade, DadosQuali$Refrigerante)$expected  #qui-quadrado
+chisq.test(DadosQuali$Depressao, DadosQuali$Refrigerante)$expected  #qui-quadrado
+chisq.test(DadosQuali$Insonia, DadosQuali$Refrigerante)$expected    #qui-quadrado
+chisq.test(DadosQuali$Enxaqueca, DadosQuali$Refrigerante)$expected   #qui-quadrado
+
+
+# 2. Agrupando e tratando as variáveis no DadosQuali ---------------------------
+
+# Agrupando a variavel Genero
+DadosQuali$Genero_agrupado <- ifelse(
+  DadosQuali$Genero %in% c("Outro", "Prefiro não responder"),
+  "Outro/Prefiro não responder",
+  as.character(DadosQuali$Genero)
+)
+DadosQuali$Genero_agrupado <- factor(DadosQuali$Genero_agrupado)
+chisq.test(DadosQuali$Genero_agrupado, DadosQuali$Refrigerante)$expected  
+
+
+# Agrupando a variavel Raca
+DadosQuali$Raca_agrupado <- ifelse(
+  DadosQuali$Raca_cor %in% c("Amarela", "Indígena", "Outro"),
+  "Outros",
+  as.character(DadosQuali$Raca_cor)
+)
+DadosQuali$Raca_agrupado <- factor(DadosQuali$Raca_agrupado)
+chisq.test(DadosQuali$Raca_agrupado, DadosQuali$Refrigerante)$expected  
+
+
+# Agrupando a variavel Escolaridade
+DadosQuali$Escolaridade_agrupado <- ifelse(
+  DadosQuali$Escolaridade %in% c("Analfabeto", "Ensino Fundamental Completo"),
+  "Até Ensino Fundamental Completo",
+  as.character(DadosQuali$Escolaridade)
+)
+DadosQuali$Escolaridade_agrupado <- factor(DadosQuali$Escolaridade_agrupado)
+chisq.test(DadosQuali$Escolaridade_agrupado, DadosQuali$Refrigerante)$expected  
+
+# 3. Criando DadosQuali_ com as colunas novas e filtrando os dados residuais ---
+
+DadosQuali_ = DadosQuali %>% 
+  select(Refrigerante, Genero_agrupado, Raca_agrupado, Regiao, Isolamento,
+         Trabalha, Renda_familiar, Escolaridade_agrupado,
+         Covid, Consulta_Nutricionista, Dificuldade_Financeira,
+         cigarro, Ansiedade, Depressao, Insonia, Enxaqueca)
+
+
+# Limpando níveis não utilizados após o filtro
+DadosQuali_$Genero_agrupado <- droplevels(factor(DadosQuali_$Genero_agrupado))
+
+# 4. Adequando variáveis qualitativas (Ordenação e Níveis) ---------------------
+
+# Raça
+DadosQuali_$Raca_agrupado <- factor(
+  DadosQuali_$Raca_agrupado,
+  levels = c("Branca", "Parda", "Preta", "Outros", "Prefiro não declarar")
+)
+
+# Escolaridade
+DadosQuali_$Escolaridade_agrupado <- factor(
+  DadosQuali_$Escolaridade_agrupado,
+  levels = c("Até Ensino Fundamental Completo","Ensino Médio Completo", "Ensino Superior Completo", "Pós-graduação", "Não desejo informar")
+)
+
+unique(as.character(DadosQuali_$Renda_familiar))
+# Agora aplica os níveis na ordem crescente
+DadosQuali_$Renda_familiar <- factor(
+  as.character(DadosQuali_$Renda_familiar),
+  levels = c(
+    "até R$ 1254,00",
+    "entre R$ 1.255 - R$ 8.640",
+    "mais de R$ 8.640"
+  ),
+  labels = c(
+    "Até R$ 1.254",
+    "Entre R$ 1.255 - R$ 8.640",
+    "Mais de R$ 8.640"
+  )
+)
+
+
+
+# 5. Verificação da Matriz Esperada (ajustadas) --------------------------------
+chisq.test(DadosQuali_$Genero_agrupado,DadosQuali_$Refrigerante)$expected      #qui-quadrado
+chisq.test(DadosQuali_$Raca_agrupado, DadosQuali_$Refrigerante)$expected         #fisher
+chisq.test(DadosQuali_$Escolaridade_agrupado, DadosQuali_$Refrigerante)$expected #fisher
+
+
+# 6. Tabelas de contingencia finais --------------------------------------------
+tbl_summary(data = DadosQuali_)
+
+tbl_summary(data = DadosQuali_,
+            by = Refrigerante)
+
+tbl_summary(data = DadosQuali_,
+            by = Refrigerante,
+            percent = 'row')
+  
+
+
+# Tabela com o pvalor ----------------------------------------------------------
+tbl_summary(data = DadosQuali_,
+            by = Refrigerante,
+            percent = "row")%>%
+  add_p()
+
+# Residuos ---------------------------------------------------------------------
+# acima de 1,96 ou abaixo de -1,96 na normal padrao sao os caras influentes
+chisq.test(DadosQuali_$Genero_agrupado,DadosQuali_$Refrigerante)$stdres
+chisq.test(DadosQuali_$Isolamento,DadosQuali_$Refrigerante)$stdres
+chisq.test(DadosQuali_$Trabalha,DadosQuali_$Refrigerante)$stdres
+chisq.test(DadosQuali_$Renda_familiar,DadosQuali_$Refrigerante)$stdres
+chisq.test(DadosQuali_$Escolaridade_agrupado,DadosQuali_$Refrigerante)$stdres
+chisq.test(DadosQuali_$Consulta_Nutricionista,DadosQuali_$Refrigerante)$stdres
+chisq.test(DadosQuali_$Dificuldade_Financeira,DadosQuali_$Refrigerante)$stdres
+chisq.test(DadosQuali_$Ansiedade,DadosQuali_$Refrigerante)$stdres
+chisq.test(DadosQuali_$Insonia,DadosQuali_$Refrigerante)$stdres
+chisq.test(DadosQuali_$Enxaqueca,DadosQuali_$Refrigerante)$stdres
+
+
+
+# Coeficiente de Cramer --------------------------------------------------------
+
+cramer_fun <- function(data, variable, by, ...) {
+  tab <- table(data[[variable]], data[[by]])
+  v <- cramer_v(tab)
+  tibble::tibble(`**Cramér**` = round(v, 2))
+}
+
+# Criando tabela ---------------------------------------------------------------
+
+tabela <- tbl_summary(data = DadosQuali_,
+                      by = Refrigerante,
+                      percent = "row",
+                      label = list(
+                        Genero_agrupado ~ "Gênero<sup>F</sup>",
+                        Raca_agrupado ~ "Raça/Cor<sup>Q</sup>",
+                        Regiao ~ "Região<sup>Q</sup>",
+                        Isolamento ~"Isolamento social<sup>Q</sup>",
+                        Trabalha ~ "Situação de Trabalho<sup>Q</sup>",
+                        Renda_familiar ~ "Faixa de Renda Familiar<sup>Q</sup>",
+                        Escolaridade_agrupado ~"Nível de Escolaridade<sup>F</sup>",
+                        Covid ~"Diagnóstico de Covid-19<sup>Q</sup>",
+                        Consulta_Nutricionista ~ "Consulta com  Nutricionista<sup>Q</sup>",
+                        Dificuldade_Financeira ~"Dificuldade Financeira<sup>Q</sup>",
+                        cigarro ~"Consumo de Cigarro<sup>Q</sup>",
+                        Ansiedade ~"Ansiedade na Pandemia<sup>Q</sup>",
+                        Depressao ~"Depressão na Pandemia<sup>Q</sup>",
+                        Insonia ~"Insônia na Pandemia<sup>Q</sup>",
+                        Enxaqueca ~"Enxaqueca na Pandemia<sup>Q</sup>"
+                        
+                      )
+) %>%
+  add_p(
+    test = list(
+      all_categorical() ~ "chisq.test",
+      Escolaridade_agrupado ~ "fisher.test",
+      Genero_agrupado ~ "fisher.test"
+    ),
+    test.args = list(
+      Genero_agrupado ~ list(simulate.p.value = TRUE, B = 10000),
+      Escolaridade_agrupado ~ list(simulate.p.value = TRUE, B = 10000)
+    ),
+    pvalue_fun = label_style_pvalue(digits = 3)
+  ) %>%
+  bold_p(t = 0.05) %>%
+  add_stat(fns = everything() ~ cramer_fun) %>%
+  modify_spanning_header(all_stat_cols() ~ "**Refrigerante**") %>%
+  modify_header(label ~ "**Variáveis**") %>%
+  bold_labels() %>%
+  modify_header(all_stat_cols() ~ "**{level}**<br>{n} ({style_percent(p)}%)") %>%
+  modify_footnote(everything() ~ NA) %>%
+  as_gt() %>%                    
+  fmt_markdown(columns = label) %>%
+  
+  # Distribui larguras fixas e perfeitamente equilibradas entre as colunas
+  gt::cols_width(
+    label ~ gt::px(260),
+    all_stat_cols() ~ gt::px(125)
+  ) %>%
+  
+  gt::tab_options(
+    table.font.size = "20px",
+    heading.title.font.size = "26px",
+    column_labels.font.size = "22px",
+    container.height = gt::px(650),
+    container.overflow.y = TRUE,
+    data_row.padding = gt::px(10)
+  ) %>%
+  gt::tab_source_note(
+    source_note = gt::html(
+      "
+      <div class='legenda-modelo'>
+        <b>Q</b>: Teste qui-quadrado de Pearson;<br>
+        <b>F</b>: Teste exato de Fisher;<br>
+        <b>r</b>: Resíduo padronizado;<br>
+        <span style='color:#8FB9DE;'>■</span> Acima do esperado (r &gt; 1,96) &nbsp;&nbsp;&nbsp;
+        <span style='color:#B8A4D4;'>■</span> Abaixo do esperado (r &lt; -1,96) &nbsp;&nbsp;&nbsp;
+        <span style='color:#E5C94F;'>■</span> Associação significativa (p &lt; 0,05)
+      </div>
+      "
+    )
+  ) %>%
+  gt::tab_style(
+    style = list(
+      gt::cell_text(align = "left", v_align = "middle"),
+      "white-space: nowrap !important;"
+    ),
+    locations = gt::cells_body(columns = label)
+  ) %>%
+  gt::tab_style(
+    style = list(
+      "padding-left: 25px !important;"
+    ),
+    locations = gt::cells_body(
+      columns = label,
+      rows = row_type == "level"
+    )
+  ) %>%
+  gt::tab_style(
+    style = gt::cell_text(align = "left"),
+    locations = gt::cells_source_notes()
+  ) %>%
+  gt::opt_css(
+    css = "
+    .gt_table {
+      table-layout: fixed !important;
+      width: 100% !important;
+    }
+
+    /* Cabeçalho fixo no topo */
+    .gt_table thead {
+      position: sticky !important;
+      top: -12px !important;
+      z-index: 9999 !important;
+      background: white !important;
+    }
+
+    .gt_table thead th {
+      background: white !important;
+    }
+
+    /* Uniformiza todas as colunas de dados (Refrigerante, Valor-p e Cramér) */
+    .gt_table th:not(:first-child),
+    .gt_table td:not(:first-child) {
+      width: 125px !important;
+      min-width: 125px !important;
+      max-width: 125px !important;
+      text-align: center !important;
+      padding-left: 8px !important;
+      padding-right: 8px !important;
+    }
+
+    /* Rodapé fixo com linha preta permanente */
+    .gt_sourcenotes {
+      position: sticky !important;
+      bottom: 0 !important;
+      z-index: 99999 !important;
+      background: white !important;
+      padding: 0 !important;
+      text-align: left !important;
+      box-shadow: 0 -2px 0 0 #111827 !important; /* Mantém a linha preta sempre visível */
+    }
+
+    .gt_sourcenote {
+      background: white !important;
+      text-align: left !important;
+      padding: 8px 12px 10px 16px !important;
+      border-top: 2px solid #111827 !important;  /* Linha preta escura sobre a legenda */
+    }
+
+    .legenda-modelo {
+      text-align: left !important;
+      font-size: 16px !important;
+      line-height: 1.45 !important;
+      color: #111827 !important;
+      white-space: nowrap !important;
+    }
+    "
+  )
+
+# 2. Colorindo as Associações e Células Significativas --------------------------
+
+# Destaque Amarelo para Variáveis Significativas (p < 0,05)
+tabela <- tbl_summary(data = DadosQuali_,
+                      by = Refrigerante,
+                      percent = "row",
+                      missing = "no",
+                      label = list(
+                        Genero_agrupado ~ "Gênero<sup>F</sup>",
+                        Raca_agrupado ~ "Raça/Cor<sup>Q</sup>",
+                        Regiao ~ "Região<sup>Q</sup>",
+                        Isolamento ~"Isolamento social<sup>Q</sup>",
+                        Trabalha ~ "Situação de Trabalho<sup>Q</sup>",
+                        Renda_familiar ~ "Faixa de Renda Familiar<sup>Q</sup>",
+                        Escolaridade_agrupado ~"Nível de Escolaridade<sup>F</sup>",
+                        Covid ~"Diagnóstico de Covid-19<sup>Q</sup>",
+                        Consulta_Nutricionista ~ "Consulta com  Nutricionista<sup>Q</sup>",
+                        Dificuldade_Financeira ~"Dificuldade Financeira<sup>Q</sup>",
+                        cigarro ~"Consumo de Cigarro<sup>Q</sup>",
+                        Ansiedade ~"Ansiedade na Pandemia<sup>Q</sup>",
+                        Depressao ~"Depressão na Pandemia<sup>Q</sup>",
+                        Insonia ~"Insônia na Pandemia<sup>Q</sup>",
+                        Enxaqueca ~"Enxaqueca na Pandemia<sup>Q</sup>"
+                        )
+) %>%
+  add_p(
+    test = list(
+      all_categorical() ~ "chisq.test",
+      Genero_agrupado ~ "fisher.test",
+      Escolaridade_agrupado ~ "fisher.test"
+    ),
+    test.args = list(
+      Genero_agrupado ~ list(simulate.p.value = TRUE, B = 10000),
+      Escolaridade_agrupado ~ list(simulate.p.value = TRUE, B = 10000)
+    ),
+    pvalue_fun = label_style_pvalue(digits = 3)
+  )  %>%
+  bold_p(t = 0.05) %>%
+  add_stat(fns = everything() ~ cramer_fun) %>%
+  
+  modify_spanning_header(all_stat_cols() ~ "**Mudança no consumo de refrigerantes**") %>%
+  modify_header(label ~ "**Variáveis**") %>%
+  bold_labels() %>%
+  modify_header(
+    all_stat_cols() ~ "**{level}**<br>{n} ({style_percent(p)}%)"
+  ) %>%
+  modify_footnote(everything() ~ NA) %>%
+  
+  as_gt() %>%
+  fmt_markdown(columns = label) %>%
+  
+  # Largura das colunas
+  gt::cols_width(
+  label ~ gt::pct(24),
+  all_stat_cols() ~ gt::pct(12.67)
+) %>%
+  
+  gt::tab_options(
+    table.font.size = "20px",
+    heading.title.font.size = "26px",
+    column_labels.font.size = "22px",
+    container.height = gt::px(650),
+    container.overflow.y = TRUE,
+    data_row.padding = gt::px(10)
+  ) %>%
+  
+  gt::tab_source_note(
+    source_note = gt::html(
+      "
+      <div class='legenda-modelo'>
+        <b>Q</b>: Teste qui-quadrado de Pearson;<br>
+        <b>F</b>: Teste exato de Fisher;<br>
+        <b>r</b>: Resíduo padronizado;<br>
+        <span style='color:#8FB9DE;'>■</span> Acima do esperado (r &gt; 1,96) &nbsp;&nbsp;&nbsp;
+        <span style='color:#B8A4D4;'>■</span> Abaixo do esperado (r &lt; -1,96) &nbsp;&nbsp;&nbsp;
+        <span style='color:#E5C94F;'>■</span> Associação significativa (p &lt; 0,05)
+      </div>
+      "
+    )
+  ) %>%
+  
+  gt::tab_style(
+    style = list(
+      gt::cell_text(align = "left"),
+      "white-space: nowrap !important;"
+    ),
+    locations = gt::cells_body(columns = label)
+  ) %>%
+  
+  gt::tab_style(
+    style = list(
+      "padding-left: 25px !important;"
+    ),
+    locations = gt::cells_body(
+      columns = label,
+      rows = row_type == "level"
+    )
+  ) %>%
+  
+  gt::tab_style(
+    style = gt::cell_text(align = "left"),
+    locations = gt::cells_source_notes()
+  ) %>%
+  
+  gt::opt_css(
+    css = "
+    
+    /* =====================================================
+       TABELA
+       ===================================================== */
+    
+    .gt_table {
+      table-layout: fixed !important;
+      width: 100% !important;
+    }
+    
+    
+   /* =====================================================
+   CABEÇALHO FIXO
+   ===================================================== */
+
+.tabela-qualitativa .gt_table thead th {
+  position: sticky !important;
+  background: white !important;
+  z-index: 100 !important;
+  white-space: nowrap !important;
+}
+
+.gt_table thead tr:first-child th {
+  top: -10px !important;                               /* <-- 1. PUXOU PARA CIMA */
+  z-index: 102 !important;
+  box-shadow: 0 -30px 0 0 white !important;           /* <-- 2. CRIA A PAREDE BRANCA NO TOPO */
+}
+
+.gt_table thead tr:nth-child(2) th {
+  top: 22px !important;                                /* <-- Compensou a subida (32 - 10 = 22px) */
+  z-index: 101 !important;
+}
+
+.gt_table thead th[rowspan] {
+  top: -10px !important;                               /* <-- PUXOU AS COLUNAS LATERAIS JUNTO */
+  z-index: 103 !important;
+  box-shadow: 0 -30px 0 0 white !important;           /* <-- PAREDE BRANCA NAS LATERAIS */
+}
+    
+  /* =====================================================
+   AJUSTE: DESLOCAR AUMENTOU PARA A DIREITA
+   ===================================================== */
+
+/* Seleciona exatamente a 1ª célula da 2ª linha do cabeçalho (Aumentou + valor) */
+.gt_table thead tr:nth-child(2) th:nth-child(1) {
+  text-align: center !important;
+  padding-left: 20px !important; /* Move para a direita */
+  padding-right: 0px !important;
+}
+
+/* Garante que o corpo da coluna continue alinhado normalmente */
+.gt_table tbody td:nth-child(2) {
+  text-align: center !important;
+  transform: none !important;
+}
+    /* =====================================================
+       COLUNA VARIÁVEIS
+       ===================================================== */
+    
+    .gt_table th:first-child,
+    .gt_table td:first-child {
+      width: 24% !important;
+      min-width: 24% !important;
+      max-width: 24% !important;
+      text-align: left !important;
+      padding-right: 15px !important;
+    }
+    
+    
+    /* =====================================================
+       4 COLUNAS DE REFRIGERANTE
+       ===================================================== */
+    
+    .gt_table th:nth-child(2),
+    .gt_table td:nth-child(2),
+    .gt_table th:nth-child(3),
+    .gt_table td:nth-child(3),
+    .gt_table th:nth-child(4),
+    .gt_table td:nth-child(4),
+    .gt_table th:nth-child(5),
+    .gt_table td:nth-child(5) {
+      width: 13% !important;
+      min-width: 13% !important;
+      max-width: 13% !important;
+      text-align: center !important;
+    }
+    .gt_table thead tr:nth-child(2) th {
+  white-space: nowrap !important;
+  font-size: 20px !important;
+}
+    
+    /* =====================================================
+       VALOR-P
+       ===================================================== */
+    
+    .gt_table th:nth-child(6),
+    .gt_table td:nth-child(6) {
+      width: 12% !important;
+      min-width: 12% !important;
+      max-width: 12% !important;
+      text-align: center !important;
+    }
+    
+    
+    /* =====================================================
+       CRAMÉR
+       ===================================================== */
+    
+    .gt_table th:nth-child(7),
+    .gt_table td:nth-child(7) {
+      width: 12% !important;
+      min-width: 12% !important;
+      max-width: 12% !important;
+      text-align: center !important;
+    }
+    
+    
+    /* =====================================================
+       CÉLULAS DAS COLUNAS NUMÉRICAS
+       ===================================================== */
+    
+    .gt_table th:not(:first-child),
+    .gt_table td:not(:first-child) {
+      padding-left: 8px !important;
+      padding-right: 8px !important;
+    }
+    
+    
+    /* =====================================================
+       LEGENDA FIXA
+       ===================================================== */
+    
+    .gt_table thead {
+      position: sticky !important;
+      top: -12px !important;
+      z-index: 9999 !important;
+      background: white !important;
+    }
+
+    .gt_table thead th {
+      background: white !important;
+    }
+
+    .gt_sourcenotes {
+      position: sticky !important;
+      bottom: 0 !important;
+      z-index: 99999 !important;
+      background: white !important;
+      padding-top: 6px !important;
+      padding-bottom: 8px !important;
+      box-shadow: 0 30px 0 0 white !important;
+    }
+
+    .gt_sourcenotes::before {
+      content: '';
+      position: absolute !important;
+      top: 0 !important;
+      left: 0 !important;
+      width: 100% !important;
+      height: 2px !important;
+      background: #4b5563 !important;
+      z-index: 100001 !important;
+    }
+
+    .gt_sourcenote {
+  background: white !important;
+  text-align: left !important;
+  padding-left: 0 !important;
+}
+
+.gt_sourcenote > * {
+  position: relative !important;
+  left: -280px !important;
+  white-space: nowrap !important;
+}
+  "
+)
+
+
+# ============================================================
+# 2. COLORINDO AS ASSOCIAÇÕES E CÉLULAS SIGNIFICATIVAS
+# ============================================================
+
+# Destaque Amarelo para Variáveis Significativas (p < 0,05)
+tabela <- tabela %>%
+  tab_style(
+    style = list(cell_fill(color = "#fef9c3")),
+    locations = cells_body(
+      rows = variable %in% c(
+        "Genero_agrupado", "Isolamento", "Trabalha", "Renda_familiar",
+        "Escolaridade_agrupado", "Consulta_Nutricionista",
+        "Dificuldade_Financeira", "Ansiedade", "Depressao", "Insonia",
+        "Enxaqueca"
+      ) & row_type == "label"
+    )
+  )
+
+# ============================================================
+# ACIMA DO ESPERADO (r > 1,96)
+# Apenas TEXTO em Azul Escuro + NEGRITO
+# ============================================================
+
+tabela <- tabela %>%
+  tab_style(
+    style = list(cell_text(color = "#0369a1", weight = "bold")),
+    locations = cells_body(
+      columns = stat_1,
+      rows = (variable == "Genero_agrupado" & label == "Feminino") |
+        (variable == "Escolaridade_agrupado" & label == "Ensino Superior Completo") |
+        (variable == "Escolaridade_agrupado" & label == "Não desejo informar") |
+        (variable == "Consulta_Nutricionista" & label == "Não") |
+        (variable == "Ansiedade" & label == "Sim") |
+        (variable == "Depressao" & label == "Sim") |
+        (variable == "Insonia" & label == "Sim") |
+        (variable == "Enxaqueca" & label == "Sim")
+    )
+  ) %>%
+  tab_style(
+    style = list(cell_text(color = "#0369a1", weight = "bold")),
+    locations = cells_body(
+      columns = stat_2,
+      rows = (variable == "Genero_agrupado" & label == "Masculino") |
+        (variable == "Trabalha" & label == "Não") |
+        (variable == "Renda_familiar" & label == "Até R$ 1.254") |
+        (variable == "Escolaridade_agrupado" & label == "Ensino Médio Completo") |
+        (variable == "Consulta_Nutricionista" & label == "Sim") |
+        (variable == "Dificuldade_Financeira" & label == "Sim") 
+    )
+  ) %>%
+  tab_style(
+    style = list(cell_text(color = "#0369a1", weight = "bold")),
+    locations = cells_body(
+      columns = stat_3,
+      rows = (variable == "Isolamento" & label == "Não") |
+        (variable == "Trabalha" & label == "Sim") |
+        (variable == "Escolaridade_agrupado" & label == "Pós-graduação") |
+        (variable == "Consulta_Nutricionista" & label == "Não") |
+        (variable == "Dificuldade_Financeira" & label == "Não") |
+        (variable == "Depressao" & label == "Não") |
+        (variable == "Insonia" & label == "Não") |
+        (variable == "Enxaqueca" & label == "Não")
+    )
+  ) %>%
+  tab_style(
+    style = list(cell_text(color = "#0369a1", weight = "bold")),
+    locations = cells_body(
+      columns = stat_4,
+      rows = (variable == "Genero_agrupado" & label == "Feminino") |
+        (variable == "Isolamento" & label == "Sim") |
+        (variable == "Renda_familiar" & label == "Mais de R$ 8.640") |
+        (variable == "Escolaridade_agrupado" & label == "Pós-graduação") |
+        (variable == "Consulta_Nutricionista" & label == "Sim") |
+        (variable == "Dificuldade_Financeira" & label == "Não") |
+        (variable == "Ansiedade" & label == "Não") |
+        (variable == "Insonia" & label == "Não")
+    )
+  )
+
+# ============================================================
+# ABAIXO DO ESPERADO (r < -1,96)
+# Apenas TEXTO em Roxo Escuro + NEGRITO
+# ============================================================
+
+tabela <- tabela %>%
+  tab_style(
+    style = list(cell_text(color = "#6d28d9", weight = "bold")),
+    locations = cells_body(
+      columns = stat_1,
+      rows = (variable == "Genero_agrupado" & label == "Masculino") |
+        (variable == "Escolaridade_agrupado" & label == "Pós-graduação") |
+        (variable == "Consulta_Nutricionista" & label == "Sim") |
+        (variable == "Ansiedade" & label == "Não") |
+        (variable == "Depressao" & label == "Não") |
+        (variable == "Insonia" & label == "Não") |
+        (variable == "Enxaqueca" & label == "Não")
+    )
+  ) %>%
+  tab_style(
+    style = list(cell_text(color = "#6d28d9", weight = "bold")),
+    locations = cells_body(
+      columns = stat_2,
+      rows = (variable == "Genero_agrupado" & label == "Feminino") |
+        (variable == "Trabalha" & label == "Sim") |
+        (variable == "Renda_familiar" & label == "Mais de R$ 8.640") |
+        (variable == "Escolaridade_agrupado" & label == "Pós-graduação") |
+        (variable == "Consulta_Nutricionista" & label == "Não") |
+        (variable == "Dificuldade_Financeira" & label == "Não")
+    )
+  ) %>%
+  tab_style(
+    style = list(cell_text(color = "#6d28d9", weight = "bold")),
+    locations = cells_body(
+      columns = stat_3,
+      rows = (variable == "Isolamento" & label == "Sim") |
+        (variable == "Trabalha" & label == "Não") |
+        (variable == "Escolaridade_agrupado" & label == "Ensino Médio Completo") |
+        (variable == "Consulta_Nutricionista" & label == "Sim") |
+        (variable == "Dificuldade_Financeira" & label == "Sim") |
+        (variable == "Depressao" & label == "Sim") |
+        (variable == "Insonia" & label == "Sim") |
+        (variable == "Enxaqueca" & label == "Sim")
+    )
+  ) %>%
+  tab_style(
+    style = list(cell_text(color = "#6d28d9", weight = "bold")),
+    locations = cells_body(
+      columns = stat_4,
+      rows = (variable == "Genero_agrupado" & label == "Masculino") |
+        (variable == "Isolamento" & label == "Não") |
+        (variable == "Renda_familiar" & label == "Até R$ 1.254") |
+        (variable == "Escolaridade_agrupado" & label == "Ensino Superior Completo") |
+        (variable == "Consulta_Nutricionista" & label == "Não") |
+        (variable == "Dificuldade_Financeira" & label == "Sim") |
+        (variable == "Ansiedade" & label == "Sim") |
+        (variable == "Insonia" & label == "Sim") 
+    )
+  )
+
+
+```
+
+```{r}
+tabela
+```
+
+## Tabela das variáveis quantitativas
+
+```{r, include=FALSE}
+
+#pacotes
+require(openxlsx)            # Leitura de base de dados
+require(dplyr)               # Manipulação de base de dados
+require(gtsummary)           # Tabelas automáticas
+require(gt)                  # Tabelas automáticas
+require(rstatix)             # Coeficiente de Cramer
+require(ggplot2)             # Gráficos
+require(qqplotr)             # Gráficos qqplot
+require(DescTools)           # Teste de Levene
+require(multcompView)
+
+
+Dados <- read.xlsx("Nutrição.xlsx")
+
+# linguagem de pontuação em português
+# formatação em português (vírgula pra decimais e ponto para milhares)
+theme_gtsummary_language("pt", big.mark = ".", decimal.mark = ",")
+
+DadosQuanti = Dados %>% 
+  select(Idade,Peso,Altura, IMC)
+
+
+#tabelas iniciais
+tbl_summary(data = DadosQuanti)
+
+tbl_summary(data = DadosQuanti,
+            statistic = all_continuous() ~ "{mean} ({sd})")
+
+Dados1 = Dados %>% 
+  select(Idade, Peso, Altura, IMC,Refrigerante)
+
+tbl_summary(data = Dados1,
+            by = Refrigerante,
+            statistic = all_continuous() ~ "{mean} ({sd})")
+
+
+#gerar as letras
+gerar_letras <- function(variavel, data, alpha = 0.05) {
+  
+  gh <- games_howell_test(
+    formula = as.formula(paste(variavel, "~ Refrigerante")),
+    data = data
+  )
+  
+  comparacoes <- paste(
+    gh$group1,
+    gh$group2,
+    sep = "-"
+  )
+  
+  pvalores <- gh$p.adj
+  names(pvalores) <- comparacoes
+  
+  letras <- multcompLetters(
+    pvalores,
+    threshold = alpha
+  )$Letters
+  
+  return(letras)
+}
+
+letras_idade <- gerar_letras("Idade", Dados1)
+letras_peso <- gerar_letras("Peso", Dados1)
+letras_altura <- gerar_letras("Altura", Dados1)
+letras_imc <- gerar_letras("IMC", Dados1)
+
+
+#tabela final
+tabela2 <- tbl_summary(
+  data = Dados1,
+  by = Refrigerante,
+  statistic = all_continuous() ~ "{mean} ({sd})",
+  label = list(
+    Idade ~ "Idade<sup>W</sup>",
+    Peso ~ "Peso<sup>W</sup>",
+    Altura ~ "Altura<sup>W</sup>",
+    IMC ~ "IMC<sup>W</sup>"
+  )
+) %>%
+  add_p(
+    test = all_continuous() ~ "oneway.test",
+    test.args = all_continuous() ~ list(var.equal = FALSE),
+    pvalue_fun = label_style_pvalue(digits = 3)
+  ) %>%
+  bold_p(t = 0.05) %>%
+  modify_spanning_header(all_stat_cols() ~ "**Refrigerante**") %>%
+  modify_header(label ~ "**Variáveis**<sup><em>3</em></sup>") %>%
+  bold_labels() %>%
+  modify_header(
+    all_stat_cols() ~ "**{level}**<br>N = {n}<sup><em>1</em></sup>"
+  ) %>%
+  modify_header(
+    p.value ~ "**Valor-p**<sup><em>2</em></sup>"
+  ) %>%
+  modify_footnote(everything() ~ NA) 
+  
+
+letras_lista <- list(
+  Idade = letras_idade,
+  Peso = letras_peso,
+  Altura = letras_altura,
+  IMC = letras_imc
+)
+
+grupos <- levels(factor(Dados1$Refrigerante))
+
+for (variavel in names(letras_lista)) {
+  
+  letras <- letras_lista[[variavel]]
+  
+  linha <- which(
+    tabela2$table_body$variable == variavel &
+      tabela2$table_body$row_type == "label"
+  )
+  
+  if (length(linha) == 1) {
+    
+    for (j in seq_along(grupos)) {
+      
+      grupo <- grupos[j]
+      coluna <- paste0("stat_", j)
+      
+      letra <- letras[grupo]
+      
+      if (!is.na(letra)) {
+        
+        tabela2$table_body[[coluna]][linha] <-
+          paste0(
+            tabela2$table_body[[coluna]][linha],
+            "<sup><strong>", letra, "</strong></sup>"
+          )
+      }
+    }
+  }
+}
+
+tabela2 <- tabela2 %>%
+  as_gt() %>%
+  fmt_markdown(columns = starts_with("stat_")) %>%
+  fmt_markdown(columns = label) %>%
+  tab_style(
+    style = cell_text(
+      v_align = "middle"
+    ),
+    locations = cells_column_labels(
+      columns = p.value
+    )
+  ) %>%
+  tab_style(
+    style = cell_fill(color = "#fef9c3"),
+    locations = cells_body(
+      rows = variable %in% c("Idade", "Peso", "Altura","IMC") &
+        row_type == "label"
+    )
+  ) %>%
+  tab_options(
+    table.font.size = "20px",
+    heading.title.font.size = "26px",
+    column_labels.font.size = "22px"
+ ) %>%
+  gt::tab_source_note(
+    source_note = gt::html(
+      paste0(
+  "<div class='legenda-modelo' style='margin-left:280px; margin-top:15px;'>",
+  "<span style='display:inline-block; width:12px; height:12px; ",
+  "background-color:#E5C94F; margin-right:5px;'></span>",
+  "Diferença estatisticamente significativa (p &lt; 0,05)<br>",
+  "<sup>1</sup> Média (Desvio Padrão);<br>",
+  "<sup>2</sup> ANOVA de Welch de um fator (não assumindo variâncias iguais);<br>",
+  "<sup>3</sup> Grupos que compartilham uma mesma letra não diferem ",
+  "significativamente pelo teste de Games-Howell (α = 0,05).",
+  "</div>"
+)
+    )
+  )
+
+```
+
+```{r}
+htmltools::div(
+  class = "tabela-quantitativa",
+  htmltools::HTML(gt::as_raw_html(tabela2)))
+```
+
+
+# Conclusão: {.transicao data-background-image="imagens/Transicao.png" data-background-size="cover"}
+
+## Principais Achados
+
+::: {.box-blue style="font-size: 0.76em; padding: 0.35em 0.7em; margin-bottom: 30px; text-align: left;"}
+
+- A **mudança no consumo de refrigerante** esteve relacionada a fatores **sociodemográficos**, **econômicos**, **emocionais** e **antropométricos**.
+
+:::
+
+::: {.box-blue style="font-size: 0.76em; padding: 0.35em 0.7em; margin-bottom: 30px; text-align: left;"}
+
+- **Idade**, **peso** e **IMC** apresentaram **diferenças expressivas** entre os grupos de consumo:  
+
+   - **Mais jovem** <span class="seta">→</span> **aumentou** o consumo    
+   - **Maior peso e IMC** <span class="seta">→</span> **aumentou** o consumo  
+
+
+:::
+
+::: {.box-blue style="font-size: 0.76em; padding: 0.35em 0.7em; margin-bottom: 30px; text-align: left;"}
+
+- Diversas **variáveis qualitativas** foram **significativas**, porém com **Cramér baixo**. Sendo as mais relevantes:   
+
+   - **Gênero feminino** <span class="seta">→</span> **aumentou** o consumo (ou **não consome**)
+   - **Dificuldade financeira** ou **baixa renda** <span class="seta">→</span> **diminuiu** o consumo   
+   - **Consulta com nutricionista** <span class="seta">→</span> **diminuiu** ou **não consome**
+   - **Aspectos emocionais** <span class="seta">→</span> **aumentou** o consumo  
+
+
+:::
+
+
+
+# Obrigado. {.unnumbered .transicao data-background-image="imagens/transicao.png" data-background-size="cover"}

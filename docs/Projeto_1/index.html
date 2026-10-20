@@ -1,0 +1,2216 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.9.38">
+
+  <meta name="author" content="Beatriz Franco (beatrizff@id.uff.br)">
+  <title>PRÁTICA ESTATÍSTICA II</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/reveal.css">
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-2740581606dc327e82f18f789b69d8a0.css">
+  <link rel="stylesheet" href="custom.css">
+  <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" data-background-image="imagens/Capa.png" data-background-size="cover" class="quarto-title-block center">
+  <h1 class="title"><strong>PRÁTICA ESTATÍSTICA II</strong></h1>
+  <p class="subtitle"><strong>PROJETO I</strong></p>
+
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Beatriz Franco (<a href="mailto:beatrizff@id.uff.br" class="email">beatrizff@id.uff.br</a>) 
+</div>
+        <p class="quarto-title-affiliation">
+            Universidade Federal Fluminense
+          </p>
+    </div>
+</div>
+
+  <p class="date">21/10/2026</p>
+</section>
+<section>
+<section id="introdução" class="title-slide slide level1 transicao center" data-background-image="imagens/Transicao.png" data-background-size="cover" data-number="1">
+<h1><span class="header-section-number">1</span> Introdução</h1>
+
+</section>
+<section id="a-pesquisa" class="slide level2" style="font-size: 0.9em;" data-number="1.1">
+<h2><span class="header-section-number">1.1</span> A Pesquisa</h2>
+<div class="box-blue">
+<p><u><strong>Contexto</strong></u></p>
+<div style="display:flex; align-items:center; gap:1em;">
+<div style="flex:1;">
+<ul>
+<li>A <strong>pandemia de COVID-19</strong> provocou mudanças para a vida da população;</li>
+<li>Mudanças sociais, econômicas e comportamentais;</li>
+<li>O isolamento social modificou a rotina das pessoas.</li>
+</ul>
+</div>
+</div>
+</div>
+<p><br></p>
+<div class="box-blue">
+<p><u><strong>Motivação</strong></u></p>
+<div style="display:flex; align-items:center; gap:1em;">
+<div style="flex:1;">
+<ul>
+<li>Diferentes fatores podem estar associados a alterações no comportamento alimentar;</li>
+<li>O <strong>consumo de refrigerantes</strong> é o foco da investigação.</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="objetivo" class="slide level2" data-number="1.2">
+<h2><span class="header-section-number">1.2</span> Objetivo</h2>
+<div class="box-blue">
+<p><u><strong>Problema de pesquisa</strong></u></p>
+<div style="display:flex; align-items:center; gap:1em;">
+<div style="flex:1;">
+<ul>
+<li>Quais <strong>fatores</strong> estão associados às <strong>mudanças no consumo de refrigerante</strong> durante a pandemia de COVID-19?</li>
+</ul>
+</div>
+</div>
+</div>
+<p><br></p>
+<div class="columns" style="font-size: 0.85em;">
+<div class="column" style="width:48%;">
+<div class="box-blue" style="position: relative; top: -25px; height: 340px;">
+<p><u><strong>Variável Desfecho</strong></u></p>
+<ul>
+<li><strong>Refrigerante</strong>: mudança no consumo durante a pandemia:
+<ul>
+<li>Aumentou;</li>
+<li>Diminuiu;</li>
+<li>Não alterou;</li>
+<li><span class="highlight-gray">Não consumo</span>.</li>
+</ul></li>
+</ul>
+</div>
+</div><div class="column" style="width:4%;">
+
+</div><div class="column" style="width:48%;">
+<div class="box-blue" style="position: relative; top: -25px; height: 340px;">
+<p><u><strong>Variáveis Explicativas</strong></u></p>
+<ul>
+<li>Sociodemográficas;<br>
+</li>
+<li>Econômicas;<br>
+</li>
+<li>Relacionadas à pandemia;</li>
+<li>Antropométricas;</li>
+<li>Comportamentais.</li>
+</ul>
+</div>
+</div></div>
+</section></section>
+<section>
+<section id="metodologia" class="title-slide slide level1 transicao center" data-background-image="imagens/Transicao.png" data-background-size="cover" data-number="2">
+<h1><span class="header-section-number">2</span> Metodologia</h1>
+
+</section>
+<section id="tratamento-dos-dados" class="slide level2" data-number="2.1">
+<h2><span class="header-section-number">2.1</span> Tratamento dos Dados</h2>
+<div class="box-blue" style="font-size: 0.76em; padding: 0.35em 0.7em; margin-bottom: 50px; text-align: left;">
+<p><u><strong>Tratamento das variáveis explicativas:</strong></u></p>
+<ul>
+<li><strong>Gênero:</strong> agrupamento das categorias “Outro” e “Prefiro não responder” na categoria “Outros/Prefiro não responder”.</li>
+<li><strong>Raça/cor:</strong> agrupamento das categorias “Amarelo”, “Indígena” e “Outro” na nova categoria “Outros”.</li>
+<li><strong>Escolaridade:</strong> agrupamento das categorias “Analfabeto” e “Ensino fundamental completo” na nova categoria “Até ensino fundamental completo”.</li>
+</ul>
+</div>
+<div class="box-blue" style="font-size: 0.76em; padding: 0.35em 0.7em; margin-bottom: 30px; text-align: left;">
+<ul>
+<li><strong>Pacotes do R:</strong> openxlsx, dplyr, gtsummary, gt, rstatix, ggplot2, qqplotr, DescTools, multcompView.</li>
+</ul>
+</div>
+</section>
+<section id="sobre-os-dados" class="slide level2" data-number="2.2">
+<h2><span class="header-section-number">2.2</span> Sobre os Dados</h2>
+<div class="box-blue" style="font-size: 0.76em; padding: 0.35em 0.7em; margin-bottom: 30px; text-align: left;">
+<ul>
+<li><strong>Amostra:</strong>
+<ul>
+<li>2.155 indivíduos adultos;</li>
+</ul></li>
+<li><strong>Coleta:</strong>
+<ul>
+<li>Dados obtidos por questionário online;</li>
+<li>Coletados por alunas da pós-graduação em Nutrição na UFF;</li>
+<li>Aplicado no ano de 2022.</li>
+</ul></li>
+</ul>
+</div>
+<div class="box-blue" style="font-size: 0.76em; padding: 0.35em 0.7em; margin-bottom: 30px; text-align: left;">
+<ul>
+<li><u><strong>Variável resposta:</strong></u>
+<ul>
+<li><strong>Refrigerante:</strong> variável que representa as mudanças no consumo de refrigerante durante a pandemia de COVID-19.</li>
+</ul></li>
+<li><u><strong>Variáveis explicativas:</strong></u>
+<ul>
+<li><strong>Qualitativas:</strong> gênero, raça/cor, região, isolamento social, situação de trabalho, faixa de renda familiar, nível de escolaridade, diagnóstico de covid-19, consulta com nutricionista, dificuldade financeira, consumo de cigarro, ansiedade, depressão, insônia e enxaqueca.</li>
+<li><strong>Quantitativas:</strong> idade, peso, altura e IMC.</li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="testes-aplicados" class="slide level2" data-number="2.3">
+<h2><span class="header-section-number">2.3</span> Testes Aplicados</h2>
+<div class="box-blue" style="font-size: 0.85em; padding: 0.35em 0.7em; margin-bottom: 50px; text-align: left;">
+<p><u><strong>Verificação de Suposições</strong></u></p>
+<ul>
+<li><strong>Normalidade:</strong> avaliação gráfica (Densidade e QQ-plot);</li>
+<li><strong>Homocedasticidade:</strong> teste de Levene;</li>
+<li><strong>Independência:</strong> assumida com base no delineamento do estudo.</li>
+</ul>
+</div>
+<div class="columns">
+<div class="column" style="width:48%;">
+<div class="box-blue" style="font-size: 0.85em; padding: 0.35em 0.7em; margin-bottom: 30px; text-align: left;">
+<p><u><strong>Variáveis qualitativas</strong></u></p>
+<ul>
+<li>Teste qui-quadrado;</li>
+<li>Teste exato de Fisher;<br>
+</li>
+<li>Coeficiente de Cramér;</li>
+<li>Análise de resíduos padronizados.</li>
+</ul>
+</div>
+</div><div class="column" style="width:4%;">
+
+</div><div class="column" style="width:48%;">
+<div class="box-blue" style="font-size: 0.85em; padding: 0.35em 0.7em; margin-bottom: 30px; text-align: left;">
+<p><u><strong>Variáveis quantitativas</strong></u></p>
+<ul>
+<li>ANOVA de Welch;<br>
+</li>
+<li>Comparações múltiplas de Games-Howell.</li>
+</ul>
+</div>
+<div class="box-blue" style="font-size: 0.85em; padding: 0.35em 0.7em; margin-top: -10px; text-align: left;">
+<p><u><strong>Nível de significância:</strong></u> <span class="math inline">\(\alpha = 0{,}05\)</span> (5%).</p>
+</div>
+</div></div>
+</section></section>
+<section>
+<section id="resultados" class="title-slide slide level1 transicao center" data-background-image="imagens/Transicao.png" data-background-size="cover" data-number="3">
+<h1><span class="header-section-number">3</span> Resultados:</h1>
+
+</section>
+<section id="tabela-das-variáveis-qualitativas" class="slide level2" data-number="3.1">
+<h2><span class="header-section-number">3.1</span> Tabela das variáveis qualitativas</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div id="bbrwhdentq" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:650px;">
+<style>@charset "UTF-8";
+#bbrwhdentq table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#bbrwhdentq thead, #bbrwhdentq tbody, #bbrwhdentq tfoot, #bbrwhdentq tr, #bbrwhdentq td, #bbrwhdentq th {
+  border-style: none;
+}
+
+#bbrwhdentq p {
+  margin: 0;
+  padding: 0;
+}
+
+#bbrwhdentq .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 20px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#bbrwhdentq .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#bbrwhdentq .gt_title {
+  color: #333333;
+  font-size: 26px;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#bbrwhdentq .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#bbrwhdentq .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#bbrwhdentq .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#bbrwhdentq .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#bbrwhdentq .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 22px;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#bbrwhdentq .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 22px;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#bbrwhdentq .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#bbrwhdentq .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#bbrwhdentq .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#bbrwhdentq .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#bbrwhdentq .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#bbrwhdentq .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#bbrwhdentq .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#bbrwhdentq .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#bbrwhdentq .gt_row {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#bbrwhdentq .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#bbrwhdentq .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#bbrwhdentq .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#bbrwhdentq .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#bbrwhdentq .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#bbrwhdentq .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#bbrwhdentq .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#bbrwhdentq .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#bbrwhdentq .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#bbrwhdentq .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#bbrwhdentq .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#bbrwhdentq .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#bbrwhdentq .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#bbrwhdentq .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#bbrwhdentq .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#bbrwhdentq .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#bbrwhdentq .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#bbrwhdentq .gt_left {
+  text-align: left;
+}
+
+#bbrwhdentq .gt_center {
+  text-align: center;
+}
+
+#bbrwhdentq .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#bbrwhdentq .gt_font_normal {
+  font-weight: normal;
+}
+
+#bbrwhdentq .gt_font_bold {
+  font-weight: bold;
+}
+
+#bbrwhdentq .gt_font_italic {
+  font-style: italic;
+}
+
+#bbrwhdentq .gt_super {
+  font-size: 65%;
+}
+
+#bbrwhdentq .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#bbrwhdentq .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#bbrwhdentq .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#bbrwhdentq .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#bbrwhdentq .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#bbrwhdentq .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#bbrwhdentq .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#bbrwhdentq .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#bbrwhdentq div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
+
+/* =====================================================
+       TABELA
+       ===================================================== */
+.gt_table {
+  table-layout: fixed !important;
+  width: 100% !important;
+}
+
+/* =====================================================
+   CABEÇALHO FIXO
+   ===================================================== */
+.tabela-qualitativa .gt_table thead th {
+  position: sticky !important;
+  background: white !important;
+  z-index: 100 !important;
+  white-space: nowrap !important;
+}
+
+.gt_table thead tr:first-child th {
+  top: -10px !important;
+  /* <-- 1. PUXOU PARA CIMA */
+  z-index: 102 !important;
+  box-shadow: 0 -30px 0 0 white !important;
+  /* <-- 2. CRIA A PAREDE BRANCA NO TOPO */
+}
+
+.gt_table thead tr:nth-child(2) th {
+  top: 22px !important;
+  /* <-- Compensou a subida (32 - 10 = 22px) */
+  z-index: 101 !important;
+}
+
+.gt_table thead th[rowspan] {
+  top: -10px !important;
+  /* <-- PUXOU AS COLUNAS LATERAIS JUNTO */
+  z-index: 103 !important;
+  box-shadow: 0 -30px 0 0 white !important;
+  /* <-- PAREDE BRANCA NAS LATERAIS */
+}
+
+/* =====================================================
+   AJUSTE: DESLOCAR AUMENTOU PARA A DIREITA
+   ===================================================== */
+/* Seleciona exatamente a 1ª célula da 2ª linha do cabeçalho (Aumentou + valor) */
+.gt_table thead tr:nth-child(2) th:nth-child(1) {
+  text-align: center !important;
+  padding-left: 20px !important;
+  /* Move para a direita */
+  padding-right: 0px !important;
+}
+
+/* Garante que o corpo da coluna continue alinhado normalmente */
+.gt_table tbody td:nth-child(2) {
+  text-align: center !important;
+  transform: none !important;
+}
+
+/* =====================================================
+       COLUNA VARIÁVEIS
+       ===================================================== */
+.gt_table th:first-child,
+.gt_table td:first-child {
+  width: 24% !important;
+  min-width: 24% !important;
+  max-width: 24% !important;
+  text-align: left !important;
+  padding-right: 15px !important;
+}
+
+/* =====================================================
+       4 COLUNAS DE REFRIGERANTE
+       ===================================================== */
+.gt_table th:nth-child(2),
+.gt_table td:nth-child(2),
+.gt_table th:nth-child(3),
+.gt_table td:nth-child(3),
+.gt_table th:nth-child(4),
+.gt_table td:nth-child(4),
+.gt_table th:nth-child(5),
+.gt_table td:nth-child(5) {
+  width: 13% !important;
+  min-width: 13% !important;
+  max-width: 13% !important;
+  text-align: center !important;
+}
+
+.gt_table thead tr:nth-child(2) th {
+  white-space: nowrap !important;
+  font-size: 20px !important;
+}
+
+/* =====================================================
+       VALOR-P
+       ===================================================== */
+.gt_table th:nth-child(6),
+.gt_table td:nth-child(6) {
+  width: 12% !important;
+  min-width: 12% !important;
+  max-width: 12% !important;
+  text-align: center !important;
+}
+
+/* =====================================================
+       CRAMÉR
+       ===================================================== */
+.gt_table th:nth-child(7),
+.gt_table td:nth-child(7) {
+  width: 12% !important;
+  min-width: 12% !important;
+  max-width: 12% !important;
+  text-align: center !important;
+}
+
+/* =====================================================
+       CÉLULAS DAS COLUNAS NUMÉRICAS
+       ===================================================== */
+.gt_table th:not(:first-child),
+.gt_table td:not(:first-child) {
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+}
+
+/* =====================================================
+       LEGENDA FIXA
+       ===================================================== */
+.gt_table thead {
+  position: sticky !important;
+  top: -12px !important;
+  z-index: 9999 !important;
+  background: white !important;
+}
+
+.gt_table thead th {
+  background: white !important;
+}
+
+.gt_sourcenotes {
+  position: sticky !important;
+  bottom: 0 !important;
+  z-index: 99999 !important;
+  background: white !important;
+  padding-top: 6px !important;
+  padding-bottom: 8px !important;
+  box-shadow: 0 30px 0 0 white !important;
+}
+
+.gt_sourcenotes::before {
+  content: '';
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 2px !important;
+  background: #4b5563 !important;
+  z-index: 100001 !important;
+}
+
+.gt_sourcenote {
+  background: white !important;
+  text-align: left !important;
+  padding-left: 0 !important;
+}
+
+.gt_sourcenote > * {
+  position: relative !important;
+  left: -280px !important;
+  white-space: nowrap !important;
+}
+</style>
+
+<table class="gt_table caption-top" style="table-layout:fixed;" data-quarto-bootstrap="false">
+<colgroup>
+<col style="width: 24%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col>
+<col>
+</colgroup>
+<thead>
+<tr class="gt_col_headings gt_spanner_row header">
+<th rowspan="2" id="label" class="gt_col_heading gt_columns_bottom_border gt_left" style="text-align: left;" data-quarto-table-cell-role="th" scope="col"><strong>Variáveis</strong></th>
+<th colspan="4" id="level 1; stat_1" class="gt_center gt_columns_top_border gt_column_spanner_outer" data-quarto-table-cell-role="th" scope="colgroup"><div class="gt_column_spanner">
+<strong>Mudança no consumo de refrigerantes</strong>
+</div></th>
+<th rowspan="2" id="p.value" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col"><strong>Valor-p</strong></th>
+<th rowspan="2" id="a**Cramér**" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col"><strong>Cramér</strong></th>
+</tr>
+<tr class="gt_col_headings even">
+<th id="stat_1" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col"><strong>Aumentou</strong><br>413 (19%)</th>
+<th id="stat_2" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col"><strong>Diminuiu</strong><br>419 (19%)</th>
+<th id="stat_3" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col"><strong>Não alterou</strong><br>647 (30%)</th>
+<th id="stat_4" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col"><strong>Não consumo</strong><br>676 (31%)</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd">
+<td class="gt_row gt_left" headers="label" style="text-align: left; font-weight: bold; white-space: nowrap !important; background-color: #FEF9C3;">Gênero<sup>F</sup></td>
+<td class="gt_row gt_center" headers="stat_1" style="background-color: #FEF9C3"><br>
+</td>
+<td class="gt_row gt_center" headers="stat_2" style="background-color: #FEF9C3"><br>
+</td>
+<td class="gt_row gt_center" headers="stat_3" style="background-color: #FEF9C3"><br>
+</td>
+<td class="gt_row gt_center" headers="stat_4" style="background-color: #FEF9C3"><br>
+</td>
+<td class="gt_row gt_center" headers="p.value" style="font-weight: bold; background-color: #FEF9C3">&lt;0,001</td>
+<td class="gt_row gt_center" headers="**Cramér**" style="background-color: #FEF9C3">0,070</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label" style="text-align: left; padding-left: 25px !important;">&nbsp;&nbsp;&nbsp;&nbsp;Feminino</td>
+<td class="gt_row gt_center" headers="stat_1" style="color: #0369A1; font-weight: bold">323 (20%)</td>
+<td class="gt_row gt_center" headers="stat_2" style="color: #6D28D9; font-weight: bold">285 (18%)</td>
+<td class="gt_row gt_center" headers="stat_3">467 (29%)</td>
+<td class="gt_row gt_center" headers="stat_4" style="color: #0369A1; font-weight: bold">527 (33%)</td>
+<td class="gt_row gt_center" headers="p.value"><br>
+</td>
+<td class="gt_row gt_center" headers="**Cramér**"><br>
+</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label" style="text-align: left; padding-left: 25px !important;">&nbsp;&nbsp;&nbsp;&nbsp;Masculino</td>
+<td class="gt_row gt_center" headers="stat_1" style="color: #6D28D9; font-weight: bold">88 (16%)</td>
+<td class="gt_row gt_center" headers="stat_2" style="color: #0369A1; font-weight: bold">130 (24%)</td>
+<td class="gt_row gt_center" headers="stat_3">179 (33%)</td>
+<td class="gt_row gt_center" headers="stat_4" style="color: #6D28D9; font-weight: bold">145 (27%)</td>
+<td class="gt_row gt_center" headers="p.value"><br>
+</td>
+<td class="gt_row gt_center" headers="**Cramér**"><br>
+</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label" style="text-align: left; padding-left: 25px !important;">&nbsp;&nbsp;&nbsp;&nbsp;Outro/Prefiro não responder</td>
+<td class="gt_row gt_center" headers="stat_1">2 (18%)</td>
+<td class="gt_row gt_center" headers="stat_2">4 (36%)</td>
+<td class="gt_row gt_center" headers="stat_3">1 (9,1%)</td>
+<td class="gt_row gt_center" headers="stat_4">4 (36%)</td>
+<td class="gt_row gt_center" headers="p.value"><br>
+</td>
+<td class="gt_row gt_center" headers="**Cramér**"><br>
+</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label" style="text-align: left; font-weight: bold; white-space: nowrap !important;">Raça/Cor<sup>Q</sup></td>
+<td class="gt_row gt_center" headers="stat_1"><br>
+</td>
+<td class="gt_row gt_center" headers="stat_2"><br>
+</td>
+<td class="gt_row gt_center" headers="stat_3"><br>
+</td>
+<td class="gt_row gt_center" headers="stat_4"><br>
+</td>
+<td class="gt_row gt_center" headers="p.value">0,096</td>
+<td class="gt_row gt_center" headers="**Cramér**">0,050</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label" style="text-align: left; padding-left: 25px !important;">&nbsp;&nbsp;&nbsp;&nbsp;Branca</td>
+<td class="gt_row gt_center" headers="stat_1">254 (19%)</td>
+<td class="gt_row gt_center" headers="stat_2">233 (17%)</td>
+<td class="gt_row gt_center" headers="stat_3">416 (31%)</td>
+<td class="gt_row gt_center" headers="stat_4">443 (33%)</td>
+<td class="gt_row gt_center" headers="p.value"><br>
+</td>
+<td class="gt_row gt_center" headers="**Cramér**"><br>
+</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label" style="text-align: left; padding-left: 25px !important;">&nbsp;&nbsp;&nbsp;&nbsp;Parda</td>
+<td class="gt_row gt_center" headers="stat_1">115 (20%)</td>
+<td class="gt_row gt_center" headers="stat_2">127 (22%)</td>
+<td class="gt_row gt_center" headers="stat_3">175 (30%)</td>
+<td class="gt_row gt_center" headers="stat_4">159 (28%)</td>
+<td class="gt_row gt_center" headers="p.value"><br>
+</td>
+<td class="gt_row gt_center" headers="**Cramér**"><br>
+</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label" style="text-align: left; padding-left: 25px !important;">&nbsp;&nbsp;&nbsp;&nbsp;Preta</td>
+<td class="gt_row gt_center" headers="stat_1">32 (19%)</td>
+<td class="gt_row gt_center" headers="stat_2">44 (27%)</td>
+<td class="gt_row gt_center" headers="stat_3">40 (24%)</td>
+<td class="gt_row gt_center" headers="stat_4">50 (30%)</td>
+<td class="gt_row gt_center" headers="p.value"><br>
+</td>
+<td class="gt_row gt_center" headers="**Cramér**"><br>
+</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label" style="text-align: left; padding-left: 25px !important;">&nbsp;&nbsp;&nbsp;&nbsp;Outros</td>
+<td class="gt_row gt_center" headers="stat_1">8 (21%)</td>
+<td class="gt_row gt_center" headers="stat_2">10 (26%)</td>
+<td class="gt_row gt_center" headers="stat_3">8 (21%)</td>
+<td class="gt_row gt_center" headers="stat_4">13 (33%)</td>
+<td class="gt_row gt_center" headers="p.value"><br>
+</td>
+<td class="gt_row gt_center" headers="**Cramér**"><br>
+</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label" style="text-align: left; padding-left: 25px !important;">&nbsp;&nbsp;&nbsp;&nbsp;Prefiro não declarar</td>
+<td class="gt_row gt_center" headers="stat_1">4 (14%)</td>
+<td class="gt_row gt_center" headers="stat_2">5 (18%)</td>
+<td class="gt_row gt_center" headers="stat_3">8 (29%)</td>
+<td class="gt_row gt_center" headers="stat_4">11 (39%)</td>
+<td class="gt_row gt_center" headers="p.value"><br>
+</td>
+<td class="gt_row gt_center" headers="**Cramér**"><br>
+</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label" style="text-align: left; font-weight: bold; white-space: nowrap !important;">Região<sup>Q</sup></td>
+<td class="gt_row gt_center" headers="stat_1"><br>
+</td>
+<td class="gt_row gt_center" headers="stat_2"><br>
+</td>
+<td class="gt_row gt_center" headers="stat_3"><br>
+</td>
+<td class="gt_row gt_center" headers="stat_4"><br>
+</td>
+<td class="gt_row gt_center" headers="p.value">0,216</td>
+<td class="gt_row gt_center" headers="**Cramér**">0,050</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label" style="text-align: left; padding-left: 25px !important;">&nbsp;&nbsp;&nbsp;&nbsp;Centro-oeste</td>
+<td class="gt_row gt_center" headers="stat_1">48 (22%)</td>
+<td class="gt_row gt_center" headers="stat_2">43 (20%)</td>
+<td class="gt_row gt_center" headers="stat_3">68 (31%)</td>
+<td class="gt_row gt_center" headers="stat_4">58 (27%)</td>
+<td class="gt_row gt_center" headers="p.value"><br>
+</td>
+<td class="gt_row gt_center" headers="**Cramér**"><br>
+</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label" style="text-align: left; padding-left: 25px !important;">&nbsp;&nbsp;&nbsp;&nbsp;Nordeste</td>
+<td class="gt_row gt_center" headers="stat_1">55 (21%)</td>
+<td class="gt_row gt_center" headers="stat_2">56 (21%)</td>
+<td class="gt_row gt_center" headers="stat_3">79 (29%)</td>
+<td class="gt_row gt_center" headers="stat_4">78 (29%)</td>
+<td class="gt_row gt_center" headers="p.value"><br>
+</td>
+<td class="gt_row gt_center" headers="**Cramér**"><br>
+</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label" style="text-align: left; padding-left: 25px !important;">&nbsp;&nbsp;&nbsp;&nbsp;Norte</td>
+<td class="gt_row gt_center" headers="stat_1">71 (23%)</td>
+<td class="gt_row gt_center" headers="stat_2">56 (18%)</td>
+<td class="gt_row gt_center" headers="stat_3">83 (27%)</td>
+<td class="gt_row gt_center" headers="stat_4">95 (31%)</td>
+<td class="gt_row gt_center" headers="p.value"><br>
+</td>
+<td class="gt_row gt_center" headers="**Cramér**"><br>
+</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label" style="text-align: left; padding-left: 25px !important;">&nbsp;&nbsp;&nbsp;&nbsp;Sudeste</td>
+<td class="gt_row gt_center" headers="stat_1">164 (18%)</td>
+<td class="gt_row gt_center" headers="stat_2">179 (20%)</td>
+<td class="gt_row gt_center" headers="stat_3">287 (32%)</td>
+<td class="gt_row gt_center" headers="stat_4">277 (31%)</td>
+<td class="gt_row gt_center" headers="p.value"><br>
+</td>
+<td class="gt_row gt_center" headers="**Cramér**"><br>
+</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label" style="text-align: left; padding-left: 25px !important;">&nbsp;&nbsp;&nbsp;&nbsp;Sul</td>
+<td class="gt_row gt_center" headers="stat_1">75 (16%)</td>
+<td class="gt_row gt_center" headers="stat_2">85 (19%)</td>
+<td class="gt_row gt_center" headers="stat_3">130 (28%)</td>
+<td class="gt_row gt_center" headers="stat_4">168 (37%)</td>
+<td class="gt_row gt_center" headers="p.value"><br>
+</td>
+<td class="gt_row gt_center" headers="**Cramér**"><br>
+</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label" style="text-align: left; font-weight: bold; white-space: nowrap !important; background-color: #FEF9C3;">Isolamento social<sup>Q</sup></td>
+<td class="gt_row gt_center" headers="stat_1" style="background-color: #FEF9C3"><br>
+</td>
+<td class="gt_row gt_center" headers="stat_2" style="background-color: #FEF9C3"><br>
+</td>
+<td class="gt_row gt_center" headers="stat_3" style="background-color: #FEF9C3"><br>
+</td>
+<td class="gt_row gt_center" headers="stat_4" style="background-color: #FEF9C3"><br>
+</td>
+<td class="gt_row gt_center" headers="p.value" style="font-weight: bold; background-color: #FEF9C3">&lt;0,001</td>
+<td class="gt_row gt_center" headers="**Cramér**" style="background-color: #FEF9C3">0,100</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label" style="text-align: left; padding-left: 25px !important;">&nbsp;&nbsp;&nbsp;&nbsp;Não</td>
+<td class="gt_row gt_center" headers="stat_1">173 (18%)</td>
+<td class="gt_row gt_center" headers="stat_2">193 (20%)</td>
+<td class="gt_row gt_center" headers="stat_3" style="color: #0369A1; font-weight: bold">326 (34%)</td>
+<td class="gt_row gt_center" headers="stat_4" style="color: #6D28D9; font-weight: bold">260 (27%)</td>
+<td class="gt_row gt_center" headers="p.value"><br>
+</td>
+<td class="gt_row gt_center" headers="**Cramér**"><br>
+</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label" style="text-align: left; padding-left: 25px !important;">&nbsp;&nbsp;&nbsp;&nbsp;Sim</td>
+<td class="gt_row gt_center" headers="stat_1">240 (20%)</td>
+<td class="gt_row gt_center" headers="stat_2">226 (19%)</td>
+<td class="gt_row gt_center" headers="stat_3" style="color: #6D28D9; font-weight: bold">321 (27%)</td>
+<td class="gt_row gt_center" headers="stat_4" style="color: #0369A1; font-weight: bold">416 (35%)</td>
+<td class="gt_row gt_center" headers="p.value"><br>
+</td>
+<td class="gt_row gt_center" headers="**Cramér**"><br>
+</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label" style="text-align: left; font-weight: bold; white-space: nowrap !important; background-color: #FEF9C3;">Situação de Trabalho<sup>Q</sup></td>
+<td class="gt_row gt_center" headers="stat_1" style="background-color: #FEF9C3"><br>
+</td>
+<td class="gt_row gt_center" headers="stat_2" style="background-color: #FEF9C3"><br>
+</td>
+<td class="gt_row gt_center" headers="stat_3" style="background-color: #FEF9C3"><br>
+</td>
+<td class="gt_row gt_center" headers="stat_4" style="background-color: #FEF9C3"><br>
+</td>
+<td class="gt_row gt_center" headers="p.value" style="font-weight: bold; background-color: #FEF9C3">&lt;0,001</td>
+<td class="gt_row gt_center" headers="**Cramér**" style="background-color: #FEF9C3">0,110</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label" style="text-align: left; padding-left: 25px !important;">&nbsp;&nbsp;&nbsp;&nbsp;Não</td>
+<td class="gt_row gt_center" headers="stat_1">113 (20%)</td>
+<td class="gt_row gt_center" headers="stat_2" style="color: #0369A1; font-weight: bold">137 (24%)</td>
+<td class="gt_row gt_center" headers="stat_3" style="color: #6D28D9; font-weight: bold">129 (23%)</td>
+<td class="gt_row gt_center" headers="stat_4">193 (34%)</td>
+<td class="gt_row gt_center" headers="p.value"><br>
+</td>
+<td class="gt_row gt_center" headers="**Cramér**"><br>
+</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label" style="text-align: left; padding-left: 25px !important;">&nbsp;&nbsp;&nbsp;&nbsp;Sim</td>
+<td class="gt_row gt_center" headers="stat_1">300 (19%)</td>
+<td class="gt_row gt_center" headers="stat_2" style="color: #6D28D9; font-weight: bold">282 (18%)</td>
+<td class="gt_row gt_center" headers="stat_3" style="color: #0369A1; font-weight: bold">518 (33%)</td>
+<td class="gt_row gt_center" headers="stat_4">483 (31%)</td>
+<td class="gt_row gt_center" headers="p.value"><br>
+</td>
+<td class="gt_row gt_center" headers="**Cramér**"><br>
+</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label" style="text-align: left; font-weight: bold; white-space: nowrap !important; background-color: #FEF9C3;">Faixa de Renda Familiar<sup>Q</sup></td>
+<td class="gt_row gt_center" headers="stat_1" style="background-color: #FEF9C3"><br>
+</td>
+<td class="gt_row gt_center" headers="stat_2" style="background-color: #FEF9C3"><br>
+</td>
+<td class="gt_row gt_center" headers="stat_3" style="background-color: #FEF9C3"><br>
+</td>
+<td class="gt_row gt_center" headers="stat_4" style="background-color: #FEF9C3"><br>
+</td>
+<td class="gt_row gt_center" headers="p.value" style="font-weight: bold; background-color: #FEF9C3">&lt;0,001</td>
+<td class="gt_row gt_center" headers="**Cramér**" style="background-color: #FEF9C3">0,080</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label" style="text-align: left; padding-left: 25px !important;">&nbsp;&nbsp;&nbsp;&nbsp;Até R$ 1.254</td>
+<td class="gt_row gt_center" headers="stat_1">52 (21%)</td>
+<td class="gt_row gt_center" headers="stat_2" style="color: #0369A1; font-weight: bold">74 (30%)</td>
+<td class="gt_row gt_center" headers="stat_3">61 (25%)</td>
+<td class="gt_row gt_center" headers="stat_4" style="color: #6D28D9; font-weight: bold">58 (24%)</td>
+<td class="gt_row gt_center" headers="p.value"><br>
+</td>
+<td class="gt_row gt_center" headers="**Cramér**"><br>
+</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label" style="text-align: left; padding-left: 25px !important;">&nbsp;&nbsp;&nbsp;&nbsp;Entre R$ 1.255 - R$ 8.640</td>
+<td class="gt_row gt_center" headers="stat_1">234 (19%)</td>
+<td class="gt_row gt_center" headers="stat_2">240 (20%)</td>
+<td class="gt_row gt_center" headers="stat_3">371 (30%)</td>
+<td class="gt_row gt_center" headers="stat_4">385 (31%)</td>
+<td class="gt_row gt_center" headers="p.value"><br>
+</td>
+<td class="gt_row gt_center" headers="**Cramér**"><br>
+</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label" style="text-align: left; padding-left: 25px !important;">&nbsp;&nbsp;&nbsp;&nbsp;Mais de R$ 8.640</td>
+<td class="gt_row gt_center" headers="stat_1">127 (19%)</td>
+<td class="gt_row gt_center" headers="stat_2" style="color: #6D28D9; font-weight: bold">105 (15%)</td>
+<td class="gt_row gt_center" headers="stat_3">215 (32%)</td>
+<td class="gt_row gt_center" headers="stat_4" style="color: #0369A1; font-weight: bold">233 (34%)</td>
+<td class="gt_row gt_center" headers="p.value"><br>
+</td>
+<td class="gt_row gt_center" headers="**Cramér**"><br>
+</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label" style="text-align: left; font-weight: bold; white-space: nowrap !important; background-color: #FEF9C3;">Nível de Escolaridade<sup>F</sup></td>
+<td class="gt_row gt_center" headers="stat_1" style="background-color: #FEF9C3"><br>
+</td>
+<td class="gt_row gt_center" headers="stat_2" style="background-color: #FEF9C3"><br>
+</td>
+<td class="gt_row gt_center" headers="stat_3" style="background-color: #FEF9C3"><br>
+</td>
+<td class="gt_row gt_center" headers="stat_4" style="background-color: #FEF9C3"><br>
+</td>
+<td class="gt_row gt_center" headers="p.value" style="font-weight: bold; background-color: #FEF9C3">&lt;0,001</td>
+<td class="gt_row gt_center" headers="**Cramér**" style="background-color: #FEF9C3">0,070</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label" style="text-align: left; padding-left: 25px !important;">&nbsp;&nbsp;&nbsp;&nbsp;Até Ensino Fundamental Completo</td>
+<td class="gt_row gt_center" headers="stat_1">2 (33%)</td>
+<td class="gt_row gt_center" headers="stat_2">1 (17%)</td>
+<td class="gt_row gt_center" headers="stat_3">2 (33%)</td>
+<td class="gt_row gt_center" headers="stat_4">1 (17%)</td>
+<td class="gt_row gt_center" headers="p.value"><br>
+</td>
+<td class="gt_row gt_center" headers="**Cramér**"><br>
+</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label" style="text-align: left; padding-left: 25px !important;">&nbsp;&nbsp;&nbsp;&nbsp;Ensino Médio Completo</td>
+<td class="gt_row gt_center" headers="stat_1">150 (20%)</td>
+<td class="gt_row gt_center" headers="stat_2" style="color: #0369A1; font-weight: bold">167 (23%)</td>
+<td class="gt_row gt_center" headers="stat_3" style="color: #6D28D9; font-weight: bold">199 (27%)</td>
+<td class="gt_row gt_center" headers="stat_4">226 (30%)</td>
+<td class="gt_row gt_center" headers="p.value"><br>
+</td>
+<td class="gt_row gt_center" headers="**Cramér**"><br>
+</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label" style="text-align: left; padding-left: 25px !important;">&nbsp;&nbsp;&nbsp;&nbsp;Ensino Superior Completo</td>
+<td class="gt_row gt_center" headers="stat_1" style="color: #0369A1; font-weight: bold">94 (23%)</td>
+<td class="gt_row gt_center" headers="stat_2">82 (20%)</td>
+<td class="gt_row gt_center" headers="stat_3">128 (31%)</td>
+<td class="gt_row gt_center" headers="stat_4" style="color: #6D28D9; font-weight: bold">112 (27%)</td>
+<td class="gt_row gt_center" headers="p.value"><br>
+</td>
+<td class="gt_row gt_center" headers="**Cramér**"><br>
+</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label" style="text-align: left; padding-left: 25px !important;">&nbsp;&nbsp;&nbsp;&nbsp;Pós-graduação</td>
+<td class="gt_row gt_center" headers="stat_1" style="color: #6D28D9; font-weight: bold">160 (16%)</td>
+<td class="gt_row gt_center" headers="stat_2" style="color: #6D28D9; font-weight: bold">166 (17%)</td>
+<td class="gt_row gt_center" headers="stat_3" style="color: #0369A1; font-weight: bold">316 (32%)</td>
+<td class="gt_row gt_center" headers="stat_4" style="color: #0369A1; font-weight: bold">332 (34%)</td>
+<td class="gt_row gt_center" headers="p.value"><br>
+</td>
+<td class="gt_row gt_center" headers="**Cramér**"><br>
+</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label" style="text-align: left; padding-left: 25px !important;">&nbsp;&nbsp;&nbsp;&nbsp;Não desejo informar</td>
+<td class="gt_row gt_center" headers="stat_1" style="color: #0369A1; font-weight: bold">7 (41%)</td>
+<td class="gt_row gt_center" headers="stat_2">3 (18%)</td>
+<td class="gt_row gt_center" headers="stat_3">2 (12%)</td>
+<td class="gt_row gt_center" headers="stat_4">5 (29%)</td>
+<td class="gt_row gt_center" headers="p.value"><br>
+</td>
+<td class="gt_row gt_center" headers="**Cramér**"><br>
+</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label" style="text-align: left; font-weight: bold; white-space: nowrap !important;">Diagnóstico de Covid-19<sup>Q</sup></td>
+<td class="gt_row gt_center" headers="stat_1"><br>
+</td>
+<td class="gt_row gt_center" headers="stat_2"><br>
+</td>
+<td class="gt_row gt_center" headers="stat_3"><br>
+</td>
+<td class="gt_row gt_center" headers="stat_4"><br>
+</td>
+<td class="gt_row gt_center" headers="p.value">0,059</td>
+<td class="gt_row gt_center" headers="**Cramér**">0,060</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label" style="text-align: left; padding-left: 25px !important;">&nbsp;&nbsp;&nbsp;&nbsp;Não</td>
+<td class="gt_row gt_center" headers="stat_1">291 (19%)</td>
+<td class="gt_row gt_center" headers="stat_2">295 (19%)</td>
+<td class="gt_row gt_center" headers="stat_3">468 (30%)</td>
+<td class="gt_row gt_center" headers="stat_4">518 (33%)</td>
+<td class="gt_row gt_center" headers="p.value"><br>
+</td>
+<td class="gt_row gt_center" headers="**Cramér**"><br>
+</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label" style="text-align: left; padding-left: 25px !important;">&nbsp;&nbsp;&nbsp;&nbsp;Sim</td>
+<td class="gt_row gt_center" headers="stat_1">122 (21%)</td>
+<td class="gt_row gt_center" headers="stat_2">124 (21%)</td>
+<td class="gt_row gt_center" headers="stat_3">179 (31%)</td>
+<td class="gt_row gt_center" headers="stat_4">158 (27%)</td>
+<td class="gt_row gt_center" headers="p.value"><br>
+</td>
+<td class="gt_row gt_center" headers="**Cramér**"><br>
+</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label" style="text-align: left; font-weight: bold; white-space: nowrap !important; background-color: #FEF9C3;">Consulta com Nutricionista<sup>Q</sup></td>
+<td class="gt_row gt_center" headers="stat_1" style="background-color: #FEF9C3"><br>
+</td>
+<td class="gt_row gt_center" headers="stat_2" style="background-color: #FEF9C3"><br>
+</td>
+<td class="gt_row gt_center" headers="stat_3" style="background-color: #FEF9C3"><br>
+</td>
+<td class="gt_row gt_center" headers="stat_4" style="background-color: #FEF9C3"><br>
+</td>
+<td class="gt_row gt_center" headers="p.value" style="font-weight: bold; background-color: #FEF9C3">&lt;0,001</td>
+<td class="gt_row gt_center" headers="**Cramér**" style="background-color: #FEF9C3">0,100</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label" style="text-align: left; padding-left: 25px !important;">&nbsp;&nbsp;&nbsp;&nbsp;Não</td>
+<td class="gt_row gt_center" headers="stat_1" style="color: #0369A1; font-weight: bold">360 (21%)</td>
+<td class="gt_row gt_center" headers="stat_2" style="color: #6D28D9; font-weight: bold">324 (19%)</td>
+<td class="gt_row gt_center" headers="stat_3" style="color: #0369A1; font-weight: bold">541 (31%)</td>
+<td class="gt_row gt_center" headers="stat_4" style="color: #6D28D9; font-weight: bold">522 (30%)</td>
+<td class="gt_row gt_center" headers="p.value"><br>
+</td>
+<td class="gt_row gt_center" headers="**Cramér**"><br>
+</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label" style="text-align: left; padding-left: 25px !important;">&nbsp;&nbsp;&nbsp;&nbsp;Sim</td>
+<td class="gt_row gt_center" headers="stat_1" style="color: #6D28D9; font-weight: bold">53 (13%)</td>
+<td class="gt_row gt_center" headers="stat_2" style="color: #0369A1; font-weight: bold">95 (23%)</td>
+<td class="gt_row gt_center" headers="stat_3" style="color: #6D28D9; font-weight: bold">106 (26%)</td>
+<td class="gt_row gt_center" headers="stat_4" style="color: #0369A1; font-weight: bold">154 (38%)</td>
+<td class="gt_row gt_center" headers="p.value"><br>
+</td>
+<td class="gt_row gt_center" headers="**Cramér**"><br>
+</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label" style="text-align: left; font-weight: bold; white-space: nowrap !important; background-color: #FEF9C3;">Dificuldade Financeira<sup>Q</sup></td>
+<td class="gt_row gt_center" headers="stat_1" style="background-color: #FEF9C3"><br>
+</td>
+<td class="gt_row gt_center" headers="stat_2" style="background-color: #FEF9C3"><br>
+</td>
+<td class="gt_row gt_center" headers="stat_3" style="background-color: #FEF9C3"><br>
+</td>
+<td class="gt_row gt_center" headers="stat_4" style="background-color: #FEF9C3"><br>
+</td>
+<td class="gt_row gt_center" headers="p.value" style="font-weight: bold; background-color: #FEF9C3">&lt;0,001</td>
+<td class="gt_row gt_center" headers="**Cramér**" style="background-color: #FEF9C3">0,130</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label" style="text-align: left; padding-left: 25px !important;">&nbsp;&nbsp;&nbsp;&nbsp;Não</td>
+<td class="gt_row gt_center" headers="stat_1">334 (19%)</td>
+<td class="gt_row gt_center" headers="stat_2" style="color: #6D28D9; font-weight: bold">302 (17%)</td>
+<td class="gt_row gt_center" headers="stat_3" style="color: #0369A1; font-weight: bold">550 (31%)</td>
+<td class="gt_row gt_center" headers="stat_4" style="color: #0369A1; font-weight: bold">575 (33%)</td>
+<td class="gt_row gt_center" headers="p.value"><br>
+</td>
+<td class="gt_row gt_center" headers="**Cramér**"><br>
+</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label" style="text-align: left; padding-left: 25px !important;">&nbsp;&nbsp;&nbsp;&nbsp;Sim</td>
+<td class="gt_row gt_center" headers="stat_1">79 (20%)</td>
+<td class="gt_row gt_center" headers="stat_2" style="color: #0369A1; font-weight: bold">117 (30%)</td>
+<td class="gt_row gt_center" headers="stat_3" style="color: #6D28D9; font-weight: bold">97 (25%)</td>
+<td class="gt_row gt_center" headers="stat_4" style="color: #6D28D9; font-weight: bold">101 (26%)</td>
+<td class="gt_row gt_center" headers="p.value"><br>
+</td>
+<td class="gt_row gt_center" headers="**Cramér**"><br>
+</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label" style="text-align: left; font-weight: bold; white-space: nowrap !important;">Consumo de Cigarro<sup>Q</sup></td>
+<td class="gt_row gt_center" headers="stat_1"><br>
+</td>
+<td class="gt_row gt_center" headers="stat_2"><br>
+</td>
+<td class="gt_row gt_center" headers="stat_3"><br>
+</td>
+<td class="gt_row gt_center" headers="stat_4"><br>
+</td>
+<td class="gt_row gt_center" headers="p.value">0,278</td>
+<td class="gt_row gt_center" headers="**Cramér**">0,040</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label" style="text-align: left; padding-left: 25px !important;">&nbsp;&nbsp;&nbsp;&nbsp;Não</td>
+<td class="gt_row gt_center" headers="stat_1">389 (19%)</td>
+<td class="gt_row gt_center" headers="stat_2">393 (19%)</td>
+<td class="gt_row gt_center" headers="stat_3">620 (30%)</td>
+<td class="gt_row gt_center" headers="stat_4">648 (32%)</td>
+<td class="gt_row gt_center" headers="p.value"><br>
+</td>
+<td class="gt_row gt_center" headers="**Cramér**"><br>
+</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label" style="text-align: left; padding-left: 25px !important;">&nbsp;&nbsp;&nbsp;&nbsp;Sim</td>
+<td class="gt_row gt_center" headers="stat_1">24 (23%)</td>
+<td class="gt_row gt_center" headers="stat_2">26 (25%)</td>
+<td class="gt_row gt_center" headers="stat_3">27 (26%)</td>
+<td class="gt_row gt_center" headers="stat_4">28 (27%)</td>
+<td class="gt_row gt_center" headers="p.value"><br>
+</td>
+<td class="gt_row gt_center" headers="**Cramér**"><br>
+</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label" style="text-align: left; font-weight: bold; white-space: nowrap !important; background-color: #FEF9C3;">Ansiedade na Pandemia<sup>Q</sup></td>
+<td class="gt_row gt_center" headers="stat_1" style="background-color: #FEF9C3"><br>
+</td>
+<td class="gt_row gt_center" headers="stat_2" style="background-color: #FEF9C3"><br>
+</td>
+<td class="gt_row gt_center" headers="stat_3" style="background-color: #FEF9C3"><br>
+</td>
+<td class="gt_row gt_center" headers="stat_4" style="background-color: #FEF9C3"><br>
+</td>
+<td class="gt_row gt_center" headers="p.value" style="font-weight: bold; background-color: #FEF9C3">&lt;0,001</td>
+<td class="gt_row gt_center" headers="**Cramér**" style="background-color: #FEF9C3">0,130</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label" style="text-align: left; padding-left: 25px !important;">&nbsp;&nbsp;&nbsp;&nbsp;Não</td>
+<td class="gt_row gt_center" headers="stat_1" style="color: #6D28D9; font-weight: bold">158 (14%)</td>
+<td class="gt_row gt_center" headers="stat_2">227 (20%)</td>
+<td class="gt_row gt_center" headers="stat_3">349 (31%)</td>
+<td class="gt_row gt_center" headers="stat_4" style="color: #0369A1; font-weight: bold">375 (34%)</td>
+<td class="gt_row gt_center" headers="p.value"><br>
+</td>
+<td class="gt_row gt_center" headers="**Cramér**"><br>
+</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label" style="text-align: left; padding-left: 25px !important;">&nbsp;&nbsp;&nbsp;&nbsp;Sim</td>
+<td class="gt_row gt_center" headers="stat_1" style="color: #0369A1; font-weight: bold">255 (24%)</td>
+<td class="gt_row gt_center" headers="stat_2">192 (18%)</td>
+<td class="gt_row gt_center" headers="stat_3">298 (28%)</td>
+<td class="gt_row gt_center" headers="stat_4" style="color: #6D28D9; font-weight: bold">301 (29%)</td>
+<td class="gt_row gt_center" headers="p.value"><br>
+</td>
+<td class="gt_row gt_center" headers="**Cramér**"><br>
+</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label" style="text-align: left; font-weight: bold; white-space: nowrap !important; background-color: #FEF9C3;">Depressão na Pandemia<sup>Q</sup></td>
+<td class="gt_row gt_center" headers="stat_1" style="background-color: #FEF9C3"><br>
+</td>
+<td class="gt_row gt_center" headers="stat_2" style="background-color: #FEF9C3"><br>
+</td>
+<td class="gt_row gt_center" headers="stat_3" style="background-color: #FEF9C3"><br>
+</td>
+<td class="gt_row gt_center" headers="stat_4" style="background-color: #FEF9C3"><br>
+</td>
+<td class="gt_row gt_center" headers="p.value" style="font-weight: bold; background-color: #FEF9C3">&lt;0,001</td>
+<td class="gt_row gt_center" headers="**Cramér**" style="background-color: #FEF9C3">0,100</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label" style="text-align: left; padding-left: 25px !important;">&nbsp;&nbsp;&nbsp;&nbsp;Não</td>
+<td class="gt_row gt_center" headers="stat_1" style="color: #6D28D9; font-weight: bold">314 (17%)</td>
+<td class="gt_row gt_center" headers="stat_2">356 (20%)</td>
+<td class="gt_row gt_center" headers="stat_3" style="color: #0369A1; font-weight: bold">561 (31%)</td>
+<td class="gt_row gt_center" headers="stat_4">575 (32%)</td>
+<td class="gt_row gt_center" headers="p.value"><br>
+</td>
+<td class="gt_row gt_center" headers="**Cramér**"><br>
+</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label" style="text-align: left; padding-left: 25px !important;">&nbsp;&nbsp;&nbsp;&nbsp;Sim</td>
+<td class="gt_row gt_center" headers="stat_1" style="color: #0369A1; font-weight: bold">99 (28%)</td>
+<td class="gt_row gt_center" headers="stat_2">63 (18%)</td>
+<td class="gt_row gt_center" headers="stat_3" style="color: #6D28D9; font-weight: bold">86 (25%)</td>
+<td class="gt_row gt_center" headers="stat_4">101 (29%)</td>
+<td class="gt_row gt_center" headers="p.value"><br>
+</td>
+<td class="gt_row gt_center" headers="**Cramér**"><br>
+</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label" style="text-align: left; font-weight: bold; white-space: nowrap !important; background-color: #FEF9C3;">Insônia na Pandemia<sup>Q</sup></td>
+<td class="gt_row gt_center" headers="stat_1" style="background-color: #FEF9C3"><br>
+</td>
+<td class="gt_row gt_center" headers="stat_2" style="background-color: #FEF9C3"><br>
+</td>
+<td class="gt_row gt_center" headers="stat_3" style="background-color: #FEF9C3"><br>
+</td>
+<td class="gt_row gt_center" headers="stat_4" style="background-color: #FEF9C3"><br>
+</td>
+<td class="gt_row gt_center" headers="p.value" style="font-weight: bold; background-color: #FEF9C3">&lt;0,001</td>
+<td class="gt_row gt_center" headers="**Cramér**" style="background-color: #FEF9C3">0,120</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label" style="text-align: left; padding-left: 25px !important;">&nbsp;&nbsp;&nbsp;&nbsp;Não</td>
+<td class="gt_row gt_center" headers="stat_1" style="color: #6D28D9; font-weight: bold">324 (17%)</td>
+<td class="gt_row gt_center" headers="stat_2">361 (19%)</td>
+<td class="gt_row gt_center" headers="stat_3" style="color: #0369A1; font-weight: bold">577 (31%)</td>
+<td class="gt_row gt_center" headers="stat_4" style="color: #0369A1; font-weight: bold">601 (32%)</td>
+<td class="gt_row gt_center" headers="p.value"><br>
+</td>
+<td class="gt_row gt_center" headers="**Cramér**"><br>
+</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label" style="text-align: left; padding-left: 25px !important;">&nbsp;&nbsp;&nbsp;&nbsp;Sim</td>
+<td class="gt_row gt_center" headers="stat_1" style="color: #0369A1; font-weight: bold">89 (30%)</td>
+<td class="gt_row gt_center" headers="stat_2">58 (20%)</td>
+<td class="gt_row gt_center" headers="stat_3" style="color: #6D28D9; font-weight: bold">70 (24%)</td>
+<td class="gt_row gt_center" headers="stat_4" style="color: #6D28D9; font-weight: bold">75 (26%)</td>
+<td class="gt_row gt_center" headers="p.value"><br>
+</td>
+<td class="gt_row gt_center" headers="**Cramér**"><br>
+</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label" style="text-align: left; font-weight: bold; white-space: nowrap !important; background-color: #FEF9C3;">Enxaqueca na Pandemia<sup>Q</sup></td>
+<td class="gt_row gt_center" headers="stat_1" style="background-color: #FEF9C3"><br>
+</td>
+<td class="gt_row gt_center" headers="stat_2" style="background-color: #FEF9C3"><br>
+</td>
+<td class="gt_row gt_center" headers="stat_3" style="background-color: #FEF9C3"><br>
+</td>
+<td class="gt_row gt_center" headers="stat_4" style="background-color: #FEF9C3"><br>
+</td>
+<td class="gt_row gt_center" headers="p.value" style="font-weight: bold; background-color: #FEF9C3">&lt;0,001</td>
+<td class="gt_row gt_center" headers="**Cramér**" style="background-color: #FEF9C3">0,090</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label" style="text-align: left; padding-left: 25px !important;">&nbsp;&nbsp;&nbsp;&nbsp;Não</td>
+<td class="gt_row gt_center" headers="stat_1" style="color: #6D28D9; font-weight: bold">332 (18%)</td>
+<td class="gt_row gt_center" headers="stat_2">352 (19%)</td>
+<td class="gt_row gt_center" headers="stat_3" style="color: #0369A1; font-weight: bold">578 (31%)</td>
+<td class="gt_row gt_center" headers="stat_4">578 (31%)</td>
+<td class="gt_row gt_center" headers="p.value"><br>
+</td>
+<td class="gt_row gt_center" headers="**Cramér**"><br>
+</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label" style="text-align: left; padding-left: 25px !important;">&nbsp;&nbsp;&nbsp;&nbsp;Sim</td>
+<td class="gt_row gt_center" headers="stat_1" style="color: #0369A1; font-weight: bold">81 (26%)</td>
+<td class="gt_row gt_center" headers="stat_2">67 (21%)</td>
+<td class="gt_row gt_center" headers="stat_3" style="color: #6D28D9; font-weight: bold">69 (22%)</td>
+<td class="gt_row gt_center" headers="stat_4">98 (31%)</td>
+<td class="gt_row gt_center" headers="p.value"><br>
+</td>
+<td class="gt_row gt_center" headers="**Cramér**"><br>
+</td>
+</tr>
+</tbody><tfoot>
+<tr class="gt_sourcenotes odd">
+<td colspan="7" class="gt_sourcenote" style="text-align: left;"><div class="legenda-modelo">
+<strong>Q</strong>: Teste qui-quadrado de Pearson;<br>
+<strong>F</strong>: Teste exato de Fisher;<br>
+<strong>r</strong>: Resíduo padronizado;<br>
+<span style="color:#8FB9DE;">■</span> Acima do esperado (r &gt; 1,96) &nbsp;&nbsp;&nbsp; <span style="color:#B8A4D4;">■</span> Abaixo do esperado (r &lt; -1,96) &nbsp;&nbsp;&nbsp; <span style="color:#E5C94F;">■</span> Associação significativa (p &lt; 0,05)
+</div></td>
+</tr>
+</tfoot>
+
+</table>
+
+</div>
+</div>
+</div>
+</section>
+<section id="tabela-das-variáveis-quantitativas" class="slide level2" data-number="3.2">
+<h2><span class="header-section-number">3.2</span> Tabela das variáveis quantitativas</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div class="tabela-quantitativa"><div id="hmllhewngw" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+  
+  
+<table class="gt_table caption-top" data-quarto-bootstrap="false" style="-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; display: table; border-collapse: collapse; line-height: normal; margin-left: auto; margin-right: auto; color: #333333; font-size: 20px; font-weight: normal; font-style: normal; background-color: #FFFFFF; width: auto; border-top-style: solid; border-top-width: 2px; border-top-color: #A8A8A8; border-right-style: none; border-right-width: 2px; border-right-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #A8A8A8; border-left-style: none; border-left-width: 2px; border-left-color: #D3D3D3;" data-bgcolor="#FFFFFF">
+<colgroup>
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+</colgroup>
+<thead style="border-style: none;">
+<tr class="gt_col_headings gt_spanner_row header" style="border-style: none; border-top-style: solid; border-top-width: 2px; border-top-color: #D3D3D3; border-bottom-width: 2px; border-bottom-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; border-bottom-style: hidden;">
+<th rowspan="2" id="label" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col" style="text-align: left; border-style: none; color: #333333; background-color: #FFFFFF; font-size: 22px; font-weight: normal; text-transform: inherit; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: bottom; padding-top: 5px; padding-bottom: 6px; padding-left: 5px; padding-right: 5px; overflow-x: hidden;" data-bgcolor="#FFFFFF" data-valign="bottom"><strong>Variáveis</strong><sup><em>3</em></sup></th>
+<th colspan="4" id="level 1; stat_1" class="gt_center gt_columns_top_border gt_column_spanner_outer" data-quarto-table-cell-role="th" scope="colgroup" style="text-align: center; border-style: none; color: #333333; background-color: #FFFFFF; font-size: 22px; font-weight: normal; text-transform: inherit; padding-top: 0; padding-bottom: 0; padding-left: 4px; padding-right: 4px;" data-bgcolor="#FFFFFF"><div class="gt_column_spanner" style="border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; vertical-align: bottom; padding-top: 5px; padding-bottom: 5px; overflow-x: hidden; display: inline-block; width: 100%;">
+<strong>Refrigerante</strong>
+</div></th>
+<th rowspan="2" id="p.value" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" style="text-align: center; border-style: none; color: #333333; background-color: #FFFFFF; font-size: 22px; font-weight: normal; text-transform: inherit; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; padding-top: 5px; padding-bottom: 6px; padding-left: 5px; padding-right: 5px; overflow-x: hidden; vertical-align: middle;" scope="col" data-valign="middle" data-bgcolor="#FFFFFF"><strong>Valor-p</strong><sup><em>2</em></sup></th>
+</tr>
+<tr class="gt_col_headings even" style="border-style: none; border-top-style: solid; border-top-width: 2px; border-top-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3;">
+<th id="stat_1" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col" style="text-align: center; border-style: none; color: #333333; background-color: #FFFFFF; font-size: 22px; font-weight: normal; text-transform: inherit; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: bottom; padding-top: 5px; padding-bottom: 6px; padding-left: 5px; padding-right: 5px; overflow-x: hidden;" data-bgcolor="#FFFFFF" data-valign="bottom"><strong>Aumentou</strong><br>N = 413<sup><em>1</em></sup></th>
+<th id="stat_2" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col" style="text-align: center; border-style: none; color: #333333; background-color: #FFFFFF; font-size: 22px; font-weight: normal; text-transform: inherit; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: bottom; padding-top: 5px; padding-bottom: 6px; padding-left: 5px; padding-right: 5px; overflow-x: hidden;" data-bgcolor="#FFFFFF" data-valign="bottom"><strong>Diminuiu</strong><br>N = 419<sup><em>1</em></sup></th>
+<th id="stat_3" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col" style="text-align: center; border-style: none; color: #333333; background-color: #FFFFFF; font-size: 22px; font-weight: normal; text-transform: inherit; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: bottom; padding-top: 5px; padding-bottom: 6px; padding-left: 5px; padding-right: 5px; overflow-x: hidden;" data-bgcolor="#FFFFFF" data-valign="bottom"><strong>Não alterou</strong><br>N = 647<sup><em>1</em></sup></th>
+<th id="stat_4" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col" style="text-align: center; border-style: none; color: #333333; background-color: #FFFFFF; font-size: 22px; font-weight: normal; text-transform: inherit; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: bottom; padding-top: 5px; padding-bottom: 6px; padding-left: 5px; padding-right: 5px; overflow-x: hidden;" data-bgcolor="#FFFFFF" data-valign="bottom"><strong>Não consumo</strong><br>N = 676<sup><em>1</em></sup></th>
+</tr>
+</thead>
+<tbody class="gt_table_body" style="border-style: none; border-top-style: solid; border-top-width: 2px; border-top-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3;">
+<tr class="odd" style="border-style: none;">
+<td class="gt_row gt_left" headers="label" style="text-align: left; border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; font-weight: bold; background-color: #FEF9C3;" data-bgcolor="#FEF9C3" data-valign="middle">Idade<sup>W</sup></td>
+<td class="gt_row gt_center" headers="stat_1" style="text-align: center; border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; background-color: #FEF9C3;" data-bgcolor="#FEF9C3" data-valign="middle">32 (10)<sup><strong>a</strong></sup></td>
+<td class="gt_row gt_center" headers="stat_2" style="text-align: center; border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; background-color: #FEF9C3;" data-bgcolor="#FEF9C3" data-valign="middle">36 (14)<sup><strong>b</strong></sup></td>
+<td class="gt_row gt_center" headers="stat_3" style="text-align: center; border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; background-color: #FEF9C3;" data-bgcolor="#FEF9C3" data-valign="middle">36 (12)<sup><strong>b</strong></sup></td>
+<td class="gt_row gt_center" headers="stat_4" style="text-align: center; border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; background-color: #FEF9C3;" data-bgcolor="#FEF9C3" data-valign="middle">35 (13)<sup><strong>b</strong></sup></td>
+<td class="gt_row gt_center" headers="p.value" style="text-align: center; border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; font-weight: bold; background-color: #FEF9C3;" data-bgcolor="#FEF9C3" data-valign="middle">&lt;0,001</td>
+</tr>
+<tr class="even" style="border-style: none;">
+<td class="gt_row gt_left" headers="label" style="text-align: left; border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; font-weight: bold; background-color: #FEF9C3;" data-bgcolor="#FEF9C3" data-valign="middle">Peso<sup>W</sup></td>
+<td class="gt_row gt_center" headers="stat_1" style="text-align: center; border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; background-color: #FEF9C3;" data-bgcolor="#FEF9C3" data-valign="middle">74 (17)<sup><strong>a</strong></sup></td>
+<td class="gt_row gt_center" headers="stat_2" style="text-align: center; border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; background-color: #FEF9C3;" data-bgcolor="#FEF9C3" data-valign="middle">72 (16)<sup><strong>ab</strong></sup></td>
+<td class="gt_row gt_center" headers="stat_3" style="text-align: center; border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; background-color: #FEF9C3;" data-bgcolor="#FEF9C3" data-valign="middle">70 (16)<sup><strong>b</strong></sup></td>
+<td class="gt_row gt_center" headers="stat_4" style="text-align: center; border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; background-color: #FEF9C3;" data-bgcolor="#FEF9C3" data-valign="middle">67 (15)<sup><strong>c</strong></sup></td>
+<td class="gt_row gt_center" headers="p.value" style="text-align: center; border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; font-weight: bold; background-color: #FEF9C3;" data-bgcolor="#FEF9C3" data-valign="middle">&lt;0,001</td>
+</tr>
+<tr class="odd" style="border-style: none;">
+<td class="gt_row gt_left" headers="label" style="text-align: left; border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; font-weight: bold; background-color: #FEF9C3;" data-bgcolor="#FEF9C3" data-valign="middle">Altura<sup>W</sup></td>
+<td class="gt_row gt_center" headers="stat_1" style="text-align: center; border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; background-color: #FEF9C3;" data-bgcolor="#FEF9C3" data-valign="middle">1,65 (0,08)<sup><strong>a</strong></sup></td>
+<td class="gt_row gt_center" headers="stat_2" style="text-align: center; border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; background-color: #FEF9C3;" data-bgcolor="#FEF9C3" data-valign="middle">1,66 (0,09)<sup><strong>a</strong></sup></td>
+<td class="gt_row gt_center" headers="stat_3" style="text-align: center; border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; background-color: #FEF9C3;" data-bgcolor="#FEF9C3" data-valign="middle">1,66 (0,09)<sup><strong>a</strong></sup></td>
+<td class="gt_row gt_center" headers="stat_4" style="text-align: center; border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; background-color: #FEF9C3;" data-bgcolor="#FEF9C3" data-valign="middle">1,65 (0,08)<sup><strong>a</strong></sup></td>
+<td class="gt_row gt_center" headers="p.value" style="text-align: center; border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; font-weight: bold; background-color: #FEF9C3;" data-bgcolor="#FEF9C3" data-valign="middle">0,048</td>
+</tr>
+<tr class="even" style="border-style: none;">
+<td class="gt_row gt_left" headers="label" style="text-align: left; border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; font-weight: bold; background-color: #FEF9C3;" data-bgcolor="#FEF9C3" data-valign="middle">IMC<sup>W</sup></td>
+<td class="gt_row gt_center" headers="stat_1" style="text-align: center; border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; background-color: #FEF9C3;" data-bgcolor="#FEF9C3" data-valign="middle">27,1 (5,6)<sup><strong>a</strong></sup></td>
+<td class="gt_row gt_center" headers="stat_2" style="text-align: center; border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; background-color: #FEF9C3;" data-bgcolor="#FEF9C3" data-valign="middle">25,9 (5,1)<sup><strong>b</strong></sup></td>
+<td class="gt_row gt_center" headers="stat_3" style="text-align: center; border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; background-color: #FEF9C3;" data-bgcolor="#FEF9C3" data-valign="middle">25,4 (4,8)<sup><strong>b</strong></sup></td>
+<td class="gt_row gt_center" headers="stat_4" style="text-align: center; border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; background-color: #FEF9C3;" data-bgcolor="#FEF9C3" data-valign="middle">24,6 (4,8)<sup><strong>c</strong></sup></td>
+<td class="gt_row gt_center" headers="p.value" style="text-align: center; border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; font-weight: bold; background-color: #FEF9C3;" data-bgcolor="#FEF9C3" data-valign="middle">&lt;0,001</td>
+</tr>
+</tbody><tfoot style="border-style: none;">
+<tr class="gt_sourcenotes odd" style="border-style: none; color: #333333; background-color: #FFFFFF; border-bottom-style: none; border-bottom-width: 2px; border-bottom-color: #D3D3D3; border-left-style: none; border-left-width: 2px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 2px; border-right-color: #D3D3D3;" data-bgcolor="#FFFFFF">
+<td colspan="6" class="gt_sourcenote" style="text-align: left; border-style: none; font-size: 90%; padding-top: 4px; padding-bottom: 4px; padding-left: 5px; padding-right: 5px;"><div class="legenda-modelo" style="margin-left:280px; margin-top:15px;">
+<span style="display:inline-block; width:12px; height:12px; background-color:#E5C94F; margin-right:5px;"></span>Diferença estatisticamente significativa (p &lt; 0,05)<br>
+<sup>1</sup> Média (Desvio Padrão);<br>
+<sup>2</sup> ANOVA de Welch de um fator (não assumindo variâncias iguais);<br>
+<sup>3</sup> Grupos que compartilham uma mesma letra não diferem significativamente pelo teste de Games-Howell (α = 0,05).
+</div></td>
+</tr>
+</tfoot>
+
+</table>
+
+</div></div>
+</div>
+</div>
+</section></section>
+<section>
+<section id="conclusão" class="title-slide slide level1 transicao center" data-background-image="imagens/Transicao.png" data-background-size="cover" data-number="4">
+<h1><span class="header-section-number">4</span> Conclusão:</h1>
+
+</section>
+<section id="principais-achados" class="slide level2" data-number="4.1">
+<h2><span class="header-section-number">4.1</span> Principais Achados</h2>
+<div class="box-blue" style="font-size: 0.76em; padding: 0.35em 0.7em; margin-bottom: 30px; text-align: left;">
+<ul>
+<li>A <strong>mudança no consumo de refrigerante</strong> esteve relacionada a fatores <strong>sociodemográficos</strong>, <strong>econômicos</strong>, <strong>emocionais</strong> e <strong>antropométricos</strong>.</li>
+</ul>
+</div>
+<div class="box-blue" style="font-size: 0.76em; padding: 0.35em 0.7em; margin-bottom: 30px; text-align: left;">
+<ul>
+<li><p><strong>Idade</strong>, <strong>peso</strong> e <strong>IMC</strong> apresentaram <strong>diferenças expressivas</strong> entre os grupos de consumo:</p>
+<ul>
+<li><strong>Mais jovem</strong> <span class="seta">→</span> <strong>aumentou</strong> o consumo<br>
+</li>
+<li><strong>Maior peso e IMC</strong> <span class="seta">→</span> <strong>aumentou</strong> o consumo</li>
+</ul></li>
+</ul>
+</div>
+<div class="box-blue" style="font-size: 0.76em; padding: 0.35em 0.7em; margin-bottom: 30px; text-align: left;">
+<ul>
+<li><p>Diversas <strong>variáveis qualitativas</strong> foram <strong>significativas</strong>, porém com <strong>Cramér baixo</strong>. Sendo as mais relevantes:</p>
+<ul>
+<li><strong>Gênero feminino</strong> <span class="seta">→</span> <strong>aumentou</strong> o consumo (ou <strong>não consome</strong>)</li>
+<li><strong>Dificuldade financeira</strong> ou <strong>baixa renda</strong> <span class="seta">→</span> <strong>diminuiu</strong> o consumo<br>
+</li>
+<li><strong>Consulta com nutricionista</strong> <span class="seta">→</span> <strong>diminuiu</strong> ou <strong>não consome</strong></li>
+<li><strong>Aspectos emocionais</strong> <span class="seta">→</span> <strong>aumentou</strong> o consumo</li>
+</ul></li>
+</ul>
+</div>
+</section></section>
+<section id="obrigado." class="title-slide slide level1 unnumbered transicao center" data-background-image="imagens/transicao.png" data-background-size="cover">
+<h1>Obrigado.</h1>
+
+
+</section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<div class="footer footer-default">
+
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="../site_libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="../site_libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="../site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="../site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="../site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="../site_libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'slide',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'fade',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1280,
+
+        height: 720,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 7.0e-2,
+
+        math: {
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    
+
+    <script>
+
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+
+      // slide changes (different for each slide format).
+
+      (function () {
+
+        // dispatch for htmlwidgets
+
+        function fireSlideEnter() {
+
+          const event = window.document.createEvent("Event");
+
+          event.initEvent("slideenter", true, true);
+
+          window.document.dispatchEvent(event);
+
+        }
+
+    
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+
+          fireSlideEnter();
+
+    
+
+          // dispatch for shiny
+
+          if (window.jQuery) {
+
+            if (previousSlide) {
+
+              window.jQuery(previousSlide).trigger("hidden");
+
+            }
+
+            if (currentSlide) {
+
+              window.jQuery(currentSlide).trigger("shown");
+
+            }
+
+          }
+
+        }
+
+    
+
+        // hookup for slidy
+
+        if (window.w3c_slidy) {
+
+          window.w3c_slidy.add_observer(function (slide_num) {
+
+            // slide_num starts at position 1
+
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+
+          });
+
+        }
+
+    
+
+      })();
+
+    </script>
+
+    
+
+    <script id="quarto-html-after-body" type="application/javascript">
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
+          }
+          return false;
+        }
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copied!");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copied!");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp('/' + window.location.host + '/');
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
+          });
+        }
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
+    
+
+</body></html>

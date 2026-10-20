@@ -214,7 +214,7 @@ $$
 
 :::
 
-## Importância do Teste de Associação:
+## Importância dos Testes de Hipótese:
 
 ::: box-blue
 
