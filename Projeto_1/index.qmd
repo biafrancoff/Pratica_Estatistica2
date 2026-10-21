@@ -22,7 +22,7 @@ format:
       data-background-size: cover
 ---
 
-# Introdução {.transicao data-background-image="imagens/Transicao.png" data-background-size="cover"}
+# Introdução: {.transicao data-background-image="imagens/Transicao.png" data-background-size="cover"}
 
 ## A Pesquisa {style="font-size: 0.9em;"}
 
@@ -117,7 +117,7 @@ format:
 
 ::::
 
-# Metodologia {.transicao data-background-image="imagens/Transicao.png" data-background-size="cover"}
+# Metodologia: {.transicao data-background-image="imagens/Transicao.png" data-background-size="cover"}
 
 ## Tratamento dos Dados
 
@@ -1203,4 +1203,4 @@ htmltools::div(
 
 
 
-# Obrigado. {.unnumbered .transicao data-background-image="imagens/transicao.png" data-background-size="cover"}
+# Obrigado. {.unnumbered .transicao data-background-image="imagens/Transicao.png" data-background-size="cover"}
