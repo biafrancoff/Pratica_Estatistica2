@@ -1,6 +1,6 @@
 ---
 title: "**PRÁTICA ESTATÍSTICA II**"
-subtitle: "**PROJETO I**"
+subtitle: "**PROJETO I <br> Mudanças no consumo de refrigerante durante a pandemia de COVID-19**"
 author: "Beatriz Franco (<beatrizff@id.uff.br>)"
 date: 2026-10-21
 date-format: "DD/MM/YYYY"

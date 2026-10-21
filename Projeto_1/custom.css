@@ -22,33 +22,33 @@
 /* Título */
 #title-slide h1 {
   position: relative;
-  top: -35px;
+  top: -20px;
   color: #052034;
 }
 
 /* Subtítulo */
 #title-slide .subtitle {
   position: relative;
-  top: -35px;
+  top: -30px;
   color: #052034;
 }
 
 #title-slide .quarto-title-author-name {
   position: relative;
-  top: -55px;
+  top: -45px;
   color: #052034;
 }
 
 
 #title-slide .quarto-title-affiliation{
   position: relative;
-  top: -50px;
+  top: -40px;
   color: #052034;
 
 }
 
 #title-slide p.date {
-  transform: translateY(-40px) !important;
+  transform: translateY(-45px) !important;
   color: #052034;
 }
 
