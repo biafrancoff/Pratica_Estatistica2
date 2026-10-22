@@ -1201,4 +1201,4 @@ htmltools::div(
 
 :::
 
-# Obrigada! {.unnumbered data-background-image="imagens/Transicao.png"}
+# Obrigada!{.unnumbered data-background-image="imagens/Transicao.png"}
