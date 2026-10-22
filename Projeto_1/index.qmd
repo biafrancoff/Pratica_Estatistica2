@@ -977,6 +977,8 @@ tabela <- tabela %>%
 ```
 
 ```{r}
+#| echo: false
+
 tabela
 ```
 
@@ -1163,6 +1165,8 @@ tabela2 <- tabela2 %>%
 ```
 
 ```{r}
+#| echo: false
+
 htmltools::div(
   class = "tabela-quantitativa",
   htmltools::HTML(gt::as_raw_html(tabela2)))

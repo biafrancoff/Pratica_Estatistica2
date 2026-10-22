@@ -117,16 +117,16 @@ Em breve.
 
 ::: {.grid-projetos}
 
-::: {.card-projeto .card-atividade-projeto .indisponivel}
+::: {.card-projeto .card-atividade-projeto}
 <div class="tipo-projeto">P1</div>
 
 ### Projeto I
 
 <div class="tema">
-Em breve
+Mudanças no consumo de refrigerante durante a pandemia de COVID-19
 </div>
 
-[ABRIR PROJETO →]()
+[ABRIR PROJETO →](Projeto_1/)
 :::
 
 
@@ -140,6 +140,8 @@ Em breve
 </div>
 
 [ABRIR PROJETO →]()
+:::
+
 :::
 
 :::
