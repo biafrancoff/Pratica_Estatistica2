@@ -1057,13 +1057,7 @@ letras_imc <- gerar_letras("IMC", Dados1)
 tabela2 <- tbl_summary(
   data = Dados1,
   by = Refrigerante,
-  statistic = all_continuous() ~ "{mean} ({sd})",
-  label = list(
-    Idade ~ "Idade<sup>W</sup>",
-    Peso ~ "Peso<sup>W</sup>",
-    Altura ~ "Altura<sup>W</sup>",
-    IMC ~ "IMC<sup>W</sup>"
-  )
+  statistic = all_continuous() ~ "{mean} ({sd})"
 ) %>%
   add_p(
     test = all_continuous() ~ "oneway.test",
@@ -1179,7 +1173,7 @@ htmltools::div(
 
 ::: {.box-blue style="font-size: 0.76em; padding: 0.35em 0.7em; margin-bottom: 30px; text-align: left;"}
 
-- A **mudança no consumo de refrigerante** esteve relacionada a fatores **sociodemográficos**, **econômicos**, **emocionais** e **antropométricos**.
+- As **mudanças no consumo de refrigerante** estiveram relacionadas a fatores **sociodemográficos**, **econômicos**, **emocionais** e **antropométricos**.
 
 :::
 

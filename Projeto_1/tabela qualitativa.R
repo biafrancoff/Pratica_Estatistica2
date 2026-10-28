@@ -1,5 +1,3 @@
-##############Criar Tabela Testes de Independência##############################
-# Setup ------------------------------------------------------------------------
 require(openxlsx)            # Leitura de base de dados
 require(dplyr)               # Manipulação de base de dados
 require(gtsummary)           # Tabelas automáticas

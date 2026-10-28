@@ -6,8 +6,7 @@ require(rstatix)             # Coeficiente de Cramer
 require(ggplot2)             # Gráficos
 require(qqplotr)             # Gráficos qqplot
 require(DescTools)           # Teste de Levene
-require(multcompView)
-
+require(multcompView)        # Gera letras para as comparações múltiplas
 
 Dados <- read.xlsx("Nutrição.xlsx")
 
@@ -200,16 +199,11 @@ letras_altura <- gerar_letras("Altura", Dados1)
 letras_imc <- gerar_letras("IMC", Dados1)
 
 
+#tabela final
 tabela2 <- tbl_summary(
   data = Dados1,
   by = Refrigerante,
-  statistic = all_continuous() ~ "{mean} ({sd})",
-  label = list(
-    Idade ~ "Idade<sup>W</sup>",
-    Peso ~ "Peso<sup>W</sup>",
-    Altura ~ "Altura<sup>W</sup>",
-    IMC ~ "IMC<sup>W</sup>"
-  )
+  statistic = all_continuous() ~ "{mean} ({sd})"
 ) %>%
   add_p(
     test = all_continuous() ~ "oneway.test",
@@ -226,13 +220,8 @@ tabela2 <- tbl_summary(
   modify_header(
     p.value ~ "**Valor-p**<sup><em>2</em></sup>"
   ) %>%
-  modify_footnote(everything() ~ NA) %>%
-  modify_source_note(
-    "<sup><em>1</em></sup> Média (Desvio Padrão)<br>
-   <sup><em>2</em></sup> ANOVA de Welch de um fator (não assumindo variâncias iguais)<br>
-   <sup><em>3</em></sup> Grupos que compartilham pelo menos uma letra não diferem significativamente pelo teste de Games-Howell (α = 0,05).",
-    text_interpret = "html"
-  )
+  modify_footnote(everything() ~ NA) 
+
 
 letras_lista <- list(
   Idade = letras_idade,
@@ -274,6 +263,7 @@ for (variavel in names(letras_lista)) {
 }
 
 tabela2 <- tabela2 %>%
+  as_gt() %>%
   fmt_markdown(columns = starts_with("stat_")) %>%
   fmt_markdown(columns = label) %>%
   tab_style(
@@ -287,7 +277,7 @@ tabela2 <- tabela2 %>%
   tab_style(
     style = cell_fill(color = "#fef9c3"),
     locations = cells_body(
-      rows = variable %in% c("Idade", "Peso", "IMC") &
+      rows = variable %in% c("Idade", "Peso", "Altura","IMC") &
         row_type == "label"
     )
   ) %>%
@@ -295,6 +285,21 @@ tabela2 <- tabela2 %>%
     table.font.size = "20px",
     heading.title.font.size = "26px",
     column_labels.font.size = "22px"
+  ) %>%
+  gt::tab_source_note(
+    source_note = gt::html(
+      paste0(
+        "<div class='legenda-modelo' style='margin-left:280px; margin-top:15px;'>",
+        "<span style='display:inline-block; width:12px; height:12px; ",
+        "background-color:#E5C94F; margin-right:5px;'></span>",
+        "Diferença estatisticamente significativa (p &lt; 0,05)<br>",
+        "<sup>1</sup> Média (Desvio Padrão);<br>",
+        "<sup>2</sup> ANOVA de Welch de um fator (não assumindo variâncias iguais);<br>",
+        "<sup>3</sup> Grupos que compartilham uma mesma letra não diferem ",
+        "significativamente pelo teste de Games-Howell (α = 0,05).",
+        "</div>"
+      )
+    )
   )
 
 tabela2
