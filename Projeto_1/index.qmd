@@ -1173,7 +1173,7 @@ htmltools::div(
 
 ::: {.box-blue style="font-size: 0.76em; padding: 0.35em 0.7em; margin-bottom: 30px; text-align: left;"}
 
-- As **mudanças no consumo de refrigerante** estiveram relacionadas a fatores **sociodemográficos**, **econômicos**, **emocionais** e **antropométricos**.
+- As **mudanças no consumo de refrigerante** estiveram relacionadas a fatores **sociodemográficos**, **econômicos**, **antropométricos**, **comportamentais** e **associados ao contexto da pandemia**.
 
 :::
 
